@@ -43,7 +43,7 @@ const Exploreslider = ({ sliderdata }) => {
             }}
             onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
             coverflowEffect={{ rotate: 10, stretch: 5, depth: 200, modifier: 2 }}
-            className="tradewith_slider h-[340px] md:h-[520px]"
+            className="tradewith_slider h-[340px] md:h-[580px]"
             modules={[Autoplay, Pagination, Navigation, EffectCoverflow]}
           >
             {sliderdata.map((data, index) => {
@@ -60,7 +60,7 @@ const Exploreslider = ({ sliderdata }) => {
                       alt={data.marketname}
                       width={1000}
                       height={500}
-                      className={`max-w-[250px] md:max-w-[410px] rounded-[20px]
+                      className={`max-w-[250px] md:max-w-[470px] rounded-[20px]
                                   ${isActive ? "shadow-2xl" : "opacity-90"} `}
                     />
                     <div className="absolute text-xl lg:text-[30px] font-normal text-white w-full h-[15%] flex items-center justify-center bottom-0 bg-[#000000c3] rounded-[10px] lg:rounded-[20px] font_ternary">
