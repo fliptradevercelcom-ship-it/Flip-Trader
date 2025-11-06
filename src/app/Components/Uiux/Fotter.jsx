@@ -113,11 +113,11 @@ const footerdata = {
       pagelink: "https://www.instagram.com/fliptradegroup/",
       icon: Instaicon
     },
-    {
-      alt: "Twitter",
-      pagelink: "https://www.instagram.com/fliptradegroup/",
-      icon: twitter
-    },
+    // {
+    //   alt: "Twitter",
+    //   pagelink: "https://www.instagram.com/fliptradegroup/",
+    //   icon: twitter
+    // },
     {
       alt: "You Tube",
       pagelink: "https://www.youtube.com/@fliptradegroup",
@@ -177,7 +177,7 @@ const Fotter = () => {
                 )}
               </div>
 
-              <div className="grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-5  border-b-[0.5px] border-[#ffffff2e]">
+              <div className="grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4  border-b-[0.5px] border-[#ffffff2e]">
                 {footerdata.social_links.map((data, index) =>
                   <div
                     key={index}
