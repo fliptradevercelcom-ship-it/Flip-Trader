@@ -1,0 +1,487 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #6a40ec;
+  --subprimary: #b46aff;
+  --secondary: #212121;
+  --ternary: #434343;
+  --lightsecondry: #16141b;
+  --bgtheme: #000000;
+}
+
+.bg-theme {
+  background-color: var(--bgtheme) !important;
+}
+
+/* Set dynamic color according Tailwind v4 */
+/* Primary */
+.bg-primary {
+  background: var(--primary);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.border-primary {
+  border-color: var(--primary);
+}
+
+/* Sub Primary */
+.bg-subprimary {
+  background: var(--subprimary);
+}
+
+.text-subprimary {
+  color: var(--subprimary);
+}
+
+.border-subprimary {
+  border-color: var(--subprimary);
+}
+
+/* Secondary */
+.bg-secondary {
+  background: var(--secondary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.border-secondary {
+  border-color: var(--secondary);
+}
+
+/* ternary */
+.bg-ternary {
+  background: var(--ternary);
+}
+
+.text-ternary {
+  color: var(--ternary);
+}
+
+.border-ternary {
+  border: var(--ternary);
+}
+
+/* lightsecondry */
+.bg-lightsecondry {
+  background: var(--lightsecondry);
+}
+
+.text-lightsecondry {
+  color: var(--lightsecondry);
+}
+
+.border-lightsecondry {
+  border: var(--lightsecondry);
+}
+
+/* ------------------------------------------ */
+
+.text-do {
+  color: #d0d0d0;
+}
+
+.list_text {
+  font-size: 21.67px;
+  letter-spacing: 0.4px;
+}
+
+.description_text {
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.title_text {
+  /* font-size: 80px; */
+  font-size: 75px;
+  line-height: 98px;
+}
+
+body {
+  font-family: var(--font-mona-sans), sans-serif;
+  background: rgb(0, 0, 0);
+}
+
+.font_secondary {
+  font-family: var(--font-mona-sans-normal), sans-serif;
+}
+
+.font_ternary {
+  font-family: var(--font-mona-sans-normallight), sans-serif;
+}
+
+.font_ternarynormal {
+  font-family: var(--font-mona-sans-monaSanswidenormal), sans-serif;
+}
+
+.main_outer_container {
+  max-width: 1960px;
+  margin: auto;
+}
+
+.inn_container {
+  max-width: 1660px;
+  margin: auto;
+}
+
+.sign_up_btn {
+  box-shadow: -1px -2px 3px 1px var(--primary);
+}
+
+.sign_up_btn button {
+  box-shadow: inset -1px 0px 20px 10px #3b2480;
+  transition: all 0.3s ease-in-out;
+}
+
+.sign_up_btn button:hover {
+  box-shadow: inset -1px 0px 20px 20px #3b2480;
+}
+
+.ui_btn_shadow {
+  box-shadow: 3px 4px 20px 0.5px var(--primary);
+}
+
+.gradient_text {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(176 156 240 / 94%) 26%,
+    rgb(159 135 234) 55%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient_text_secondary {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1),
+    rgba(135, 135, 135, 0)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient_bg {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(176 156 240 / 94%) 26%,
+    rgb(159 135 234) 55%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.gradient_line_bg {
+  background: linear-gradient(
+    182deg,
+    rgba(255, 255, 255, 1) -26%,
+    rgb(188 171 240 / 95%) 49%,
+    rgba(255, 255, 255, 1) 106%
+  );
+}
+
+strong {
+  font-weight: 600 !important;
+}
+
+.banner_secondary_text {
+  font-size: 64px;
+}
+
+.banner_primary_text {
+  font-size: 105px;
+  line-height: 115px;
+}
+
+.main_banner {
+  background-image: url(../../public/banners/Homebanner.webp);
+}
+
+/* For swiper slider  */
+.swiper-pagination-bullet-active {
+  background: var(--primary) !important;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 80px;
+  border-radius: 10px;
+  transition: all 0.7s ease-in-out;
+}
+
+.swiper-slide-shadow-left {
+  background-image: none !important;
+}
+
+.swiper-slide-shadow-right {
+  background-image: none !important;
+}
+
+@media screen and (max-width: 1700px) {
+  .inn_container {
+    padding-inline: 4%;
+  }
+
+  .banner_primary_text {
+    font-size: 95px;
+    line-height: 105px;
+  }
+
+  .banner_secondary_text {
+    font-size: 58px;
+  }
+
+  .description_text {
+    font-size: 22px;
+    line-height: 35px;
+  }
+
+  .title_text {
+    font-size: 76px;
+    line-height: 94px;
+  }
+
+  .list_text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .list_text {
+    font-size: 15px;
+  }
+
+  .banner_primary_text {
+    font-size: 85px;
+    line-height: 95px;
+  }
+
+  .banner_secondary_text {
+    font-size: 52px;
+  }
+
+  .description_text {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .title_text {
+    font-size: 68px;
+    line-height: 84px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .banner_primary_text {
+    font-size: 70px;
+    line-height: 83px;
+  }
+
+  .banner_secondary_text {
+    font-size: 46px;
+  }
+
+  .rainbow-btn {
+    max-height: 55px !important;
+    min-height: 54px !important;
+    padding: 0 20px !important;
+  }
+
+  .title_text {
+    font-size: 51px;
+    line-height: 75px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  br {
+    display: none;
+  }
+
+  .banner_primary_text {
+    font-size: 58px;
+    line-height: 83px;
+  }
+
+  .banner_secondary_text {
+    font-size: 40px;
+  }
+
+  .description_text {
+    max-width: 100%;
+    margin: auto;
+    width: 100%;
+  }
+
+  .rainbow-btn {
+    max-height: 45px !important;
+    min-height: 45px !important;
+    padding: 0 14px !important;
+  }
+
+  .title_text {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .bg_image_none {
+    background-image: none !important;
+  }
+
+  .newgenbg {
+    background-image: url(../../public/images/bluebg.webp) !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner_primary_text {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .banner_secondary_text {
+    font-size: 18px;
+  }
+
+  .description_text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .main_banner {
+    background-image: url(../../public/banners/Homebannerph.webp);
+  }
+
+  .title_text {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .list_text {
+    font-size: 14px;
+  }
+
+  .rainbow-btn {
+    max-height: 36px !important;
+    min-height: 36px !important;
+    padding: 0 14px !important;
+  }
+
+  span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 30px;
+  }
+}
+
+/* 
+@theme  {
+   --breakpoint-2xl: 1680px;
+} */
+.tradingview-widget-container.min-h-\[500px\].h-full {
+  width: auto !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.custome_faq a {
+  color: var(--primary);
+}
+
+.newgenbg {
+  background-image: url(../../public/images/nextgenbg.webp);
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff !important;
+}
+
+/* 🟣 Smooth Animated Black + Purple Gradient Background (with top/bottom fade) */
+.bg-animated-gradient {
+  position: relative;
+  background: linear-gradient(
+    -45deg,
+    #000000,
+    #1a002e,
+    #3b007a,
+    #000000
+  );
+  background-size: 300% 300%;
+  animation: gradientShift 35s ease-in-out infinite;
+  overflow: hidden;
+}
+
+/* ✨ Soft purple lines (subtle motion) */
+.bg-animated-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    125deg,
+    rgba(150, 0, 255, 0.06) 0px,
+    rgba(150, 0, 255, 0.06) 1px,
+    transparent 3px,
+    transparent 90px
+  );
+  animation: softLines 100s linear infinite;
+  opacity: 0.25;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* 🌫 Fade top & bottom overlay */
+.bg-animated-gradient::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 20%,
+    rgba(0, 0, 0, 0) 80%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* 🎬 Gradient motion */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* 🌀 Slow diagonal line drift */
+@keyframes softLines {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1200px 600px;
+  }
+}
