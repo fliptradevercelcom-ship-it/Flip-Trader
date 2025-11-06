@@ -8,7 +8,7 @@ const Nextgennew = () => {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 0.30;
+      videoRef.current.playbackRate = 0.70;
     }
   }, []);
   return (
