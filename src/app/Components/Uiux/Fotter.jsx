@@ -11,6 +11,7 @@ import Link from "next/link";
 import Worldbroker from "../Pagecomponents/Worldbroker";
 import telegram from "../../../../public/icons/telegram.svg";
 import twitter from "../../../../public/icons/twitter.svg";
+import Reviewshowcase from "../Pagecomponents/Reviewshowcase";
 
 const footerdata = {
   policydata: [
@@ -142,6 +143,7 @@ const Fotter = () => {
   return (
     <div>
       <Worldbroker />
+      <Reviewshowcase />
       <div className="bg-theme pb-18">
         <div className="inn_container">
           <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 bg-primary py-8 md:py-12 my-[2em]">

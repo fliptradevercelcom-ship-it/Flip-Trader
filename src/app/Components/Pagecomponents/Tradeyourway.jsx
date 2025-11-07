@@ -12,7 +12,6 @@ import Faq from "./Faq";
 import Yourway from "./Yourway";
 import { useAutoScroll } from "../../../hooks/useAutoScroll";
 import Link from "next/link";
-import Reviewshowcase from "./Reviewshowcase";
 const faqData = [
   {
     question: "What is FlipTrade?",
@@ -43,7 +42,6 @@ const Tradeyourway = () => {
     <div className="bg-theme">
       <div className="">
         <Yourway />
-        <Reviewshowcase />
         <div>
           <div className="inn_container pt-20 md:pt-12 lg:pt-18 xl:pt-24">
             <div className="text-center">
