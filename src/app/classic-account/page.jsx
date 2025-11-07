@@ -88,7 +88,7 @@ const page = () => {
         }
         mini_depo={"$100"}
         spreads_from={"0.8 pips"}
-        swap_free={"Yes"}
+        swap_free={"No"}
         commission={"No"}
       />
       <Accountchoose
