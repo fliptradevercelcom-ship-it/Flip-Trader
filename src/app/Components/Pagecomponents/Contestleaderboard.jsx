@@ -29,8 +29,8 @@ const Contestleaderboard = () => {
             height={500}
           />
 
-          <div className="absolute bottom-0 h-[85%] flex items-center w-[57%] 2xl:w-[50%]">
-            <div className="relative top-[-2%] left-[6%] xl:left-[5%] 2xl:left-[10%]">
+          <div className="absolute bottom-0 h-[85%] flex items-center w-[57%] lg:w-[60%] xl:w-[57%] 2xl:w-[50%]">
+            <div className="relative top-[-2%] left-[4%] lg:left-[3%] xl:left-[1%] 2xl:left-[10%] pl-2 lg:pl-4">
               <Title
                 title={`Win up to $10,000 <br/>  in free <span class='text-primary'> weekly <br/> contests. </span>`}
                 color="text-black"

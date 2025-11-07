@@ -10,7 +10,7 @@ import giftwhite from "../../../../public/icons/giftwhite.svg";
 
 function Worldbroker() {
   return (
-    <div className="bg-theme pt-12 md:pt-18 lg:pt-24 pb-12 md:pb-18">
+    <div className="bg-theme pt-12 md:pt-18 lg:pt-24 pb-12 md:pb-4">
       <div
         className="inn_container  bg-no-repeat bg-center bg-cover min-h-[600px] sm:min-h-[500px] md:min-h-[660px] md:rounded-4xl relative"
         style={{ backgroundImage: `url(${Worldbrokerbg.src})` }}

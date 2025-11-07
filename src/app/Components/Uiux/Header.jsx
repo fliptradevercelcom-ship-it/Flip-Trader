@@ -20,53 +20,43 @@ const navlistdata = [
     nav_name: "Quick Start",
     sections: [
       {
-        heading: "Trade",
+        heading: "Markets",
         items: [
-          { id: 8, name: "Types of Markets", link: "/" },
-          // { id: 9, name: "Trading Conditions", link: "#" },
-          { id: 10, name: "Account Types Overview", link: "/" },
-          { id: 11, name: "Risk Management Tips", link: "/" }
-        ]
-      },
-      {
-        heading: "Trading Platforms",
-        items: [
-          { id: "webtrader", name: "WebTrader", link: "/web-trading" },
-          { id: "mobileapp", name: "Mobile App", link: "/" },
-          { id: "mt5", name: "MetaTrader 5 (MT5)", link: "/platform" },
+          { id: "typesmarkets", name: "Forex", link: "/forex" },
+          { id: "tradingconditions", name: "Indices", link: "/indices" },
+          { id: "accounttypes", name: "Commodities", link: "/commodities" },
+          { id: "riskmanagement", name: "Metals", link: "/metals" },
           {
-            id: "Platform Features",
-            name: "Platform Features",
-            link: "/platform"
-          }
-        ]
-      },
-      {
-        heading: "Tools & Resources",
-        items: [
-          { id: "webtrader", name: "Pip Calculator", link: "/" },
-          {
-            id: "mobileapp",
-            name: "Economic Calendar",
-            link: "/economic-calendar"
+            id: "riskmanagement",
+            name: "Cryptocurrency",
+            link: "/cryptocurrency"
           },
-          { id: "mt5", name: "IB Partner", link: "/ib-partner" },
-          {
-            id: "Platform Features",
-            name: "Why Partner with Us",
-            link: "/ib-partner"
-          }
+          { id: "riskmanagement", name: "Stocks", link: "/stocks" }
         ]
       },
       {
-        heading: "Quick Links",
+        heading: "Account Type",
         items: [
-          { id: 1, name: "Why FlipTrade?", link: "/" },
-          // { id: 2, name: "What is Online Trading", link: "#" },
-          { id: 4, name: "How to Start Trading", link: "/" },
-          { id: 5, name: "Why Traders Choose Us", link: "/why-fliptrade" },
-          { id: 6, name: "Contact Us", link: "/contact-us" },
-          { id: 7, name: "FAQs", link: "/faq" }
+          { id: "typesmarkets", name: "Standard Account", link: "/standard-account" },
+          { id: "tradingconditions", name: "Classic Account", link: "/classic-account" },
+          { id: "accounttypes", name: "ECN Account", link: "/enc-account" },
+          { id: "riskmanagement", name: "Professional Account", link: "/professional-account" }
+        ]
+      },
+      {
+        heading: "Platforms",
+        items: [
+          { id: "2", name: "MetaTrader 5 (MT5)", link: "/platform" },
+          { id: "tradingcondidstions", name: "WebTrader", link: "/web-trading" },
+          // { id: "accounttfdsfypes", name: "Mobile App", link: "/" },
+          { id: "riskmanafdsgement", name: "Social & Copy Trading", link: "/social-&-copy-trading" }
+        ]
+      },
+      {
+        heading: "Tools",
+        items: [
+          { name: "Pip Calculator", link: "/pip-calculator" },
+          { name: "Economic Calendar", link: "/economic-calendar" }
         ]
       },
     ]
@@ -629,7 +619,7 @@ export default function Header() {
                   Where Smart Traders
                   <br /> Flip the Game.
                 </div>
-                <div className="flex flex-wrap pt-8 gap-2.5">
+                <div className="flex flex-wrap pt-8 gap-2">
                   <Link
                     href={
                       "https://client.fliptradegroup.com/trader/registration"
@@ -646,12 +636,12 @@ export default function Header() {
                   </Link>
                   <Link
                     href={
-                      "https://client.fliptradegroup.com/trader/registration"
+                      "/ib-partner"
                     }
                   >
                     <Button
                       icon={giftwhite.src}
-                      btn_name="Try Demo"
+                      btn_name="Become IB Partner"
                       btn_bg="bg-[#0000008A]"
                       text_color="text-white"
                       border_color="border-[#fff]"

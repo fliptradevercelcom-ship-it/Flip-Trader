@@ -5,22 +5,22 @@
 
 export const navScrollMap = {
   // Quick Start dropdown items
-  "Quick Start": {
-    "Why FlipTrade?": { sectionId: "buildtrader", path: "/" },
-    "How to Start Trading": { sectionId: "workprocess", path: "/" },
-    "Why Traders Choose Us": { sectionId: "whyflipstep", path: "/why-fliptrade" },
-    "Contact Us": { sectionId: "contact", path: "/contact-us" },
-    "FAQs": { sectionId: "faq-scroll", path: "/faq" },
-    "Types of Markets": { sectionId: "exploremarket", path: "/" },
-    "Account Types Overview": { sectionId: "account-type", path: "/" },
-    "Risk Management Tips": { sectionId: "starttrading", path: "/" },
-    "Mobile App": { sectionId: "trade-anywhere", path: "/" },
-    "Platform Features": { sectionId: "platform-features", path: "/platform" },
-    "Pip Calculator": { sectionId: "pip-calculator", path: "/" },
-    "Economic Calendar": { sectionId: "calender", path: "/economic-calendar" },
-    "IB Partner": { sectionId: "ib-partners", path: "/ib-partner" },
-    "Why Partner with Us": { sectionId: "ib-why", path: "/ib-partner" },
-  },
+  // "Quick Start": {
+  //   "Why FlipTrade?": { sectionId: "buildtrader", path: "/" },
+  //   "How to Start Trading": { sectionId: "workprocess", path: "/" },
+  //   "Why Traders Choose Us": { sectionId: "whyflipstep", path: "/why-fliptrade" },
+  //   "Contact Us": { sectionId: "contact", path: "/contact-us" },
+  //   "FAQs": { sectionId: "faq-scroll", path: "/faq" },
+  //   "Types of Markets": { sectionId: "exploremarket", path: "/" },
+  //   "Account Types Overview": { sectionId: "account-type", path: "/" },
+  //   "Risk Management Tips": { sectionId: "starttrading", path: "/" },
+  //   "Mobile App": { sectionId: "trade-anywhere", path: "/" },
+  //   "Platform Features": { sectionId: "platform-features", path: "/platform" },
+  //   "Pip Calculator": { sectionId: "pip-calculator", path: "/" },
+  //   "Economic Calendar": { sectionId: "calender", path: "/economic-calendar" },
+  //   "IB Partner": { sectionId: "ib-partners", path: "/ib-partner" },
+  //   "Why Partner with Us": { sectionId: "ib-why", path: "/ib-partner" },
+  // },
   
   // Markets dropdown items
   "Markets": {

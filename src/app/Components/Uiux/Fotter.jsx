@@ -11,7 +11,15 @@ import Link from "next/link";
 import Worldbroker from "../Pagecomponents/Worldbroker";
 import telegram from "../../../../public/icons/telegram.svg";
 import twitter from "../../../../public/icons/twitter.svg";
+
 const footerdata = {
+  policydata: [
+    { pagelink: "/privacy-policy", pagename: "Privacy Policy" },
+    { pagelink: "/aml-&-ctf-policy", pagename: "AML & CTF Policy" },
+    { pagelink: "/refund-&-withdrawal", pagename: "Refund & Withdrawal" },
+    { pagelink: "/risk-warning", pagename: "Risk Warning" },
+    { pagelink: "/terms-and-conditions", pagename: "Terms & Conditions" },
+  ],
   linkingdata: [
     {
       title: "Company",
@@ -19,18 +27,18 @@ const footerdata = {
         // { pagelink: "/about-us", pagename: "About Us" },
         { pagelink: "/why-fliptrade", pagename: "Why FlipTrade" },
         { pagelink: "/contact-us", pagename: "Contact Us" },
-        { pagelink: "/privacy-policy", pagename: "Privacy Policy" },
+        // { pagelink: "/privacy-policy", pagename: "Privacy Policy" },
         { pagelink: "/faq", pagename: "FAQs" },
-        { pagelink: "/aml-&-ctf-policy", pagename: "AML & CTF Policy" },
+        // { pagelink: "/aml-&-ctf-policy", pagename: "AML & CTF Policy" },
         {
           pagelink: "/complaint-handling-procedures",
-          pagename: "Complaint Handling Procedures"
+          pagename: "Complaint Handling Procedures",
         },
         { pagelink: "/cookies", pagename: "Cookies" },
-        { pagelink: "/refund-&-withdrawal", pagename: "Refund & Withdrawal" },
-        { pagelink: "/risk-warning", pagename: "Risk Warning" },
-        { pagelink: "/terms-and-conditions", pagename: "Terms & Conditions" }
-      ]
+        // { pagelink: "/refund-&-withdrawal", pagename: "Refund & Withdrawal" },
+        // { pagelink: "/risk-warning", pagename: "Risk Warning" },
+        // { pagelink: "/terms-and-conditions", pagename: "Terms & Conditions" }
+      ],
     },
     {
       title: "Markets",
@@ -40,8 +48,8 @@ const footerdata = {
         { pagelink: "/commodities", pagename: "Commodities" },
         { pagelink: "/cryptocurrency", pagename: "Crypto Currency" },
         { pagelink: "/metals", pagename: "Metals" },
-        { pagelink: "/stocks", pagename: "Stocks" }
-      ]
+        { pagelink: "/stocks", pagename: "Stocks" },
+      ],
     },
     {
       title: "Accounts",
@@ -50,15 +58,15 @@ const footerdata = {
         { pagelink: "/standard-account", pagename: "Standard Account" },
         { pagelink: "/classic-account", pagename: "Classic Account" },
         { pagelink: "/enc-account", pagename: "ECN Account" },
-        { pagelink: "/professional-account", pagename: "Professional Account" }
-      ]
+        { pagelink: "/professional-account", pagename: "Professional Account" },
+      ],
     },
     {
       title: "Tools",
       pagelinks: [
         { pagelink: "/economic-calendar", pagename: "Economic Calendar" },
-        { pagelink: "/pip-calculator", pagename: "Pip Calculator" }
-      ]
+        { pagelink: "/pip-calculator", pagename: "Pip Calculator" },
+      ],
     },
     {
       title: "Platforms",
@@ -68,50 +76,50 @@ const footerdata = {
         // { pagelink: "/pip-calculator", pagename: "Mobile App" },
         {
           pagelink: "/social-&-copy-trading",
-          pagename: "Social & Copy Trading"
-        }
-      ]
-    }
+          pagename: "Social & Copy Trading",
+        },
+      ],
+    },
   ],
   carddata: [
     {
       title: "Head Quarter",
       discription:
         "Giorgi Leonid Ze Street, Tbilisi 0105, <br/> Georgia Office 38.",
-      link: false
+      link: false,
     },
     {
       title: "Registered Address",
       discription:
         "Ground Floor, The Sotheby <br/> Building, Rodney  Village, Rodney <br/> Bay, Saint Lucia",
-      link: false
+      link: false,
     },
     {
       title: "Registration No.",
       discription: "2025-00621",
-      link: false
+      link: false,
     },
     {
       title: "Contact No.",
       discription: "+41 2650 06818",
-      link: "tel:+41265006818"
+      link: "tel:+41265006818",
     },
     {
       title: "Email",
       discription: "support@fliptradegroup.com",
-      link: "mailto:support@fliptradegroup.com"
-    }
+      link: "mailto:support@fliptradegroup.com",
+    },
   ],
   social_links: [
     {
       alt: "Facebook",
       pagelink: "https://www.facebook.com/profile.php?id=61580314210503",
-      icon: facebookicon
+      icon: facebookicon,
     },
     {
       alt: "Instagram",
       pagelink: "https://www.instagram.com/fliptradegroup/",
-      icon: Instaicon
+      icon: Instaicon,
     },
     // {
     //   alt: "Twitter",
@@ -121,14 +129,14 @@ const footerdata = {
     {
       alt: "You Tube",
       pagelink: "https://www.youtube.com/@fliptradegroup",
-      icon: youtue
+      icon: youtue,
     },
     {
       alt: "Telegram",
       pagelink: "https://t.me/fliptradegroup",
-      icon: telegram
-    }
-  ]
+      icon: telegram,
+    },
+  ],
 };
 const Fotter = () => {
   return (
@@ -136,6 +144,41 @@ const Fotter = () => {
       <Worldbroker />
       <div className="bg-theme pb-18">
         <div className="inn_container">
+          <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 bg-primary py-8 md:py-12 my-[2em]">
+            {footerdata.carddata.map((data, index) => (
+              <div
+                className={`font_secondary  ${
+                  index === 4
+                    ? null
+                    : " md:border-r-[3px] border-dashed md:border-[#C5C6FF80]"
+                }`}
+                key={index}
+              >
+                <div className="w-auto xl:w-max md:m-auto pt-3 md:px-2">
+                  <p className="text-lg 2xl:text-2xl font-semibold w-max text-white">
+                    {data.title}
+                  </p>
+                  {data.link !== false ? (
+                    <Link href={data.link}>
+                      <p
+                        className="text-[15px] md:text-[13px] 2xl:text-base pt-1 md:pt-3 2xl:pt-4 font-light hover:underline text-white leading-6"
+                        dangerouslySetInnerHTML={{
+                          __html: data.discription,
+                        }}
+                      />
+                    </Link>
+                  ) : (
+                    <p
+                      className="text-[15px] md:text-[13px] 2xl:text-base pt-1 md:pt-3 2xl:pt-4 font-light  text-white leading-6 max-w-[90%] lg:max-w-max"
+                      dangerouslySetInnerHTML={{
+                        __html: data.discription,
+                      }}
+                    />
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
           <div className="max-w-[1660px] m-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 py-8 lg:py-12 border-[0.5px] gap-y-5 lg:gap-y-0 border-[#ffffff2e] border-b-0 px-[3%] rounded-tl-[30px] md:rounded-tl-[56px] rounded-tr-[30px] md:rounded-tr-[56px]">
               <div>
@@ -164,26 +207,37 @@ const Fotter = () => {
             </div>
             <div className="border-[0.5px] border-[#ffffff2e] rounded-bl-[30px] md:rounded-bl-[56px] rounded-br-[30px] md:rounded-br-[56px]">
               <div className="grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 border-b-[0.5px] border-[#ffffff2e]">
-                {footerdata.linkingdata.map((data, index) =>
+                {footerdata.linkingdata.map((data, index) => (
                   <div
-                    className={`pt-4 md:pt-8 xl:pt-12 pb-4 md:pb-12 xl:pb-16 ${index ===
-                      4
-                      ? null
-                      : "border-r-[0.5px] border-[#ffffff2e]"}`}
+                    className={`pt-4 md:pt-8 xl:pt-12 pb-4 md:pb-12 xl:pb-16 ${
+                      index === 4 ? null : "border-r-[0.5px] border-[#ffffff2e]"
+                    }`}
                     key={index}
                   >
                     <Fotterlinks title={data.title} linklist={data.pagelinks} />
                   </div>
-                )}
+                ))}
               </div>
-
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 bg-primary py-4 md:py-6 lg:py-8 xl:py-10 2xl:py-12 gap-3 md:gap-4 lg:gap-4 xl:gap-6 px-4 md:px-6 lg:px-8 xl:px-12">
+                {footerdata.policydata.map((data, index) => (
+                  <div key={index} className="flex items-center justify-center">
+                    <Link href={data.pagelink} className="w-full">
+                      <p className="text-[14px] md:text-lg 2xl:text-xl font-light text-white hover:underline">
+                        {data.pagename}
+                      </p>
+                    </Link>
+                  </div>
+                ))}
+              </div>
               <div className="grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4  border-b-[0.5px] border-[#ffffff2e]">
-                {footerdata.social_links.map((data, index) =>
+                {footerdata.social_links.map((data, index) => (
                   <div
                     key={index}
-                    className={`${index === 4
-                      ? null
-                      : "border-r-[0.5px] border-t-[0.5px] border-[#ffffff2e]"}`}
+                    className={`${
+                      index === 4
+                        ? null
+                        : "border-r-[0.5px] border-t-[0.5px] border-[#ffffff2e]"
+                    }`}
                   >
                     <Link href={data.pagelink} target="_blank">
                       <div
@@ -204,76 +258,48 @@ const Fotter = () => {
                       </div>
                     </Link>
                   </div>
-                )}
-              </div>
-              <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 bg-primary py-8 md:py-12">
-                {footerdata.carddata.map((data, index) =>
-                  <div
-                    className={`font_secondary  ${index === 4
-                      ? null
-                      : " md:border-r-[3px] border-dashed md:border-[#C5C6FF80]"}`}
-                    key={index}
-                  >
-                    <div className="w-auto xl:w-max md:m-auto pt-3 md:px-2">
-                      <p className="text-lg 2xl:text-2xl font-semibold w-max text-white">
-                        {data.title}
-                      </p>
-                      {data.link !== false
-                        ? <Link href={data.link}>
-                          <p
-                            className="text-[15px] md:text-[13px] 2xl:text-base pt-1 md:pt-3 2xl:pt-4 font-light hover:underline text-white leading-6"
-                            dangerouslySetInnerHTML={{
-                              __html: data.discription
-                            }}
-                          />
-                        </Link>
-                        : <p
-                          className="text-[15px] md:text-[13px] 2xl:text-base pt-1 md:pt-3 2xl:pt-4 font-light  text-white leading-6 max-w-[90%] lg:max-w-max"
-                          dangerouslySetInnerHTML={{
-                            __html: data.discription
-                          }}
-                        />}
-                    </div>
-                  </div>
-                )}
+                ))}
               </div>
               <div
                 className="grid md:hidden grid-cols-1 bg-no-repeat bg-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 bg-cover md:p-12 "
                 style={{ backgroundImage: `url(${fottercardph.src})` }}
               >
                 <div className="p-6">
-                  {footerdata.carddata.map((data, index) =>
+                  {footerdata.carddata.map((data, index) => (
                     <div
-                      className={`font_secondary ${index === 4
-                        ? null
-                        : " md:border-r-[3px] border-dashed md:border-[#C5C6FF80]"}`}
+                      className={`font_secondary ${
+                        index === 4
+                          ? null
+                          : " md:border-r-[3px] border-dashed md:border-[#C5C6FF80]"
+                      }`}
                       key={index}
                     >
                       <div className="w-auto xl:w-max md:m-auto pt-3 md:px-2">
                         <p className="text-lg 2xl:text-2xl font-semibold w-max text-white">
                           {data.title}
                         </p>
-                        {data.link !== false
-                          ? <Link href={data.link}>
+                        {data.link !== false ? (
+                          <Link href={data.link}>
                             <p
                               className="text-[15px] md:text-[13px] 2xl:text-base pt-1 md:pt-3 2xl:pt-4 font-light text-white leading-6 hover:underline"
                               dangerouslySetInnerHTML={{
-                                __html: data.discription
+                                __html: data.discription,
                               }}
                             />
                           </Link>
-                          : <p
+                        ) : (
+                          <p
                             className="text-[15px] md:text-[13px] 2xl:text-base pt-1 md:pt-3 2xl:pt-4 font-light text-white leading-6 max-w-[90%] lg:max-w-max"
                             dangerouslySetInnerHTML={{
-                              __html: data.discription
+                              __html: data.discription,
                             }}
-                          />}
+                          />
+                        )}
                       </div>
                     </div>
-                  )}
+                  ))}
                 </div>
               </div>
-
               <div className="py-8 lg:py-12 max-w-[93%] m-auto">
                 <div className="text-base 2xl:text-lg text-[#AAAAAA] leading-[32px] 2xl:leading-[40px] font-light font_secondary">
                   <span className="text-white font-medium">
