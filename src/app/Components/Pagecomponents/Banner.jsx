@@ -51,7 +51,7 @@ export default function Banner() {
                 >
                   <Button
                     icon={giftbtnicon.src}
-                    btn_name="Try Demo"
+                    btn_name="Become IB Partner"
                     btn_bg="bg-lightsecondry"
                     text_color="text-white"
                     border_color="border-ternary"
