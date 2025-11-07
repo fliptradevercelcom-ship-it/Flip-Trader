@@ -114,6 +114,7 @@ const Privacypolicy = () => {
 
     const sectionRefs = useRef([]);
     const [activeSection, setActiveSection] = useState(null);
+    const [faqtogle, setFaqTogle] = useState(false);
 
 
     useEffect(() => {
@@ -181,8 +182,9 @@ const Privacypolicy = () => {
 
                     <div className=" xl:w-[70%] 2xl:w-[75%]">
                         <div className="block xl:hidden sticky top-[50px]">
-                            <div className="bg-primary w-max p-3 rounded-full"
-                                onClick={() => setFaqTogle(!faqtogle)}
+                            <div
+                                className="bg-primary w-max p-3 rounded-full"
+                                onClick={() => setFaqTogle((prev) => !prev)}
                             >
                                 <Image
                                     src={faqicon}
@@ -193,7 +195,7 @@ const Privacypolicy = () => {
                                 />
                             </div>
 
-                            <div className={` absolute top-[57px] left-0 w-full md:w-[80%] xl:top-0 xl:relative overflow-hidden  xl:h-auto xl:w-[30%] 2xl:w-[25%]`}>
+                            <div className={`${faqtogle ? "block" : "hidden"} absolute top-[57px] left-0 w-full md:w-[80%] xl:top-0 xl:relative overflow-hidden  xl:h-auto xl:w-[30%] 2xl:w-[25%]`}>
                                 <div className={`bg-primary xl:max-w-[380px] p-6 rounded-3xl sticky top-10 ${activeSection === privatepolicy.length ? 'hidden' : 'block'}`}>
                                     <p className="text-[30px] font-medium text-white">FAQ Categories</p>
                                     <div className="pt-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-3">
@@ -206,7 +208,8 @@ const Privacypolicy = () => {
                                                     sectionRefs.current[index]?.scrollIntoView({
                                                         behavior: "smooth",
                                                         block: "start"
-                                                    }), setFaqTogle(!faqtogle);
+                                                    });
+                                                    setFaqTogle(false);
                                                 }}
                                             >
                                                 <div className="flex items-center gap-3">
