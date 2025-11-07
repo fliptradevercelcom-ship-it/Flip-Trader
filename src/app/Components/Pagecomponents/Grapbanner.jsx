@@ -44,7 +44,7 @@ const Grapbanner = () => {
                     }
                   >
                     <Button
-                      btn_name={`Join Now`}
+                      btn_name={`Become IB Partner`}
                       btn_bg="bg-primary"
                       text_color="text-white"
                       border_color="border-transparent"
@@ -117,7 +117,7 @@ const Grapbanner = () => {
                       }
                     >
                       <Button
-                        btn_name={`Join Now`}
+                        btn_name={`Become IB Partner`}
                         btn_bg="bg-primary"
                         text_color="text-white"
                         border_color="border-transparent"
@@ -161,7 +161,7 @@ const Grapbanner = () => {
                           }
                         >
                           <Button
-                            btn_name={`Join Now`}
+                            btn_name={`Become IB Partner`}
                             btn_bg="bg-primary"
                             text_color="text-white"
                             border_color="border-transparent"
