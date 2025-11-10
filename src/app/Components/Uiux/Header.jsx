@@ -533,13 +533,13 @@ export default function Header() {
 
       {/* Mobile Dropdown Menu */}
       <div
-        className={`fixed bg-theme h-screen w-screen z-[999] duration-300 transition-all flex flex-col ${!isMenu
+        className={`fixed inset-x-0 top-[6rem] bottom-0 bg-theme z-[999] duration-300 transition-all flex flex-col ${!isMenu
           ? "translate-x-full opacity-0 pointer-events-none"
-          : "translate-x-0 opacity-100 pointer-events-auto top-[6rem]"
+          : "translate-x-0 opacity-100 pointer-events-auto"
           }`}
       >
         {/* Navigation Content */}
-        <div className="flex-1 overflow-y-auto" style={{ maxHeight: 'calc(100vh - 200px)' }}>
+        <div className="flex-1 overflow-y-auto">
           <div className="">
             {navlistdata.map((data) => (
               <div key={data.id}>

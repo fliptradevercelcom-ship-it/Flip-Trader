@@ -63,7 +63,7 @@ const Nextgennew = () => {
                       Ultra-Tight Spreads
                     </p>
                     <p className="list_text font-light text-center font_ternary leading-[28px] text-white">
-                      Milliseconds matter.
+                      From 0.0 pips.
                     </p>
                   </div>
                 </div>
