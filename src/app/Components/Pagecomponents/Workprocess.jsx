@@ -43,7 +43,7 @@ export default function Workprocess() {
               height={300}
               className="w-full opacity-40"
             />
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
+            <div className="absolute inset-0 flex flex-col justify-center items-center text-white bottom-[4rem] lg:bottom-0">
               <h3 className="text-2xl sm:text-3xl font-semibold">
                 In Just
               </h3>
@@ -99,7 +99,7 @@ export default function Workprocess() {
                 Start<br/> Trading
               </p>
               <span className="text-white text-sm sm:text-base leading-[24px] font-light">
-                Start trading on your live account and <br className="hidden sm:block" /> access +2000 instruments
+                Start trading on your live account and <br className="hidden sm:block" /> access 2000+ instruments
               </span>
             </div>
           </div>

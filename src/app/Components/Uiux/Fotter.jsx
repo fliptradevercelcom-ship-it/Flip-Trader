@@ -314,7 +314,7 @@ const Fotter = () => {
                   should only invest money you can afford to lose. Before
                   investing, ensure such activities are permitted in your
                   country and seek independent financial, legal, or tax advice.
-                  FlipTrade Trade Limited does not provide services to residents
+                  FlipTrade Group Limited does not provide services to residents
                   of the United States, Cuba, Iraq, Myanmar, North Korea, or
                   Sudan, and its services are not intended for jurisdictions
                   where they would contravene local laws or regulations. Nothing
@@ -322,7 +322,7 @@ const Fotter = () => {
                 </div>
                 <div className="border-t-[0.5px] border-[#ffffff2e] text-center">
                   <div className="pt-6 w-[85%] xl:w-[70%] m-auto  text-[14px] md:text-base lg:text-lg text-[#AAAAAA]">
-                    © FlipTrade Group Limited 2025 | All Rights Reserved
+                    © FlipTrade Group Limited {new Date().getFullYear()} | All Rights Reserved
                   </div>
                 </div>
               </div>
