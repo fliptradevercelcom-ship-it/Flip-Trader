@@ -1,5 +1,6 @@
+"use client";
 import React from "react";
-import fotterbackground from "../../../../public/banners/fotterbackground.webp";
+// import fotterbackground from "../../../../public/banners/fotterbackground.webp";
 import fottercardph from "../../../../public/images/fottercardph.webp";
 import logo from "../../../../public/images/Logo.webp";
 import Image from "next/image";
@@ -12,6 +13,7 @@ import Worldbroker from "../Pagecomponents/Worldbroker";
 import telegram from "../../../../public/icons/telegram.svg";
 import twitter from "../../../../public/icons/twitter.svg";
 import Reviewshowcase from "../Pagecomponents/Reviewshowcase";
+import { usePathname } from "next/navigation";
 
 const footerdata = {
   policydata: [
@@ -140,6 +142,11 @@ const footerdata = {
   ],
 };
 const Fotter = () => {
+  const pathname = usePathname();
+
+  if (pathname?.startsWith('/promo')) {
+    return null;
+  }
   return (
     <div>
       <Worldbroker />
