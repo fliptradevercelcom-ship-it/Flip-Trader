@@ -50,7 +50,7 @@ const Accountgetstarted = ({
               <div className="relative">
                 <Image
                   src={accountarrowprimary}
-                  alt=""
+                  alt="Arrow graphic highlighting the minimum deposit detail"
                   width={1000}
                   height={500}
                   className="max-w-[140px] lg:max-w-[180px] xl:max-w-[220px] 2xl:max-w-[280px] m-auto lg:m-[unset]"
@@ -65,7 +65,7 @@ const Accountgetstarted = ({
               <div className="lg:pt-54 relative">
                 <Image
                   src={accountarrowsecondary}
-                  alt=""
+                  alt="Arrow graphic highlighting spread information"
                   width={1000}
                   height={500}
                   className="max-w-[140px] lg:max-w-[180px] xl:max-w-[220px] 2xl:max-w-[280px] m-auto lg:m-[unset]"
@@ -80,7 +80,7 @@ const Accountgetstarted = ({
               <div className="lg:pt-54 relative">
                 <Image
                   src={accountarrowprimary}
-                  alt=""
+                  alt="Arrow graphic emphasising the swap-free benefit"
                   width={1000}
                   height={500}
                   className="max-w-[140px] lg:max-w-[180px] xl:max-w-[220px] 2xl:max-w-[280px] m-auto lg:m-[unset] rotate-[295deg]"
@@ -95,7 +95,7 @@ const Accountgetstarted = ({
               <div className="relative">
                 <Image
                   src={accountarrowsecondary}
-                  alt=""
+                  alt="Arrow graphic pointing to commission details"
                   width={1000}
                   height={500}
                   className="max-w-[140px] lg:max-w-[180px] xl:max-w-[220px] 2xl:max-w-[280px] m-auto lg:m-[unset] rotate-[295deg]"

@@ -72,7 +72,7 @@ const Riskwarning = () => {
         <div className="bg-theme">
             <div className="inn_container pt-28 xl:pt-32 2xl:pt-40 pb-12 xl:pb-24">
                 <div className="text-center">
-                    <Title title="Risk Warning" color="text-white" />
+                    <Title title="Risk Warning" color="text-white" ish1={true} />
                 </div>
 
                 <div className="flex flex-col xl:flex-row xl:pt-14 gap-4 relative">

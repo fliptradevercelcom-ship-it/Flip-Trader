@@ -7,8 +7,8 @@ const Cookies = () => {
     return (
         <div className="bg-theme">
             <div className="inn_container pt-12 md:pt-18 lg:pt-28 xl:pt-32 2xl:pt-40 pb-12 xl:pb-24">
-                <div className="text-center">
-                    <Title title="Cookies Policy" color="text-white" />
+                <div className="text-center mt-16">
+                    <Title title="Cookies Policy" color="text-white" ish1={true} />
                 </div>
 
                 <div className="py-4 px-8 shadow-[0px_1px_20px_1px_#fff] rounded-4xl mt-12">
