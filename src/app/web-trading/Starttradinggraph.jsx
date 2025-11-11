@@ -2,10 +2,18 @@
 'use client';
 
 import React from 'react';
+import Title from '../Components/Uiux/Title';
 
 export default function Starttradinggraph() {
   return (
     <div className='bg-black inn_container m-auto'>
+      <div className="py-8 text-center">
+        <Title
+          title="FlipTrade Web Trading Terminal"
+          color="gradient_text"
+          ish1={true}
+        />
+      </div>
       <iframe
         src="https://webtrading.fliptradegroup.com/terminal"
         frameBorder="0"

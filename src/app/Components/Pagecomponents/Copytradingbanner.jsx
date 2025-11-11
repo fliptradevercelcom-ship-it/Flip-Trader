@@ -19,6 +19,7 @@ const Copytradingbanner = () => {
             <Title
               title={"Social & Copy <br/> Trading"}
               color={"gradient_text"}
+              ish1={true}
             />
             <div className="py-6">
               <Discription

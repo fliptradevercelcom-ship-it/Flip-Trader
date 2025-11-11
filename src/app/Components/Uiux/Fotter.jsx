@@ -202,16 +202,18 @@ const Fotter = () => {
                 </Link>
               </div>
               <div className="flex flex-col md:flex-row justify-end items-center gap-4">
-                <input
-                  type="email"
-                  className="outline-none border-none py-3 px-6 bg-white text-ternary font-normal font_ternary w-[90%] md:w-[50%] text-base md:text-lg xl:text-xl 2xl:text-[22px] rounded-[8.16px]"
-                  placeholder="Enter Your Email"
-                  data-np-intersection-state="visible"
-                />
-
-                <button className="border-none outline-none py-3 text-white text text-base md:text-lg xl:text-xl 2xl:text-[22px] rounded-[8.16px] bg-primary max-w-[168px] w-full cursor-pointer">
-                  Share
-                </button>
+                <a
+                  href="mailto:support@fliptradegroup.com"
+                  className="text-white underline underline-offset-4 hover:opacity-80 text-base md:text-lg xl:text-xl 2xl:text-[22px]"
+                >
+                  support@fliptradegroup.com
+                </a>
+                <a
+                  href="mailto:support@fliptradegroup.com"
+                  className="border-none outline-none py-3 text-center text-white text text-base md:text-lg xl:text-xl 2xl:text-[22px] rounded-[8.16px] bg-primary max-w-[178px] w-full cursor-pointer hover:opacity-90 transition-opacity"
+                >
+                  Connect Now
+                </a>
               </div>
             </div>
             <div className="border-[0.5px] border-[#ffffff2e] rounded-bl-[30px] md:rounded-bl-[56px] rounded-br-[30px] md:rounded-br-[56px]">

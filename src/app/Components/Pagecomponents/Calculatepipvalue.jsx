@@ -21,7 +21,7 @@ const Calculatepipvalue = () => {
           <div>
             <Image
               src={Calculatepipvalueleft}
-              alt=""
+              alt="Illustration of a trader calculating pip values"
               width={3000}
               height={500}
               className=" max-w-[70%] lg:max-w-[90%] m-auto"

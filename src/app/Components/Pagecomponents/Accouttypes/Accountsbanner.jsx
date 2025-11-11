@@ -15,7 +15,7 @@ const Accountsbanner = ({ title, description, bannerposter }) => {
       <div className=" pt-40 pb-14">
         <div className="grid grid-cols-1 lg:grid-cols-2 ms-[7%]">
           <div className="flex flex-col justify-center text-center lg:text-start me-[7%] lg:me-0">
-            <Title title={title} color={"gradient_text"} />
+            <Title title={title} color={"gradient_text"} ish1={true} />
             <div className="py-6">
               <Discription dispription={description} color={"text-[#D0D0D0]"} />
             </div>

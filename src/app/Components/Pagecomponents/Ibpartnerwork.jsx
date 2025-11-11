@@ -46,7 +46,7 @@ const Ibpartnerwork = () => {
             <div className="relative">
               <Image
                 src={Ibpartnerworkbanner}
-                alt="."
+                alt="Illustration of the FlipTrade IB partner workflow"
                 width={3000}
                 height={500}
                 className="max-w-[1500px] m-auto w-full"
@@ -63,7 +63,7 @@ const Ibpartnerwork = () => {
                 <div className="flex items-center justify-end gap-2">
                   <Image
                     src={ibworkdash1}
-                    alt=""
+                    alt="Gradient connector line highlighting the sign up step"
                     width={1000}
                     height={500}
                     className="  max-w-[180px] 2xl:max-w-[203px]"
@@ -71,7 +71,7 @@ const Ibpartnerwork = () => {
 
                   <Image
                     src={ibworkimg1}
-                    alt=""
+                    alt="Clipboard icon for IB partner registration"
                     width={1000}
                     height={500}
                     className="max-w-[80px] 2xl:max-w-[100px]"
@@ -82,7 +82,7 @@ const Ibpartnerwork = () => {
                 <div className="flex items-center justify-end gap-2 h-[130px] xl:h-[190px]">
                   <Image
                     src={ibworkdash3}
-                    alt=""
+                    alt="Connector line leading to the commission earnings step"
                     width={1000}
                     height={500}
                     className="  max-w-[180px] 2xl:max-w-[203px] mt-auto"
@@ -90,7 +90,7 @@ const Ibpartnerwork = () => {
 
                   <Image
                     src={ibworkimg3}
-                    alt=""
+                    alt="Coin stack icon symbolising commission earnings"
                     width={1000}
                     height={500}
                     className="max-w-[80px] 2xl:max-w-[100px] mb-auto"
@@ -119,14 +119,14 @@ const Ibpartnerwork = () => {
                 <div className="flex items-center justify-start gap-2">
                   <Image
                     src={ibworkimg2}
-                    alt=""
+                    alt="Referral link sharing icon"
                     width={1000}
                     height={500}
                     className="max-w-[80px] 2xl:max-w-[100px]"
                   />
                   <Image
                     src={ibworkdash2}
-                    alt=""
+                    alt="Connector line illustrating the referral process"
                     width={1000}
                     height={500}
                     className="  max-w-[180px] 2xl:max-w-[203px]"
@@ -137,14 +137,14 @@ const Ibpartnerwork = () => {
                 <div className="flex items-center justify-start gap-2 h-[130px] xl:h-[190px]">
                   <Image
                     src={ibworkimg4}
-                    alt=""
+                    alt="Analytics icon for performance tracking"
                     width={1000}
                     height={500}
                     className="max-w-[80px] 2xl:max-w-[100px] mb-auto"
                   />
                   <Image
                     src={ibworkdash4}
-                    alt=""
+                    alt="Connector line leading to performance tracking"
                     width={1000}
                     height={500}
                     className="  max-w-[180px] 2xl:max-w-[203px] mt-auto"
@@ -169,7 +169,7 @@ const Ibpartnerwork = () => {
                 <div>
                   <Image
                     src={ibworkimg1}
-                    alt=""
+                    alt="Clipboard icon for IB partner registration"
                     width={1000}
                     height={500}
                     className="max-w-[60px]"
@@ -188,7 +188,7 @@ const Ibpartnerwork = () => {
                 <div>
                   <Image
                     src={ibworkimg2}
-                    alt=""
+                    alt="Referral link sharing icon"
                     width={1000}
                     height={500}
                     className="max-w-[60px]"
@@ -207,7 +207,7 @@ const Ibpartnerwork = () => {
                 <div>
                   <Image
                     src={ibworkimg3}
-                    alt=""
+                    alt="Coin stack icon symbolising commission earnings"
                     width={1000}
                     height={500}
                     className="max-w-[60px]"
@@ -226,7 +226,7 @@ const Ibpartnerwork = () => {
                 <div>
                   <Image
                     src={ibworkimg4}
-                    alt=""
+                    alt="Analytics icon for performance tracking"
                     width={1000}
                     height={500}
                     className="max-w-[60px]"

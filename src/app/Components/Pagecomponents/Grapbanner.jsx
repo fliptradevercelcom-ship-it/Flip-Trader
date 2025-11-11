@@ -79,7 +79,7 @@ const Grapbanner = () => {
             <div className="hidden md:block">
               <Image
                 src={buildtraderimageuppervrph}
-                alt=""
+                alt="FlipTrade trader illustration in vertical layout"
                 width={1000}
                 height={500}
                 className="max-h-[575px]"
@@ -88,7 +88,7 @@ const Grapbanner = () => {
             <div className="block md:hidden">
               <Image
                 src={buildtraderimageupperhzph}
-                alt=""
+                alt="FlipTrade trader illustration in horizontal layout"
                 width={1000}
                 height={500}
                 className="max-h-[330px]"

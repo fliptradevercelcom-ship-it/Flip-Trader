@@ -148,7 +148,7 @@ function Tradingaccounts() {
               />
               <div className="flex justify-center items-center">
                 <Discription
-                  dispription={`Ustomize your trading journey with accounts built to<br/> enhance your experience and strategies.`}
+                  dispription={`Customize your trading journey with accounts built to<br/> enhance your experience and strategies.`}
                   color="text-white"
                 />
               </div>

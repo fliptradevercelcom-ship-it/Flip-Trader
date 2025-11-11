@@ -17,7 +17,7 @@ const Yourway = () => {
           <div className="hidden lg:block">
             <Image
               src={tradeyourwayleft}
-              alt=""
+              alt="Trader reviewing FlipTrade market insights"
               width={3000}
               height={500}
               className=""

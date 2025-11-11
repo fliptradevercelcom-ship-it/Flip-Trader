@@ -35,7 +35,7 @@ const Accountchoose = ({
           <div className="h-max hidden lg:block">
             <Image
               src={accountchooseleft}
-              alt=""
+              alt="Illustration of a trader selecting a FlipTrade account type"
               width={3000}
               height={500}
               className="w-[85%]"

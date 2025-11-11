@@ -76,7 +76,7 @@ const Accountgrap = ({desktopbanner,phonetabbanner,title,description,btnname}) =
             <div className="hidden md:block">
               <Image
                 src={phonetabbanner}
-                alt=""
+                alt="FlipTrade account types mobile banner"
                 width={1000}
                 height={500}
                 className="max-h-[575px]"
@@ -85,7 +85,7 @@ const Accountgrap = ({desktopbanner,phonetabbanner,title,description,btnname}) =
             <div className="block md:hidden">
               <Image
                 src={phonetabbanner}
-                alt=""
+                alt="FlipTrade account types mobile banner"
                 width={1000}
                 height={500}
                 className="max-h-[330px]"
