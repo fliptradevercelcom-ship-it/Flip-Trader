@@ -38,7 +38,7 @@ function Mt5keyfeature() {
         <div>
           <Image
             src={sidebanner}
-            alt=""
+            alt="Illustration of MT5 key features on FlipTrade"
             width={1500}
             height={500}
             className="w-full m-auto"

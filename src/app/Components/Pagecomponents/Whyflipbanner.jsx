@@ -13,7 +13,7 @@ const Whyflipbanner = () => {
       <div className="inn_container pt-40 pb-20 lg:py-40">
         <div className="grid grid-cols-1 lg:grid-cols-2 ">
           <div className="flex flex-col justify-center text-center lg:text-start">
-            <Title title={"Why FlipTrade"} color={"gradient_text"} />
+            <Title title={"Why FlipTrade"} color={"gradient_text"} ish1={true} />
             <div className="py-6">
               <Discription
                 dispription={

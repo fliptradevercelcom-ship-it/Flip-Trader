@@ -58,7 +58,7 @@ const Tradefliptrade = () => {
             <div className="py-38">
               <Image
                 src={Tradefliptradeposter}
-                alt=""
+                alt="FlipTrade copy trading dashboard illustration"
                 width={3000}
                 height={500}
                 className="max-w-[600px] m-auto"

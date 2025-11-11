@@ -15,7 +15,7 @@ export default function Pipbanner({onScrollClick }) {
       <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] inn_container pt-28 md:pt-40 xl:pt-60 pb-12">
         <div className="pt-10 text-center lg:text-start max-w-[700px] lg:max-w-[unset] m-auto h-full">
           <div>
-            <Title title="Pip Calculator" color="gradient_text" />
+            <Title title="Pip Calculator" color="gradient_text" ish1={true} />
           </div>
           <div className="pb-12">
             <Discription

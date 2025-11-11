@@ -16,6 +16,7 @@ const Ibpartnerbanner = () => {
             <Title
               title={"Become a Fliptrade <br/> IB Partner"}
               color={"gradient_text"}
+              ish1={true}
             />
             <div className="py-6">
               <Discription

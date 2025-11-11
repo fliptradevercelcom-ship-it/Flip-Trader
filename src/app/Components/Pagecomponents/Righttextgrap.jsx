@@ -55,7 +55,7 @@ const Righttextgrap = ({desktopbanner,phonetabbanner,title,description,btnname,p
             <div className="block">
               <Image
                 src={phonetabbanner}
-                alt=""
+                alt="FlipTrade feature spotlight graphic"
                 width={1000}
                 height={500}
                 className="object-cover h-full rounded-3xl"

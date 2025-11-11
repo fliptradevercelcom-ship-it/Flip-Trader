@@ -25,51 +25,57 @@ const Accountcards = ({description ,carddata}) => {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 xl:gap-0 xl:grid-cols-3 pt-8 md:pt-18">
-          {carddata.map((data, index) =>
-            <div
-              key={index}
-              className={`xl:relative px-10 py-20 flex flex-col gap-8 h-full rounded-[50px] ${data.class}  ${index %
-                2 ===
-              0
-                ? "bg-primary"
-                : "bg-[#E2E2FF]"}`}
-            >
-              <div>
-                <Image
-                  src={data.icon}
-                  alt=""
-                  width={1000}
-                  height={500}
-                  className={`max-w-[88px] m-auto xl:relative ${index === 0
+          {carddata.map((data, index) => {
+            const cleanTitle =
+              typeof data.title === "string"
+                ? data.title.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim()
+                : "FlipTrade account";
+            return (
+              <div
+                key={index}
+                className={`xl:relative px-10 py-20 flex flex-col gap-8 h-full rounded-[50px] ${data.class}  ${index %
+                  2 ===
+                0
+                  ? "bg-primary"
+                  : "bg-[#E2E2FF]"}`}
+              >
+                <div>
+                  <Image
+                    src={data.icon}
+                    alt={`${cleanTitle} icon`}
+                    width={1000}
+                    height={500}
+                    className={`max-w-[88px] m-auto xl:relative ${index === 0
+                      ? ""
+                      : "left-[10%]"}`}
+                  />
+                </div>
+                <div
+                  className={`text-center flex flex-col justify-center gap-4 m-auto max-w-[330px] xl:relative ${index ===
+                  0
                     ? ""
                     : "left-[10%]"}`}
-                />
+                >
+                  <h5
+                    className={`text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl lg:leading-[35px]  font-medium ${index %
+                      2 ===
+                    0
+                      ? "text-white"
+                      : "text-primary"}`}
+                    dangerouslySetInnerHTML={{ __html: data.title }}
+                  />
+                  <span
+                    className={`list_text font-light font_ternary leading-6 xl:leading-[28px] ${index %
+                      2 ===
+                    0
+                      ? "text-white"
+                      : "text-secondary"}`}
+                    dangerouslySetInnerHTML={{ __html: data.description }}
+                  />
+                </div>
               </div>
-              <div
-                className={`text-center flex flex-col justify-center gap-4 m-auto max-w-[330px] xl:relative ${index ===
-                0
-                  ? ""
-                  : "left-[10%]"}`}
-              >
-                <h5
-                  className={`text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl lg:leading-[35px]  font-medium ${index %
-                    2 ===
-                  0
-                    ? "text-white"
-                    : "text-primary"}`}
-                  dangerouslySetInnerHTML={{ __html: data.title }}
-                />
-                <span
-                  className={`list_text font-light font_ternary leading-6 xl:leading-[28px] ${index %
-                    2 ===
-                  0
-                    ? "text-white"
-                    : "text-secondary"}`}
-                  dangerouslySetInnerHTML={{ __html: data.description }}
-                />
-              </div>
-            </div>
-          )}
+            );
+          })}
         </div>
       </div>
     </div>

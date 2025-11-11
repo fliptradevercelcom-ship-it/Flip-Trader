@@ -4,7 +4,7 @@ import Discription from "../Uiux/Discription";
 import Button from "../Uiux/Button";
 import firebtnicon from "../../../../public/icons/firebtnicon.svg";
 import giftbtnicon from "../../../../public/icons/giftbtnicon.svg";
-import Homesidebanner from "../../../../public/banners/Homesidebanner.webp";
+// import Homesidebanner from "../../../../public/banners/Homesidebanner.webp";
 import Image from "next/image";
 import Link from "next/link";
 import Banergif from "../../../../public/videos/BaneerGIF.gif";
@@ -66,6 +66,8 @@ export default function Banner() {
               alt="Side banner"
               width={3000}
               height={1000}
+              priority
+              unoptimized
               className="relative right-[-2%] w-[90%] md:w-[60%] lg:w-full m-auto"
             />
             {/* <Player

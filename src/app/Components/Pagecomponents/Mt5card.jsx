@@ -12,25 +12,29 @@ const features = [
     icon: timewhite,
     title: "Fast Execution",
     description: "Trade with lightning-fast order speed and low latency.",
-    class: "z-[4]"
+    class: "z-[4]",
+    alt: "Stopwatch representing fast trade execution"
   },
   {
     icon: networkblue,
     title: "Seamless <br/> Integration",
     description: "Connect your FlipTrade account to MT5 instantly.",
-    class: "xl:w-[120%] left-[-20%] z-[3]"
+    class: "xl:w-[120%] left-[-20%] z-[3]",
+    alt: "Network nodes showing seamless platform integration"
   },
   {
     icon: settingwhite,
     title: "Powerful <br/> Tools",
     description: "Use advanced charts, indicators, and automation.",
-    class: "xl:w-[120%] left-[-20%] z-[2]"
+    class: "xl:w-[120%] left-[-20%] z-[2]",
+    alt: "Settings icon highlighting powerful trading tools"
   },
   {
     icon: customerblue,
     title: "Expert <br/> Support",
     description: "Learn and grow with guides, tools, and 24/7 help.",
-    class: "xl:w-[120%] left-[-20%] z-[1]"
+    class: "xl:w-[120%] left-[-20%] z-[1]",
+    alt: "Customer support headset icon"
   }
 ];
 
@@ -58,7 +62,7 @@ const Mt5card = () => {
                 <div>
                   <Image
                     src={data.icon}
-                    alt=""
+                    alt={data.alt}
                     width={1000}
                     height={500}
                     className={`max-w-[88px] m-auto xl:relative ${index === 0

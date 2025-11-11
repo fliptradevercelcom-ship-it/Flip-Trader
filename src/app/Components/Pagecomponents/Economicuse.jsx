@@ -112,7 +112,7 @@ function Economicuse() {
               <div className="hidden xl:block absolute z-[1] top-[12%] 2xl:top-[14%] left-[44%]">
                 <Image
                   src={joint}
-                  alt=""
+                  alt="Connector joint linking the first economic insight card"
                   width={1000}
                   height={500}
                   className="max-w-[140px] 2xl:max-w-[165px]"
@@ -121,7 +121,7 @@ function Economicuse() {
               <div className="hidden xl:block absolute z-[1] top-[37%] 2xl:top-[39%] left-[48%] 2xl:left-[46%] rotate-[69deg]">
                 <Image
                   src={joint}
-                  alt=""
+                  alt="Connector joint linking the middle economic insight card"
                   width={1000}
                   height={500}
                   className="max-w-[140px] 2xl:max-w-[165px]"
@@ -130,7 +130,7 @@ function Economicuse() {
               <div className="hidden xl:block absolute z-[1] top-[63%] 2xl:top-[64%] left-[48%] 2xl:left-[46%]">
                 <Image
                   src={joint}
-                  alt=""
+                  alt="Connector joint highlighting the final economic insight card"
                   width={1000}
                   height={500}
                   className="max-w-[140px] 2xl:max-w-[165px]"

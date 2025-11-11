@@ -51,8 +51,8 @@ const ComplaintHandlingProcedures = () => {
   return (
     <div className="bg-theme">
       <div className="inn_container pt-12 md:pt-18 lg:pt-28 xl:pt-32 2xl:pt-40 pb-12 xl:pb-24">
-        <div className="text-center">
-          <Title title="Complaint Handling Procedures" color="text-white" />
+        <div className="text-center mt-16">
+          <Title title="Complaint Handling Procedures" color="text-white" ish1={true} />
         </div>
 
         <div className="flex flex-col xl:flex-row xl:pt-14 gap-4 relative">
