@@ -95,7 +95,7 @@ function Whatyoulearn() {
                   />
                 </div>
                 <div>
-                  <h5 className="text-3xl 2xl:text-4xl font-medium gradient_text text-center lg:text-start">
+                  <h5 className="text-xl md:text-2xl lg:text-3xl 2xl:text-4xl font-medium gradient_text text-center lg:text-start md:w-max">
                     {data.title}
                   </h5>
                   <div className="list_text font-light text-center font_ternary leading-[28px] max-w[330px] text-white">
