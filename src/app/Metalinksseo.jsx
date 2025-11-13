@@ -4,7 +4,7 @@ import Script from "next/script";
 export default function Metalinksseo() {
   return (
     <>
-      {/* First Meta Pixel */}
+      {/* ===== Meta Pixel 1 ===== */}
       <script id="meta-pixel-1" strategy="afterInteractive">
         {`
           !function(f,b,e,v,n,t,s)
@@ -30,7 +30,7 @@ export default function Metalinksseo() {
         />
       </noscript>
 
-      {/* Second Meta Pixel */}
+      {/* ===== Meta Pixel 2 ===== */}
       <script id="meta-pixel-2" strategy="afterInteractive">
         {`
           !function(f,b,e,v,n,t,s)
@@ -55,6 +55,48 @@ export default function Metalinksseo() {
           alt="meta-pixel-2"
         />
       </noscript>
+
+      {/* ===== Website Schema ===== */}
+      <script
+        id="schema-website"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            name: "FlipTrade Group",
+            url: "https://www.fliptradegroup.com/",
+            potentialAction: {
+              "@type": "SearchAction",
+              target:
+                "https://www.fliptradegroup.com/contact-us{search_term_string}",
+              "query-input": "required name=search_term_string",
+            },
+          }),
+        }}
+      />
+
+      {/* ===== Organization Schema ===== */}
+      <script
+        id="schema-organization"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "FlipTrade Group",
+            url: "https://www.fliptradegroup.com/",
+            logo: "",
+            sameAs: [
+              "https://www.facebook.com/profile.php?id=61580314210503",
+              "https://www.instagram.com/fliptradegroup/",
+              "https://www.youtube.com/@fliptradegroup",
+            ],
+          }),
+        }}
+      />
     </>
   );
 }
