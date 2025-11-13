@@ -7,11 +7,11 @@ import firebtnicon from "../../../../public/icons/firebtnicon.svg";
 import learnbannerright from "../../../../public/images/learnbannerright.webp";
 import Image from "next/image";
 import learntradingbanner from "../../../../public/banners/learntradingbanner.webp";
-const Learntradingbanner = () => {
+const Learntradingbanner = ({onJoinClick}) => {
   return (
     <div className="bg-cover" style={{ backgroundImage: `url(${learntradingbanner.src})` }}>
       <div className="inn_container h-full pt-[180px]  2xl:pt-[200px]">
-        <div className="grid grid-cols-2">
+        <div className="grid md:grid-cols-2">
           <div>
             <Title
               title={"Master the Markets with Confidence"}
@@ -25,10 +25,8 @@ const Learntradingbanner = () => {
                 color={"text-white"}
               />
             </div>
-            <div className="pt-8">
-              <Link
-                href={"https://client.fliptradegroup.com/trader/registration"}
-              >
+            <div className="pt-8" onClick={onJoinClick}>
+  
                 <Button
                   icon={firebtnicon.src}
                   btn_name="Start Trading"
@@ -37,7 +35,6 @@ const Learntradingbanner = () => {
                   border_color="border-primary"
                   shadow={true}
                 />
-              </Link>
             </div>
           </div>
           <div>

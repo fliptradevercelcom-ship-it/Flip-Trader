@@ -44,7 +44,7 @@ const learnlist = [
     padding_start: "lg:ps-0"
   }
 ];
-function Whatyoulearn() {
+function Whatyoulearn({onJoinClick}) {
   return (
     <div className="bg-theme  pt-12 xl:pt-24 2xl:pt-36">
       <div
@@ -63,10 +63,7 @@ function Whatyoulearn() {
                   color={"text-white"}
                 />
               </div>
-              <div className="lg:pt-8">
-                <Link
-                  href={"https://client.fliptradegroup.com/trader/registration"}
-                >
+              <div className="lg:pt-8" onClick={onJoinClick}>
                   <Button
                     icon={firebtniconblue.src}
                     btn_name="Start Learning Now"
@@ -75,7 +72,6 @@ function Whatyoulearn() {
                     border_color="border-white"
                     shadow={true}
                   />
-                </Link>
               </div>
             </div>
           </div>

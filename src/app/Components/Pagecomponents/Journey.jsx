@@ -9,7 +9,7 @@ import Button from "../Uiux/Button";
 import firebtnicon from "../../../../public/icons/firebtnicon.svg";
 import learnmt5bg from "../../../../public/images/learnmt5bg.webp";
 import Link from "next/link";
-function Journey() {
+function Journey({onJoinClick}) {
   return (
     <div className="bg-theme  pt-12 xl:pt-24 2xl:pt-36">
       <div className="inn_container">
@@ -128,9 +128,7 @@ function Journey() {
                     dispription={`MT5 delivers speed, accuracy, and flexibility for <br/> trading Forex, CFDs, and more — all in one <br/> platform.`}
                     color="text-white"
                   />
-                  <div className="flex justify-center md:justify-start me-auto pt-5">
-                    <Link
-                     href={'/platform'}>
+                  <div className="flex justify-center md:justify-start me-auto pt-5"  onClick={onJoinClick}>
                     <Button
                       btn_name={`Master MT5 Today`}
                       icon={firebtnicon.src}
@@ -139,7 +137,6 @@ function Journey() {
                       border_color="border-primary"
                       shadow={true}
                     />
-                    </Link>
                   </div>
                 </div>
               </div>

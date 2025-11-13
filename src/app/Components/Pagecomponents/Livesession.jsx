@@ -65,7 +65,7 @@ const sessiondata = [
   }
 ];
 
-const Livesession = () => {
+const Livesession = ({onJoinClick}) => {
   return (
     <div className="theme">
       <div className="inn_container pt-12 xl:pt-22 2xl:pt-30">
@@ -134,10 +134,7 @@ const Livesession = () => {
                   </p>
                 </div>
               </div>
-              <div className="pt-7">
-                <Link
-                  href={"https://client.fliptradegroup.com/trader/registration"}
-                >
+              <div className="pt-7" onClick={onJoinClick}>
                   <Button
                     btn_name={"Register Now"}
                     btn_bg={"bg-primary"}
@@ -146,7 +143,6 @@ const Livesession = () => {
                     shadow={true}
                     border_color={"border-primary"}
                   />
-                </Link>
               </div>
             </div>
           )}
