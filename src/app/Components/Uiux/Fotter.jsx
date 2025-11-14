@@ -233,9 +233,9 @@ const Fotter = () => {
                 {footerdata.policydata.map((data, index) => (
                   <div key={index} className="flex items-center justify-center">
                     <Link href={data.pagelink} className="w-full">
-                      <p className="text-[14px] md:text-lg 2xl:text-xl font-light text-white hover:underline">
+                      <span className="text-[14px] md:text-lg 2xl:text-xl font-light text-white hover:underline">
                         {data.pagename}
-                      </p>
+                      </span>
                     </Link>
                   </div>
                 ))}

@@ -51,7 +51,7 @@ function Whatyoulearn({onJoinClick}) {
         className="bg-cover bg-no-repeat"
         style={{ backgroundImage: `url(${whatyoulearnbg.src})` }}
       >
-        <div className="inn_container  grid lg:grid-cols-2 py-6 lg:py-0">
+        <div className="inn_container  grid lg:grid-cols-2 py-6 lg:py-6">
           <div className="my-auto text-center lg:text-start">
             <div>
               <Title title={"What You'll <br/> Learn"} color={"text-white"} />
@@ -79,9 +79,9 @@ function Whatyoulearn({onJoinClick}) {
             {learnlist.map((data, index) =>
               <div
                 key={index}
-                className={`flex  flex-col lg:flex-row items-center justify-center lg:justify-start pb-6 gap-6 ${data.padding_start}`}
+                className={`flex  flex-col lg:flex-row items-center justify-center lg:justify-start pb-6 gap-6 group ${data.padding_start}`}
               >
-                <div className="w-[60px] xl:w-[70px] 2xl:w-[80px] h-[60px] xl:h-[70px] 2xl:h-[80px] bg-white rounded-[50%] flex justify-center items-center">
+                <div className="w-[60px] xl:w-[70px] 2xl:w-[80px] h-[60px] xl:h-[70px] 2xl:h-[80px] bg-white group-hover:bg-[var(--primary)] rounded-[50%] flex justify-center items-center  transition-all duration-300 group-hover:shadow-[0px_0px_20px_6px_#6a40ec]">
                   <Image
                     src={data.icon}
                     alt={data.title}

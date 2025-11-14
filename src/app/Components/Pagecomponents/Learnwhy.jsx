@@ -47,7 +47,7 @@ function Learnwhy() {
         <div className="pt-12 grid md:grid-cols-2 xl:grid-cols-4 gap-6">
           {carddata.map((data, index) =>
             <div
-              className="flex flex-col px-8 2xl:px-12 py-12 shadow-[inset_-15px_0_20px_-16px_#6a40ec,inset_15px_0_16px_-15px_#6a40ec] rounded-4xl max-w-[400px] m-auto"
+              className="flex flex-col px-8 2xl:px-12 py-12 shadow-[inset_-15px_0_20px_-16px_#6a40ec,inset_15px_0_16px_-15px_#6a40ec] rounded-4xl max-w-[400px] m-auto group"
               key={index}
             >
               <Image
@@ -55,9 +55,9 @@ function Learnwhy() {
                 alt=""
                 width={1000}
                 height={500}
-                className="max-w-[70px] 2xl:max-w-[80px] m-auto"
+                className="max-w-[70px] 2xl:max-w-[80px] m-auto group-hover:shadow-[0px_0px_20px_6px_#6a40ec] rounded-[50%] transition-all duration-300 group-hover:scale-[1.05]"
               />
-              <h5 className="text-3xl 2xl:text-4xl pt-8  font-medium gradient_text text-center">
+              <h5 className="text-2xl lg:text-3xl 2xl:text-4xl pt-8  font-medium gradient_text text-center">
                 {data.title}
               </h5>
               <div className="list_text font-light text-center  pt-6 font_ternary leading-[28px] max-w[330px] text-white">

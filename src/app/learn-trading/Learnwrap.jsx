@@ -71,7 +71,7 @@ const Learnwrap = () => {
                 </div>
             </div>
             <div className=" bg-theme">
-                <div className="inn_container pt-12 pb-16">
+                <div className="inn_container pt-12 ">
                     <div className="text-center">
                         <Title
                             title={"Frequently Asked <br/> Questions"}

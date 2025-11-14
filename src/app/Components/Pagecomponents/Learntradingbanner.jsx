@@ -10,9 +10,9 @@ import learntradingbanner from "../../../../public/banners/learntradingbanner.we
 const Learntradingbanner = ({onJoinClick}) => {
   return (
     <div className="bg-cover" style={{ backgroundImage: `url(${learntradingbanner.src})` }}>
-      <div className="inn_container h-full pt-[180px]  2xl:pt-[200px]">
+      <div className="inn_container h-full pt-[130px] md:pt-[180px]  2xl:pt-[200px]">
         <div className="grid md:grid-cols-2">
-          <div>
+          <div className="text-center md:text-start">
             <Title
               title={"Master the Markets with Confidence"}
               color={"gradient_text"}
@@ -25,7 +25,7 @@ const Learntradingbanner = ({onJoinClick}) => {
                 color={"text-white"}
               />
             </div>
-            <div className="pt-8" onClick={onJoinClick}>
+            <div className="pt-4 md:pt-8" onClick={onJoinClick}>
   
                 <Button
                   icon={firebtnicon.src}
@@ -37,7 +37,7 @@ const Learntradingbanner = ({onJoinClick}) => {
                 />
             </div>
           </div>
-          <div>
+          <div className="pt-4 md:pt-0">
             <Image
               src={learnbannerright}
               alt=""

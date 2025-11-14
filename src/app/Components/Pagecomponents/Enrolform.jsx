@@ -108,7 +108,7 @@ const Enrolform = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="bg-[#C3C3C3] outline-none border-none text-xl font_ternary px-4 py-3 rounded-[10px] text-secondary"
+            className="bg-[#c3c3c359] outline-none border-none text-xl font_ternary px-4 py-3 rounded-[10px] text-secondary"
           />
           {errors.name && (
             <span className="text-red-500 text-[14px]">{errors.name}</span>
@@ -123,7 +123,7 @@ const Enrolform = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="bg-[#C3C3C3] outline-none border-none text-xl font_ternary px-4 py-3 rounded-[10px] text-secondary"
+            className="bg-[#c3c3c359] outline-none border-none text-xl font_ternary px-4 py-3 rounded-[10px] text-secondary"
           />
           {errors.email && (
             <span className="text-red-500 text-[14px]">{errors.email}</span>
@@ -138,7 +138,7 @@ const Enrolform = () => {
             name="phonenumber"
             value={formData.phonenumber}
             onChange={handleChange}
-            className="bg-[#C3C3C3] outline-none border-none text-xl font_ternary px-4 py-3 rounded-[10px] text-secondary"
+            className="bg-[#c3c3c359] outline-none border-none text-xl font_ternary px-4 py-3 rounded-[10px] text-secondary"
           />
           {errors.phonenumber && (
             <span className="text-red-500 text-[14px]">{errors.phonenumber}</span>
@@ -153,7 +153,7 @@ const Enrolform = () => {
             name="experience"
             value={formData.experience}
             onChange={handleChange}
-            className="bg-[#C3C3C3] outline-none border-none text-xl font_ternary px-4 py-3 rounded-[10px] text-secondary"
+            className="bg-[#c3c3c359] outline-none border-none text-xl font_ternary px-4 py-3 rounded-[10px] text-secondary"
           />
           {errors.experience && (
             <span className="text-red-500 text-[14px]">{errors.experience}</span>
@@ -211,7 +211,7 @@ const Enrolform = () => {
           value={formData.message}
           onChange={handleChange}
           placeholder="Tell us about..."
-          className="bg-[#C3C3C3] min-h-[150px] w-full outline-none border-none text-xl font_ternary px-4 py-3 rounded-[10px] text-secondary mt-2"
+          className="bg-[#c3c3c359] min-h-[150px] w-full outline-none border-none text-xl font_ternary px-4 py-3 rounded-[10px] text-secondary mt-2"
         />
       </div>
 

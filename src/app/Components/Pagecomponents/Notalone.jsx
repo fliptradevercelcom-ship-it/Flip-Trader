@@ -54,10 +54,10 @@ const Notalone = () => {
                   alt=""
                   width={1000}
                   height={500}
-                  className="max-w-[150px]"
+                  className="max-w-[120px] lg:max-w-[150px]"
                 />
               </div>
-              <div className=" lg:max-w-[480px] px-4 md:px-0">
+              <div className=" lg:max-w-[480px] px-6 md:px-0">
                 <h5 className="text-xl md:text-2xl lg:text-3xl 2xl:text-4xl font-medium gradient_text text-center lg:text-start md:w-max">
                   {data.title}
                 </h5>

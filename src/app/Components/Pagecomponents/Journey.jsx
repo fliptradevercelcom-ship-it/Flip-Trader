@@ -31,9 +31,9 @@ function Journey({onJoinClick}) {
           className="bg-cover bg-center relative"
           style={{ backgroundImage: `url(${Journeybluebg.src})` }}
         >
-          <div className="inn_container grid lg:grid-cols-2  py-18 lg:py-30 xl:py-44 gap-y-8 md:gap-y-18 lg:gap-y-24 xl:gap-y-40 relative z-20">
-            <div className="2xl:relative flex justify-between items-center shadow-[10px_12px_20px_8px_#00000036] py-4 px-8 max-w-[90%] xl:max-w-[80%] 2xl:max-w-[516px] bg-white rounded-tr-full md:rounded-tr-none  rounded-br-full md:rounded-br-none rounded-tl-full rounded-bl-full  gap-3 lg:gap-12 left-[9%] bottom-8">
-              <div className="text-[22px] lg:text-3xl 2xl:text-4xl font-bold bg-primary w-[40px] md:w-[80px] h-[40px] md:h-[80px] flex justify-center items-center rounded-full text-white">
+          <div className="inn_container grid lg:grid-cols-2 py-12 md:py-18 lg:py-30 xl:py-44 gap-y-8 md:gap-y-18 lg:gap-y-24 xl:gap-y-40 relative z-20">
+            <div className="2xl:relative flex justify-between items-center group shadow-[10px_12px_20px_8px_#00000036] py-4 px-8 md:max-w-[90%] xl:max-w-[80%] 2xl:max-w-[516px] bg-white rounded-tr-full md:rounded-tr-none  rounded-br-full md:rounded-br-none rounded-tl-full rounded-bl-full  gap-3 lg:gap-12 left-[9%] bottom-8">
+              <div className="text-[22px] lg:text-3xl 2xl:text-4xl group-hover:shadow-[0px_0px_20px_6px_#6a40ec] group-hover:scale-[1.05] transition-all duration-300 font-bold bg-primary w-[40px] md:w-[80px] h-[40px] md:h-[80px] flex justify-center items-center rounded-full text-white">
                 A
               </div>
               <div>
@@ -45,7 +45,7 @@ function Journey({onJoinClick}) {
                 </div>
               </div>
             </div>
-            <div className="2xl:relative flex justify-between items-center shadow-[10px_12px_20px_8px_#00000036] py-4 px-8 max-w-[90%] xl:max-w-[80%] 2xl:max-w-[516px] bg-white rounded-tl-full md:rounded-tl-none rounded-bl-full  md:rounded-bl-none rounded-tr-full rounded-br-full ms-auto gap-3 lg:gap-12 right-[9%] bottom-8">
+            <div className="2xl:relative flex justify-between items-center group shadow-[10px_12px_20px_8px_#00000036] py-4 px-8 md:max-w-[90%] xl:max-w-[80%] 2xl:max-w-[516px] bg-white rounded-tl-full md:rounded-tl-none rounded-bl-full  md:rounded-bl-none rounded-tr-full rounded-br-full ms-auto gap-3 lg:gap-12 right-[9%] bottom-8">
               <div>
                 <h5 className="text-xl md:text-2xl lg:text-3xl 2xl:text-4xl font-medium text-secondary text-start">
                   Practice
@@ -54,12 +54,12 @@ function Journey({onJoinClick}) {
                   Apply strategies in risk-free <br /> demo environments.e.
                 </div>
               </div>
-              <div className="text-[22px] lg:text-3xl 2xl:text-4xl font-bold bg-primary w-[40px] md:w-[80px] h-[40px] md:h-[80px] flex justify-center items-center rounded-full text-white">
+              <div className="text-[22px] lg:text-3xl 2xl:text-4xl group-hover:shadow-[0px_0px_20px_6px_#6a40ec] group-hover:scale-[1.05] transition-all duration-300 font-bold bg-primary w-[40px] md:w-[80px] h-[40px] md:h-[80px] flex justify-center items-center rounded-full text-white">
                 B
               </div>
             </div>
-            <div className="2xl:relative flex justify-between items-center shadow-[10px_12px_20px_8px_#00000036] py-4 px-8 max-w-[90%] xl:max-w-[80%] 2xl:max-w-[516px] bg-white rounded-tr-full md:rounded-tr-none  rounded-br-full md:rounded-br-none  rounded-tl-full rounded-bl-full  gap-3 lg:gap-12 bottom-6">
-              <div className="text-[22px] lg:text-3xl 2xl:text-4xl font-bold bg-primary w-[40px] md:w-[80px] h-[40px] md:h-[80px] flex justify-center items-center rounded-full text-white">
+            <div className="2xl:relative flex justify-between items-center group shadow-[10px_12px_20px_8px_#00000036] py-4 px-8 md:max-w-[90%] xl:max-w-[80%] 2xl:max-w-[516px] bg-white rounded-tr-full md:rounded-tr-none  rounded-br-full md:rounded-br-none  rounded-tl-full rounded-bl-full  gap-3 lg:gap-12 bottom-6">
+              <div className="text-[22px] lg:text-3xl 2xl:text-4xl group-hover:shadow-[0px_0px_20px_6px_#6a40ec] group-hover:scale-[1.05] transition-all duration-300 font-bold bg-primary w-[40px] md:w-[80px] h-[40px] md:h-[80px] flex justify-center items-center rounded-full text-white">
                 C
               </div>
               <div>
@@ -71,7 +71,7 @@ function Journey({onJoinClick}) {
                 </div>
               </div>
             </div>
-            <div className="2xl:relative flex justify-between items-center shadow-[10px_12px_20px_8px_#00000036] py-4 px-8 max-w-[90%] xl:max-w-[80%] 2xl:max-w-[516px] bg-white rounded-tl-full md:rounded-tl-none rounded-bl-full  md:rounded-bl-none  rounded-tr-full rounded-br-full ms-auto gap-3 lg:gap-12 bottom-6">
+            <div className="2xl:relative flex justify-between items-center group shadow-[10px_12px_20px_8px_#00000036] py-4 px-8 md:max-w-[90%] xl:max-w-[80%] 2xl:max-w-[516px] bg-white rounded-tl-full md:rounded-tl-none rounded-bl-full  md:rounded-bl-none  rounded-tr-full rounded-br-full ms-auto gap-3 lg:gap-12 bottom-6">
               <div>
                 <h5 className="text-xl md:text-2xl lg:text-3xl 2xl:text-4xl font-medium text-secondary text-end">
                   Earn
@@ -80,7 +80,7 @@ function Journey({onJoinClick}) {
                   Generate consistent returns <br /> from the markets.
                 </div>
               </div>
-              <div className="text-[22px] lg:text-3xl 2xl:text-4xl font-bold bg-primary w-[40px] md:w-[80px] h-[40px] md:h-[80px] flex justify-center items-center rounded-full text-white">
+              <div className="text-[22px] lg:text-3xl 2xl:text-4xl group-hover:shadow-[0px_0px_20px_6px_#6a40ec] group-hover:scale-[1.05] transition-all duration-300 font-bold bg-primary w-[40px] md:w-[80px] h-[40px] md:h-[80px] flex justify-center items-center rounded-full text-white">
                 D
               </div>
             </div>

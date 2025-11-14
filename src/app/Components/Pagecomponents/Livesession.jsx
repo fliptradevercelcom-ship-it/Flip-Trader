@@ -86,7 +86,7 @@ const Livesession = ({onJoinClick}) => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 pt-12 xl:pt-18">
           {sessiondata.map((data, index) =>
-            <div className="bg-white p-10 rounded-[48px]" key={index}>
+            <div className="bg-white p-6 md:p-10 rounded-[28px] md:rounded-[48px]" key={index}>
               <div className="flex justify-between items-center">
                 <p className="text-base md:text-lg font_ternary font-[350] text-white px-5 py-1.5 bg-secondary w-max rounded-full">
                   {data.level}
@@ -104,7 +104,7 @@ const Livesession = ({onJoinClick}) => {
                 </div>
               </div>
               <div className="pt-6">
-                <h5 className="text-[22px] lg:text-[24px] 2xl:text-[28px] text-primary max-w-[80%]">
+                <h5 className="text-[20px] lg:text-[24px] 2xl:text-[28px] text-primary max-w-[80%]">
                   {data.title}
                 </h5>
                 <p className="text-lg font_ternary text-secondary pt-1">
