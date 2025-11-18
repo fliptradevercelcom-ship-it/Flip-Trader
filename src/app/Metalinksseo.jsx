@@ -5,8 +5,11 @@ export default function Metalinksseo() {
   return (
     <>
       {/* ===== Meta Pixel 1 ===== */}
-      <script id="meta-pixel-1" strategy="afterInteractive">
-        {`
+      <Script
+        id="meta-pixel-1"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
           n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -17,8 +20,9 @@ export default function Metalinksseo() {
           'https://connect.facebook.net/en_US/fbevents.js');  
           fbq('init', '1802853220355740');
           fbq('track', 'PageView');
-        `}
-      </script>
+        `,
+        }}
+      />
 
       <noscript>
         <img
@@ -31,8 +35,11 @@ export default function Metalinksseo() {
       </noscript>
 
       {/* ===== Meta Pixel 2 ===== */}
-      <script id="meta-pixel-2" strategy="afterInteractive">
-        {`
+      <Script
+        id="meta-pixel-2"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
           n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -43,8 +50,9 @@ export default function Metalinksseo() {
           'https://connect.facebook.net/en_US/fbevents.js');
           fbq('init', '1916610305873436');
           fbq('track', 'PageView');
-        `}
-      </script>
+        `,
+        }}
+      />
 
       <noscript>
         <img
@@ -57,7 +65,7 @@ export default function Metalinksseo() {
       </noscript>
 
       {/* ===== Website Schema ===== */}
-      <script
+      <Script
         id="schema-website"
         type="application/ld+json"
         strategy="afterInteractive"
@@ -78,7 +86,7 @@ export default function Metalinksseo() {
       />
 
       {/* ===== Organization Schema ===== */}
-      <script
+      <Script
         id="schema-organization"
         type="application/ld+json"
         strategy="afterInteractive"
