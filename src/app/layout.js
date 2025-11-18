@@ -55,6 +55,7 @@ export default function RootLayout({ children }) {
           async
         ></script>
         {/* <!-- End TrustBox script --> */}
+        <Metalinksseo />
       </head>
       <body
         className={`${monaSans.variable} ${monaSansnormal.variable} ${monaSansnormallight.variable} ${monaSanswidenormal.variable} antialiased`}
@@ -80,7 +81,6 @@ export default function RootLayout({ children }) {
             <Telegramlink />
           </div>
         </div>
-        <Metalinksseo />
         <script>{` ;(function(_, m) { const orufyConnectSettings = { appId: 'wsxQa3dGW436zgdZgOzyNHB47qdKdl7S' }; const s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = 'https://widget.connect.orufy.com/widget.js'; const head = document.getElementsByTagName("head")[0]; head?.appendChild(s); window.orufy_connect = m; m._globals = orufyConnectSettings; })(document, window.orufy_connect || {}) `}</script>
       </body>
     </html>

@@ -180,7 +180,8 @@ const navlistdata = [
         heading: "Trading Tools",
         items: [
           { name: "Pip Calculator", link: "/pip-calculator" },
-          { name: "Economic Calendar", link: "/economic-calendar" }
+          { name: "Economic Calendar", link: "/economic-calendar" },
+          { name: "Learn Trading", link: "/learn-trading" }
         ]
       },
       {

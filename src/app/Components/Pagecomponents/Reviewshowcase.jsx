@@ -118,7 +118,7 @@ const Reviewshowcase = () => {
   }, []);
 
   return (
-    <section className="bg-theme py-16">
+    <section className="bg-theme pb-16">
       {/* <!-- TrustBox widget - Review Collector --> */}
       <div
         className="trustpilot-widget mb-[2rem]"
@@ -186,12 +186,12 @@ const Reviewshowcase = () => {
             </div>
           </Link>
           <div className="space-y-6">
-            {reviews.map((review) => (
-              <>
+            {reviews.map((review,index) => (
                 <Link
                   href="https://www.trustpilot.com/review/fliptradegroup.com"
                   target="_blank"
                   rel="noopener"
+                  key={index}
                 >
                   <article
                     key={review.name}
@@ -262,7 +262,6 @@ const Reviewshowcase = () => {
                 </div> */}
                   </article>
                 </Link>
-              </>
             ))}
           </div>
         </div>

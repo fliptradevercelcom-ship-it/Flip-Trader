@@ -9,8 +9,10 @@ import instawhite from "../../../../public/icons/instawhite.svg";
 import youtubewhite from "../../../../public/icons/youtubewhite.svg";
 import Link from "next/link";
 import { useAutoScroll } from "../../../hooks/useAutoScroll";
-import formsidebanner from "../../../../public/images/womenleft.webp";
-import manright from "../../../../public/images/manright.webp";
+// import formsidebanner from "../../../../public/images/womenleft.webp";
+// import manright from "../../../../public/images/manright.webp";
+import Title from "../Uiux/Title";
+import Discription from "../Uiux/Discription";
 export default function Contactfrom() {
   useAutoScroll("social-link", { delay: 800 });
   return (
@@ -20,12 +22,24 @@ export default function Contactfrom() {
         style={{ backgroundImage: `url(${contactusbanner.src})` }}
       >
         <div className="inn_container">
-          <div className=" max-w-[1380px] m-auto">
+          <div className="text-center">
+             <Title
+              title={' Get in Touch'}
+              color={'text-white'}
+              />
+              <div>
+                <Discription
+                 dispription={'Have a question about our services or need <br/> trading support? Let us know.'}
+                 color={'text-white'}
+                 />
+              </div>
+          </div>
+          <div className=" max-w-[1380px] m-auto pt-10">
             <div className="flex justify-center xl:justify-center">
               <Maincontactform />
             </div>
             <div className="flex">
-            <div className="hidden xl:block absolute max-w-[450px] 2xl:max-w-[600px] bottom-0 left-0.5 w-full">
+            {/* <div className="hidden xl:block absolute max-w-[450px] 2xl:max-w-[600px] bottom-0 left-0.5 w-full">
               <Image
                 src={formsidebanner}
                 alt="formsidebanner"
@@ -42,7 +56,7 @@ export default function Contactfrom() {
                 height={500}
                 className="w-full"
               />
-            </div>
+            </div> */}
             </div>
           </div>
         </div>
