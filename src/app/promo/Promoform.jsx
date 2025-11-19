@@ -93,7 +93,12 @@ const Promoform = () => {
     <div className="max-w-[530px] bg-white p-3   lg:p-6 rounded-[38px] lg:rounded-[58px] w-full relative">
       {/* <form action=""> */}
       <div>
-        <div className="font_ternary px-2 py-5   lg:py-7 ">
+        <div className="py-3">
+          <h5 className="text-center text-primary text-lg lg:text-xl xl:text-3xl 2xl:text-4xl">
+            Sign Up To Get $500 
+          </h5>
+        </div>
+        <div className="font_ternary px-2 pb-5   lg:pb-7 ">
           <div className=" text-start">
             <div className="text-lg lg:text-[21px] text-primary font-[350]">
               Your Name <span className="text-red-500">*</span>
@@ -105,7 +110,7 @@ const Promoform = () => {
               value={formdata.name}
               onChange={handleChange}
               placeholder="Enter Your Name"
-              className={`outline-none border-[3px] border-[#D8D8FF80] border-solid text-base lg:text-lg text-primary px-3 md:px-6 py-2 rounded-[10px] md:rounded-[40px] w-full bg-[#D8D8FF80] mt-4`}
+              className={`outline-none border-[3px] border-[#D8D8FF80] border-solid text-base lg:text-lg text-primary px-3 md:px-6 py-2 rounded-[10px] md:rounded-[40px] w-full bg-[#D8D8FF80] mt-1.5`}
               data-np-intersection-state="visible"
             />
             {nameerror === ""
@@ -116,7 +121,7 @@ const Promoform = () => {
           </div>
           <div className="pt-3 text-start">
             <div className="text-lg lg:text-[21px] text-primary font-[350]">
-              Phonenumber Here <span className="text-red-500">*</span>
+              Phone Number <span className="text-red-500">*</span>
             </div>
             <input
               name="phonenumber"
@@ -125,7 +130,7 @@ const Promoform = () => {
               value={formdata.phonenumber}
               onChange={handleChange}
               placeholder="phonenumber"
-              className="outline-none border-[3px] border-[#D8D8FF80] border-solid text-base lg:text-lg text-primary px-3 md:px-6 py-2 rounded-[10px] md:rounded-[40px] w-full bg-[#D8D8FF80] mt-4 "
+              className="outline-none border-[3px] border-[#D8D8FF80] border-solid text-base lg:text-lg text-primary px-3 md:px-6 py-2 rounded-[10px] md:rounded-[40px] w-full bg-[#D8D8FF80] mt-1.5 "
               data-np-intersection-state="visible"
             />
             {phonenumbererror === ""
@@ -145,7 +150,7 @@ const Promoform = () => {
               value={formdata.email}
               onChange={handleChange}
               placeholder="Enter Your Email"
-              className="outline-none border-[3px] border-[#D8D8FF80] border-solid text-base lg:text-lg text-primary px-3 md:px-6 py-2 rounded-[10px] md:rounded-[40px] w-full bg-[#D8D8FF80] mt-4"
+              className="outline-none border-[3px] border-[#D8D8FF80] border-solid text-base lg:text-lg text-primary px-3 md:px-6 py-2 rounded-[10px] md:rounded-[40px] w-full bg-[#D8D8FF80] mt-1.5"
               data-np-intersection-state="visible"
             />
             {emailerror === ""

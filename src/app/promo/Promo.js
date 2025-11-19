@@ -171,9 +171,9 @@ export const Promo = () => {
           <div className="absolute left-1/4 top-20 h-[500px] w-[500px] animate-pulse rounded-full bg-[#6a40ec] blur-[120px]" />
           <div className="absolute right-1/4 top-40 h-[400px] w-[400px] animate-pulse rounded-full bg-[#9679f0] blur-[100px] [animation-delay:1s]" />
         </div>
-       <div className="flex flex-col-reverse xl:flex-row px-[3%]">
+       <div className="flex flex-col-reverse xl:flex-row px-[3%] gap-6">
          <div className="relative my-auto max-w-5xl xl:w-[60%]">
-          <h1 className="mb-6 bg-gradient-to-r from-white via-[#b39cff] to-white bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl md:text-7xl leading-[normal] text-center xl:text-start">
+          <h1 className="mb-6 bg-gradient-to-r from-white via-[#b39cff] to-white bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl md:text-7xl leading-[normal] lg:leading-24 text-center xl:text-start">
             Get a Deposit Bonus of <br/> up to $500
           </h1>
           <h2 className="mb-4 text-xl sm:text-2xl md:text-3xl text-center xl:text-start">
