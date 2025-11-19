@@ -56,7 +56,8 @@ const navlistdata = [
         heading: "Tools",
         items: [
           { name: "Pip Calculator", link: "/pip-calculator" },
-          { name: "Economic Calendar", link: "/economic-calendar" }
+          { name: "Economic Calendar", link: "/economic-calendar" },
+          { name: "Learn Trading", link: "/learn-trading" }
         ]
       },
     ]
@@ -224,7 +225,6 @@ const navlistdata = [
   }
 ];
 
-// Mobile Dropdown Item Component
 const MobileDropdownItem = ({ data, isOpen, setIsOpen, setIsMenu, pathname }) => {
   const sections = data.sections;
 
@@ -319,7 +319,6 @@ export default function Header() {
   const [isMenu, setIsMenu] = useState(false);
   const [openMobileDropdown, setOpenMobileDropdown] = useState(null);
 
-  // Prevent background scroll when mobile menu is open
   useEffect(() => {
     if (isMenu) {
       document.body.style.overflow = 'hidden';
@@ -340,27 +339,25 @@ export default function Header() {
   }, [isMenu]);
   const [openDropdown, setOpenDropdown] = useState(null);
   
-  // Close any open dropdown when route changes, especially on home page
   useEffect(() => {
     setOpenDropdown(null);
     setHoverPos({ left: 0, width: 0 });
     setTempHoveredItem(null);
-    setOpenMobileDropdown(null); // Close mobile dropdowns too
+    setOpenMobileDropdown(null); 
   }, [pathname]);
   
   const [hoveredItem, setHoveredItem] = useState(() => {
-    // If on home page, no highlight
+    
     if (pathname === '/') return null;
 
-    // Initialize based on current pathname
     const matchingNav = navlistdata.find(nav =>
       nav.sections?.some(section =>
         section.items?.some(item => item.link === pathname)
       )
     );
-    return matchingNav ? matchingNav.id : null; // No default highlight
+    return matchingNav ? matchingNav.id : null; 
   });
-  const [tempHoveredItem, setTempHoveredItem] = useState(null); // For temporary hover effect
+  const [tempHoveredItem, setTempHoveredItem] = useState(null); 
   const containerRef = useRef(null);
   const leaveTimeoutRef = useRef(null);
 
@@ -368,14 +365,12 @@ export default function Header() {
     const timeoutId = setTimeout(() => {
       if (!containerRef.current) return;
 
-      // If on home page, clear all highlights
       if (pathname === '/') {
         setActivePos({ left: 0, width: 0 });
         setHoveredItem(null);
         return;
       }
 
-      // Check if current pathname matches any navigation link
       const matchingNav = navlistdata.find(nav =>
         nav.sections?.some(section =>
           section.items?.some(item => item.link === pathname)
@@ -383,7 +378,6 @@ export default function Header() {
       );
 
       if (matchingNav) {
-        // If we found a matching navigation, highlight that nav item
         const navItem = containerRef.current.querySelector(`[data-nav-id="${matchingNav.id}"]`);
         if (navItem) {
           const rect = navItem.getBoundingClientRect();
@@ -394,7 +388,6 @@ export default function Header() {
         }
       }
 
-      // If no matching navigation found, clear highlights
       setActivePos({ left: 0, width: 0 });
       setHoveredItem(null);
     }, 50);
@@ -402,7 +395,6 @@ export default function Header() {
     return () => clearTimeout(timeoutId);
   }, [pathname]);
 
-  // Cleanup timeout
   useEffect(() => {
     return () => {
       if (leaveTimeoutRef.current) clearTimeout(leaveTimeoutRef.current);

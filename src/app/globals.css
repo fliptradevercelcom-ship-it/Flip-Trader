@@ -485,3 +485,19 @@ input[type=number] {
     background-position: 1200px 600px;
   }
 }
+
+.popup_scale {
+  animation: popup_scaleani 1.5s ease-in-out infinite;
+  transition: all 0.9s ease-in-out;
+}
+@keyframes popup_scaleani {
+  0%{
+     transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+     transform: scale(1.1);
+  }
+}

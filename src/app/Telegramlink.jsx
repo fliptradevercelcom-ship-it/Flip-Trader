@@ -5,7 +5,7 @@ import Link from "next/link";
 const Telegramlink = () => {
   return (
     <div className="cursor-pointer">
-      <Link href={"https://t.me/fliptradegroup"} target="_blank">
+      <Link href={"https://t.me/Giyi2sne0gplNWE1"} target="_blank">
         <Image
           src={Telegramlogo}
           alt="Telegramlogo"
