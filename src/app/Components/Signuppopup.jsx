@@ -1,0 +1,107 @@
+"use client";
+import { useEffect, useState } from "react";
+import popupbanner from "../../../public/images/popupbanner.webp";
+import cross from "../../../public/icons/popupcross.svg";
+import Image from "next/image";
+import popupcoin from "../../../public/icons/popupcoin.svg";
+export default function Signuppopup() {
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    const popupHiddenUntil = localStorage.getItem("popupHiddenUntil");
+    const now = Date.now();
+
+    if (popupHiddenUntil && now < Number(popupHiddenUntil)) {
+      return;
+    }
+
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+      document.body.style.overflow = "hidden";
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleClose = () => {
+    const hideUntil = Date.now() + 12 * 30 * 30 * 1000; 
+    localStorage.setItem("popupHiddenUntil", hideUntil);
+    document.body.style.overflow = "auto";
+    setShowPopup(false);
+  };
+
+  const handleSignup = () => {
+    const hideUntil = Date.now() + 24 * 30 * 30 * 1000;
+    localStorage.setItem("popupHiddenUntil", hideUntil);
+    document.body.style.overflow = "auto";
+    window.location.href =
+      "https://client.fliptradegroup.com/trader/registration";
+  };
+
+  if (!showPopup) return null;
+
+  return (
+    <div style={styles.overlay}>
+      <div className="relative">
+        <Image
+          src={popupbanner}
+          alt="popupbanner"
+          width={2000}
+          height={500}
+          className="max-w-[90%] m-auto md:max-w-[400px] lg:max-w-[550px] 2xl:max-w-[650px]"
+        />
+        {/* popup cross */}
+        <div className="absolute top-3 right-3 z-[10]" onClick={handleClose}>
+          <Image
+            src={cross}
+            alt="cross"
+            width={1000}
+            height={500}
+            className="max-w-[52px] cursor-pointer"
+          />
+        </div>
+        {/* main text */}
+        <div className="absolute w-full h-full flex items-center justify-center top-0 left-0">
+          <div className="flex flex-col items-center rotate-[355deg] relative left-2">
+            <h2 className="text-[28px] lg:text-[40px] xl:text-[48px] 2xl:text-[60px] text-primary font-bold leading-[normal]
+            text-center px-16">
+              Get $500
+            </h2>
+             <h2 className="text-[28px] lg:text-[40px] xl:text-[48px] 2xl:text-[60px] text-primary font-bold leading-[normal]
+            text-center px-16">
+              Bonus
+            </h2>
+            <p className="text-[22px] lg:text-[30px] 2xl:text-[40px] text-secondary text-center">
+              on first Sign Up
+            </p>
+
+            <div className=" flex gap-4 bg-primary w-max px-4 2xl:px-6 items-center rounded-full py-3 relative mt-2 cursor-pointer popup_scale" onClick={handleSignup}>
+              <Image
+                src={popupcoin}
+                alt="popupcoin"
+                width={1000}
+                height={500}
+                className="w-[60px] absolute -left-2"
+              />
+              <span className="text-base 2xl:text-lg font-light font_ternary text-do aos-init aos-animate underline ps-[40px]">
+                Claim $500 Bonus Now!
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+const styles = {
+  overlay: {
+    position: "fixed",
+    inset: 0,
+    background: "#000000cf",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    zIndex: 9999
+  }
+};
