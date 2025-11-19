@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import { Phone } from "lucide-react";
 import Image from "next/image";
+import Promoform from "./Promoform";
 
 const statsData = [
   {
@@ -148,7 +149,7 @@ export const Promo = () => {
                 <span className="font-semibold">Get a 100% deposit bonus</span>
               </div>
               <Link
-                href={REGISTRATION_URL}
+                href={'https://wa.me/+66815837672'}
                className="group inline-flex w-full max-w-xs items-center justify-center rounded-full border-2 border-white bg-white px-6 py-2 text-sm font-semibold text-[#6a40ec] transition-all duration-300 hover:scale-105 hover:bg-transparent hover:text-white hover:shadow-[0_0_20px_rgba(255,255,255,0.5)] sm:w-auto sm:max-w-xs sm:px-8"
                target="_blank"
                rel="noopener noreferrer"
@@ -164,24 +165,24 @@ export const Promo = () => {
       )}
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#1a0f2e] via-[#0f0820] to-[#060608] px-4 py-24 text-center">
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#1a0f2e] via-[#0f0820] to-[#060608] px-4 py-12 md:py-18 lg:py-24 text-center">
         {/* Animated Background Gradients */}
         <div className="absolute inset-0 opacity-30">
           <div className="absolute left-1/4 top-20 h-[500px] w-[500px] animate-pulse rounded-full bg-[#6a40ec] blur-[120px]" />
           <div className="absolute right-1/4 top-40 h-[400px] w-[400px] animate-pulse rounded-full bg-[#9679f0] blur-[100px] [animation-delay:1s]" />
         </div>
-
-        <div className="relative mx-auto max-w-5xl">
-          <h1 className="mb-6 bg-gradient-to-r from-white via-[#b39cff] to-white bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl md:text-7xl leading-20">
-            Get a Deposit Bonus of up to $500
+       <div className="flex flex-col-reverse xl:flex-row px-[3%]">
+         <div className="relative my-auto max-w-5xl xl:w-[60%]">
+          <h1 className="mb-6 bg-gradient-to-r from-white via-[#b39cff] to-white bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl md:text-7xl leading-[normal] text-center xl:text-start">
+            Get a Deposit Bonus of <br/> up to $500
           </h1>
-          <h2 className="mb-4 text-xl sm:text-2xl md:text-3xl">
+          <h2 className="mb-4 text-xl sm:text-2xl md:text-3xl text-center xl:text-start">
             Fliptrade will credit a 100% bonus on your first deposit
           </h2>
-          <p className="mb-10 text-base text-gray-400 sm:text-lg md:text-xl">
+          <p className="mb-10 text-base text-gray-400 sm:text-lg md:text-xl text-center xl:text-start">
             According to the promotion terms in your personal account
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center xl:justify-start gap-4">
             <Link
               href={REGISTRATION_URL}
               className="group relative inline-flex w-full max-w-xs items-center justify-center overflow-hidden rounded-full bg-primary px-8 py-3 text-base shadow-[0_0_30px_rgba(106,64,236,0.4)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_50px_rgba(106,64,236,0.6)] sm:w-auto sm:max-w-none sm:px-12 sm:py-4 sm:text-lg"
@@ -190,7 +191,7 @@ export const Promo = () => {
             >
               <span className="relative z-10 flex items-center gap-2">
                 <Zap className="h-5 w-5" />
-                Open an Account
+                Claim Your Bonus
               </span>
               <div className="absolute inset-0 bg-primary opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
             </Link>
@@ -216,6 +217,11 @@ export const Promo = () => {
             </Link>
           </div>
         </div>
+        <div className="flex justify-center pb-12 xl:pb-0 xl:w-[40%]">
+        <Promoform/>
+        </div>
+       </div>
+        
       </section>
 
       {/* Stats Section */}
@@ -618,7 +624,7 @@ export const Promo = () => {
             >
               <span className="flex items-center gap-2">
                 <Zap className="h-5 w-5" />
-                Open an Account
+                Open an Account 
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </span>
             </Link>

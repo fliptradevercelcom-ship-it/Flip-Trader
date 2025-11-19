@@ -6,7 +6,7 @@ import Image from "next/image";
 import popupcoin from "../../../public/icons/popupcoin.svg";
 export default function Signuppopup() {
   const [showPopup, setShowPopup] = useState(false);
-
+  const [showcross, setshowcross] = useState(false);
   useEffect(() => {
     const popupHiddenUntil = localStorage.getItem("popupHiddenUntil");
     const now = Date.now();
@@ -19,23 +19,26 @@ export default function Signuppopup() {
       setShowPopup(true);
       document.body.style.overflow = "hidden";
     }, 5000);
+    const timercross = setTimeout(() => {
+      setshowcross(true);
+    }, 10000);
 
-    return () => clearTimeout(timer);
+    return () => clearTimeout(timer, timercross);
   }, []);
 
   const handleClose = () => {
-    const hideUntil = Date.now() + 12 * 30 * 30 * 1000; 
+    const hideUntil = Date.now() + 12 * 60 * 60 * 1000;
     localStorage.setItem("popupHiddenUntil", hideUntil);
     document.body.style.overflow = "auto";
     setShowPopup(false);
   };
 
   const handleSignup = () => {
-    const hideUntil = Date.now() + 24 * 30 * 30 * 1000;
+    const hideUntil = Date.now() + 12 * 60 * 60 * 1000;
     localStorage.setItem("popupHiddenUntil", hideUntil);
     document.body.style.overflow = "auto";
     window.location.href =
-      "https://client.fliptradegroup.com/trader/registration";
+      "https://wa.me/+66815837672";
   };
 
   if (!showPopup) return null;
@@ -51,15 +54,21 @@ export default function Signuppopup() {
           className="max-w-[90%] m-auto md:max-w-[400px] lg:max-w-[550px] 2xl:max-w-[650px]"
         />
         {/* popup cross */}
-        <div className="absolute top-3 right-3 z-[10]" onClick={handleClose}>
-          <Image
-            src={cross}
-            alt="cross"
-            width={1000}
-            height={500}
-            className="max-w-[52px] cursor-pointer"
-          />
-        </div>
+        {showcross
+          ? <div
+              className="absolute top-3 right-3 z-[10]"
+              onClick={handleClose}
+            >
+              <Image
+                src={cross}
+                alt="cross"
+                width={1000}
+                height={500}
+                className="max-w-[52px] cursor-pointer"
+              />
+            </div>
+          : null}
+
         {/* main text */}
         <div className="absolute w-full h-full flex items-center justify-center top-0 left-0">
           <div className="flex flex-col items-center rotate-[355deg] relative left-2">
@@ -67,7 +76,7 @@ export default function Signuppopup() {
             text-center px-16">
               Get $500
             </h2>
-             <h2 className="text-[28px] lg:text-[40px] xl:text-[48px] 2xl:text-[60px] text-primary font-bold leading-[normal]
+            <h2 className="text-[28px] lg:text-[40px] xl:text-[48px] 2xl:text-[60px] text-primary font-bold leading-[normal]
             text-center px-16">
               Bonus
             </h2>
@@ -75,7 +84,10 @@ export default function Signuppopup() {
               on first Sign Up
             </p>
 
-            <div className=" flex gap-4 bg-primary w-max px-4 2xl:px-6 items-center rounded-full py-3 relative mt-2 cursor-pointer popup_scale" onClick={handleSignup}>
+            <div
+              className=" flex gap-4 bg-primary w-max px-4 2xl:px-6 items-center rounded-full py-3 relative mt-2 cursor-pointer popup_scale"
+              onClick={handleSignup}
+            >
               <Image
                 src={popupcoin}
                 alt="popupcoin"
