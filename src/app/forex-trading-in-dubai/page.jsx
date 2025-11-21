@@ -19,7 +19,8 @@ const faqData = [
     answer: `To begin forex trading in Dubai UAE, simply register for a live trading account using the link below. FlipTrade Group makes it easy to start your journey in the forex share market and global financial markets. <a href='https://client.fliptradegroup.com/trader/registration' target="_blank">https://client.fliptradegroup.com/trader/registration</a>`
   },
   {
-    question: "How do I change the password for my FlipTrade Group Secure Client Area?",
+    question:
+      "How do I change the password for my FlipTrade Group Secure Client Area?",
     answer: `If you are trading with one of the trusted forex brokers Dubai, you can reset your password anytime. Click the ‘Forgot Password’ link on the login page to reset it securely. <a href='https://client.fliptradegroup.com/trader' target="_blank">https://client.fliptradegroup.com/trader</a>`
   },
   {
@@ -47,6 +48,11 @@ const faqData = [
     answer: `If you need help with forex trading time in Dubai, account setup, or platform support, our team is available 24/7 via email, phone, or live chat. <a href='https://www.fliptradegroup.com/contact-us' target="_blank">https://www.fliptradegroup.com/contact-us</a>`
   }
 ];
+export const metadata = {
+  title: "Forex Trading in Dubai - Forex Market | FlipTrade Group",
+  description:
+    "Explore Forex trading in Dubai with insights on regulations, approved brokers, market benefits, risks, & essential tips to help beginners trade safely and effectively."
+};
 const page = () => {
   return (
     <div>

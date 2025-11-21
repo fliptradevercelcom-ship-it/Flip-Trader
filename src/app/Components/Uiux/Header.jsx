@@ -49,7 +49,7 @@ const navlistdata = [
           { id: "2", name: "MetaTrader 5 (MT5)", link: "/platform" },
           { id: "tradingcondidstions", name: "WebTrader", link: "/web-trading" },
           // { id: "accounttfdsfypes", name: "Mobile App", link: "/" },
-          { id: "riskmanafdsgement", name: "Social & Copy Trading", link: "/social-&-copy-trading" }
+          { id: "riskmanafdsgement", name: "Social & Copy Trading", link: "/social-copy-trading" }
         ]
       },
       {
@@ -158,7 +158,7 @@ const navlistdata = [
           { id: "2", name: "MetaTrader 5 (MT5)", link: "/platform" },
           { id: "tradingcondidstions", name: "WebTrader", link: "/web-trading" },
           { id: "accounttfdsfypes", name: "Mobile App", link: "/" },
-          { id: "riskmanafdsgement", name: "Social & Copy Trading", link: "/social-&-copy-trading" }
+          { id: "riskmanafdsgement", name: "Social & Copy Trading", link: "/social-copy-trading" }
         ]
       },
       {

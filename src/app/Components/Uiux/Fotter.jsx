@@ -18,8 +18,8 @@ import { usePathname } from "next/navigation";
 const footerdata = {
   policydata: [
     { pagelink: "/privacy-policy", pagename: "Privacy Policy" },
-    { pagelink: "/aml-&-ctf-policy", pagename: "AML & CTF Policy" },
-    { pagelink: "/refund-&-withdrawal", pagename: "Refund & Withdrawal" },
+    { pagelink: "/aml-ctf-policy", pagename: "AML & CTF Policy" },
+    { pagelink: "/refund-withdrawal", pagename: "Refund & Withdrawal" },
     { pagelink: "/risk-warning", pagename: "Risk Warning" },
     { pagelink: "/terms-and-conditions", pagename: "Terms & Conditions" },
   ],
@@ -32,13 +32,13 @@ const footerdata = {
         { pagelink: "/contact-us", pagename: "Contact Us" },
         // { pagelink: "/privacy-policy", pagename: "Privacy Policy" },
         { pagelink: "/faq", pagename: "FAQs" },
-        // { pagelink: "/aml-&-ctf-policy", pagename: "AML & CTF Policy" },
+        // { pagelink: "/aml-ctf-policy", pagename: "AML & CTF Policy" },
         {
           pagelink: "/complaint-handling-procedures",
           pagename: "Complaint Handling Procedures",
         },
         { pagelink: "/cookies", pagename: "Cookies" },
-        // { pagelink: "/refund-&-withdrawal", pagename: "Refund & Withdrawal" },
+        // { pagelink: "/refund-withdrawal", pagename: "Refund & Withdrawal" },
         // { pagelink: "/risk-warning", pagename: "Risk Warning" },
         // { pagelink: "/terms-and-conditions", pagename: "Terms & Conditions" }
       ],
@@ -78,7 +78,7 @@ const footerdata = {
         { pagelink: "/web-trading", pagename: "WebTrader" },
         // { pagelink: "/pip-calculator", pagename: "Mobile App" },
         {
-          pagelink: "/social-&-copy-trading",
+          pagelink: "/social-copy-trading",
           pagename: "Social & Copy Trading",
         },
       ],

@@ -16,6 +16,7 @@ const Seobanner = () => {
             <Title
               title={"Forex Trading in Dubai, Your <br/> Trusted Global Broker"}
               color={"gradient_text"}
+              ish1={true}
             />
             <div className="py-3 max-w-7xl m-auto">
               <Discription

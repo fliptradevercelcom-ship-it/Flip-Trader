@@ -174,7 +174,7 @@ export const Promo = () => {
        <div className="flex flex-col-reverse xl:flex-row px-[3%] gap-6">
          <div className="relative my-auto max-w-5xl xl:w-[60%]">
           <h1 className="mb-6 bg-gradient-to-r from-white via-[#b39cff] to-white bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl md:text-7xl leading-[normal] lg:leading-24 text-center xl:text-start">
-            Get a Deposit Bonus of <br/> up to $500
+            Get a Deposit Bonus of <br/> up to $250
           </h1>
           <h2 className="mb-4 text-xl sm:text-2xl md:text-3xl text-center xl:text-start">
             Fliptrade will credit a 100% bonus on your first deposit
@@ -205,7 +205,7 @@ export const Promo = () => {
               </span>
             </Link> */}
             <Link
-              href="https://wa.me/66815837672"
+              href="https://wa.me/+918852099227"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex w-full max-w-xs items-center justify-center rounded-full border-2 border-[#25D366] bg-[#25D366] px-8 py-3 text-base text-[#060608] transition-all duration-300 hover:scale-105 hover:bg-transparent hover:text-white hover:shadow-[0_0_30px_rgba(37,211,102,0.5)] sm:w-auto sm:max-w-none sm:px-12 sm:py-4 sm:text-lg"

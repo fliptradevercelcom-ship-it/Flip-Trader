@@ -38,7 +38,7 @@ export default function Signuppopup() {
     localStorage.setItem("popupHiddenUntil", hideUntil);
     document.body.style.overflow = "auto";
     window.location.href =
-      "https://wa.me/+66815837672";
+      "https://wa.me/+918852099227";
   };
 
   if (!showPopup) return null;
@@ -74,7 +74,7 @@ export default function Signuppopup() {
           <div className="flex flex-col items-center rotate-[355deg] relative left-2">
             <h2 className="text-[28px] lg:text-[40px] xl:text-[48px] 2xl:text-[60px] text-primary font-bold leading-[normal]
             text-center px-16">
-              Get $500
+              Get $250
             </h2>
             <h2 className="text-[28px] lg:text-[40px] xl:text-[48px] 2xl:text-[60px] text-primary font-bold leading-[normal]
             text-center px-16">
@@ -96,7 +96,7 @@ export default function Signuppopup() {
                 className="w-[60px] absolute -left-2"
               />
               <span className="text-base 2xl:text-lg font-light font_ternary text-do aos-init aos-animate underline ps-[40px]">
-                Claim $500 Bonus Now!
+                Claim $250 Bonus Now!
               </span>
             </div>
           </div>

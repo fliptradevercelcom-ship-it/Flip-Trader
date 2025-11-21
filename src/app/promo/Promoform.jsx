@@ -95,7 +95,7 @@ const Promoform = () => {
       <div>
         <div className="py-3">
           <h5 className="text-center text-primary text-lg lg:text-xl xl:text-3xl 2xl:text-4xl">
-            Sign Up To Get $500 
+            Sign Up To Get $250 
           </h5>
         </div>
         <div className="font_ternary px-2 pb-5   lg:pb-7 ">
@@ -173,7 +173,7 @@ const Promoform = () => {
             <span className={`text-base 2xl:text-lg font-light font_ternary text-do aos-init aos-animate underline ps-[40px] ${loading ? "cursor-not-allowed opacity-70" : "cursor-pointer"} `} 
               onClick={!loading ? handlesubmit : undefined}
             >
-              {loading ? 'Loading' : ' Claim $500 Bonus Now!'} 
+              {loading ? 'Loading' : ' Claim $250 Bonus Now!'} 
             </span>
           </div>
         </div>
