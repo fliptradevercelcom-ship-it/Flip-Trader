@@ -23,7 +23,7 @@ const Forextradinglegal = () => {
             />
           </div>
         </div>
-        <div className="grid grid-cols-2 pt-18">
+        <div className="grid lg:grid-cols-2 gap-y-8 pt-12 md:pt-18">
           {tradeInfo.map((data, index) =>
             <div
               key={index}
