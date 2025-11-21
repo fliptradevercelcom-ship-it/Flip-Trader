@@ -51,7 +51,7 @@ const Howstart = () => {
           </div>
         </div>
 
-        <div className="pt-12 grid grid-cols-3 gap-8">
+        <div className="pt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {stepsData.map((data, index) =>
             <div
               className="shadow-[0_-15px_20px_-16px_#6a40ec,0_15px_16px_-15px_#6a40ec]  px-12 py-6  rounded-4xl z-[2] flex justify-center flex-col"

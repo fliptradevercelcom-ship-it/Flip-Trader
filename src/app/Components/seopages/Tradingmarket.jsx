@@ -27,7 +27,7 @@ const marketsname = [
     pagelink: "/commodities"
   },
   {
-    pagename: "Forex share market assets",
+    pagename: "Forex Stock",
     pagelink: "/stocks"
   }
 ];
@@ -45,7 +45,7 @@ const Tradingmarket = () => {
           </div>
         </div>
 
-        <div className="pt-12 grid grid-cols-3 gap-8">
+        <div className="pt-12 grid grid-cols-2 lg:grid-cols-3 gap-8">
           {marketsname.map((data, index) =>
             <div className="flex justify-center" key={index}>
               <Link href={data.pagelink}>
