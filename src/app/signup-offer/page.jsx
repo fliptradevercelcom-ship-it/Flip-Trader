@@ -32,7 +32,7 @@ const page = () => {
             >
               <span className="relative z-10 flex items-center gap-2 text-white">
                 <Zap className="h-5 w-5" />
-                Claim Your Bonus
+                Claim Your Reward
               </span>
               <div className="absolute inset-0 bg-primary opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
             </Link>
