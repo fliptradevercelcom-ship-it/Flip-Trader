@@ -1,28 +1,19 @@
 import React from "react";
 import Title from "../Uiux/Title";
 import Discription from "../Uiux/Discription";
-import newgencardbg from "../../../../public/images/newgencardbg.webp";
 
-const platyformdata = [
-  "Multi-asset trading capabilities",
-  "38 technical indicators",
-  "21 timeframes",
-  "Advanced charting tools",
-  "Automated trading with Expert Advisors",
-  "Full access on iOS, Android, Windows, and Mac"
-];
-const Seobestplatform = () => {
+const Seobestplatform = ({title,description,platyformdata}) => {
   return (
     <div>
       <div className="inn_container pt-12 xl:pt-24 2xl:pt-36">
         <div className="grid grid-col-1  pb-5 text-center  relative z-[2]">
           <Title
-            title="Best Platform for Forex Trading in <br/> <span class='gradient_text'> Dubai UAE </span>"
+            title={title}
             color="text-white"
           />
           <div className="flex justify-center items-center max-w-7xl m-auto">
             <Discription
-              dispription={`FlipTrade Group is built for traders who demand fast execution, low spreads, and advanced tools. Our MetaTrader 5 (MT5) platform is preferred by thousands of traders performing forex trading in Dubai UAE, offering features like`}
+              dispription={description}
               color="text-white"
             />
           </div>
