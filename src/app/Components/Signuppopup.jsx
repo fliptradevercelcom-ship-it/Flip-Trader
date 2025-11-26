@@ -4,9 +4,11 @@ import popupbanner from "../../../public/images/popupbanner.webp";
 import cross from "../../../public/icons/popupcross.svg";
 import Image from "next/image";
 import popupcoin from "../../../public/icons/popupcoin.svg";
+import { usePathname } from "next/navigation";
 export default function Signuppopup() {
   const [showPopup, setShowPopup] = useState(false);
   const [showcross, setshowcross] = useState(false);
+  const currentpath = usePathname();
   useEffect(() => {
     const popupHiddenUntil = localStorage.getItem("popupHiddenUntil");
     const now = Date.now();
@@ -17,7 +19,8 @@ export default function Signuppopup() {
 
     const timer = setTimeout(() => {
       setShowPopup(true);
-      document.body.style.overflow = "hidden";
+      currentpath === '/signup-offer' ? null : document.body.style.overflow = "hidden";
+      
     }, 5000);
     const timercross = setTimeout(() => {
       setshowcross(true);
@@ -44,7 +47,12 @@ export default function Signuppopup() {
   if (!showPopup) return null;
 
   return (
-    <div style={styles.overlay}>
+    <>
+     {
+      currentpath === '/signup-offer' 
+      ? null 
+      :
+       <div style={styles.overlay}>
       <div className="relative">
         <Image
           src={popupbanner}
@@ -103,6 +111,9 @@ export default function Signuppopup() {
         </div>
       </div>
     </div>
+     }
+    </>
+   
   );
 }
 
