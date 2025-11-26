@@ -1,24 +1,19 @@
 import React from "react";
 import Title from "../Uiux/Title";
 import Discription from "../Uiux/Discription";
-const tradeInfo = [
-  "DFSA (Dubai Financial Services Authority)",
-  "SCA (Securities and Commodities Authority)"
-];
-const Forextradinglegal = () => {
+
+const Forextradinglegal = ({title,description1,tradeInfo,description2}) => {
   return (
     <div>
       <div className="inn_container pt-12 xl:pt-24 2xl:pt-36">
         <div className="text-center max-w-7xl m-auto">
           <Title
-            title={"Is Forex Trading Legal and Regulated in Dubai?"}
+            title={title}
             color={"gradient_text"}
           />
           <div className="pt-3">
             <Discription
-              dispription={
-                "Yes, forex trading in Dubai UAE is legal and regulated under authorities such as"
-              }
+              dispription={description1}
               color={"text-white"}
             />
           </div>
@@ -64,9 +59,7 @@ const Forextradinglegal = () => {
         </div>
         <div className="pt-12 text-center max-w-7xl m-auto">
           <Discription
-            dispription={
-              "FlipTrade Group operates with complete compliance and ensures a safe, secure, and transparent environment for all clients. Our goal is to become the most trusted choice among forex brokers Dubai traders depend on for fairness and reliability."
-            }
+            dispription={description2}
             color={"text-white"}
           />
         </div>

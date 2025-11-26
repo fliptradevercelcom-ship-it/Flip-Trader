@@ -218,7 +218,7 @@ export const Promo = () => {
           </div>
         </div>
         <div className="flex justify-center pb-12 xl:pb-0 xl:w-[40%]">
-        <Promoform/>
+        <Promoform title={'Sign Up To Get $250'}/>
         </div>
        </div>
         
