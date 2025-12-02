@@ -26,7 +26,7 @@ const Faqbanner = () => {
               href={"https://client.fliptradegroup.com/trader/registration"}
             >
               <Button
-                btn_name="Become IB Partner"
+                btn_name="Flip Trade Group"
                 border_color="border-primary"
                 btn_bg={"bg-primary"}
                 shadow={true}

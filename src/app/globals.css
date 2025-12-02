@@ -413,7 +413,7 @@ input[type=number] {
   background-color: #fff !important;
 }
 
-/* 🟣 Smooth Animated Black + Purple Gradient Background (with top/bottom fade) */
+/*  Smooth Animated Black + Purple Gradient Background (with top/bottom fade) */
 .bg-animated-gradient {
   position: relative;
   background: linear-gradient(
@@ -428,7 +428,7 @@ input[type=number] {
   overflow: hidden;
 }
 
-/* ✨ Soft purple lines (subtle motion) */
+/*  Soft purple lines (subtle motion) */
 .bg-animated-gradient::before {
   content: "";
   position: absolute;
@@ -476,7 +476,7 @@ input[type=number] {
   }
 }
 
-/* 🌀 Slow diagonal line drift */
+/*  Slow diagonal line drift */
 @keyframes softLines {
   0% {
     background-position: 0 0;

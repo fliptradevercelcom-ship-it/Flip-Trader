@@ -44,7 +44,7 @@ function page() {
     <div>
       <Mt5banner />
       <Mt5keyfeature />
-      <Mt5anywhere />
+      {/* <Mt5anywhere /> */}
       <Mt5card />
       <Mt5download />
       <div className=" bg-theme ">

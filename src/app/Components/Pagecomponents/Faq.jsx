@@ -48,7 +48,7 @@ const Faq = ({ faqData, pt }) => {
             <div
               className={`overflow-hidden transition-all duration-500 ease-in-out`}
               style={{
-                maxHeight: activeIndex === index ? "200px" : "0px"
+                maxHeight: activeIndex === index ? "500px" : "0px"
               }}
             >
               <div
