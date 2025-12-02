@@ -194,7 +194,12 @@ const faqsmaindata = [
             {
                 question: "Who are FlipTrade Group’s liquidity providers?",
                 answer:
-                    "FlipTrade Group partners with leading global liquidity providers to ensure deep liquidity, competitive spreads, and fast execution for traders in CFDs, crypto, indices, forex, and more. Our relationships with top-tier institutions in the Saint Lucia markets allow us to deliver reliable pricing and seamless trading conditions for all clients."
+                    `Flip Trade Group works with some of the most trusted and globally recognized liquidity providers to ensure deep liquidity, tight spreads, and fast order execution for all our traders. <br/>
+                    Our primary liquidity providers include:<br/>
+                    • <strong> JP Morgan </strong> – One of the world’s largest financial institutions, providing institutional-grade liquidity and high-confidence pricing.<br/>
+                    • <strong> FinalTo </strong> – A well-established liquidity provider known for its advanced technology, fast execution, and diversified market access.<br/>
+                    • <strong> LMAX </strong> – A globally regulated institutional exchange offering transparent, no-last-look liquidity with ultra-fast execution speeds.<br/>
+                    • <strong> Mass Market </strong> – A reliable institutional liquidity source offering stable pricing and consistent market depth.`
             },
             {
                 question: "Who is FlipTrade Group regulated by?",

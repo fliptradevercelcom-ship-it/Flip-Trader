@@ -15,7 +15,7 @@ const Button = ({
       <button
         className={`rainbow-btn cursor-pointer ${btn_bg} ${border_color} ${shadow
           ? "ui_btn_shadow"
-          : ""} website_design_by_Ankit_ankitverma40289@gmail.com`}
+          : ""} website_design&develop_by_Ankit_`}
       >
         {icon &&
           <span className="icon-wrap">
