@@ -7,7 +7,7 @@ import buildtraderimagelowerph from "../../../../public/images/explorelowerphgra
 import contestleaderboard from "../../../../public/images/contestleaderboard.webp";
 import Button from "../Uiux/Button";
 import Link from "next/link";
-const Contestleaderboard = () => {
+const Contestleaderboard = ({btn_name}) => {
   return (
     <div className="relative">
        <video
@@ -47,7 +47,7 @@ const Contestleaderboard = () => {
                   href={"https://client.fliptradegroup.com/trader/registration"}
                 >
                   <Button
-                    btn_name={`Join the Contest Now`}
+                    btn_name={btn_name}
                     btn_bg="bg-primary"
                     text_color="text-white"
                     border_color="border-transparent"
@@ -87,14 +87,14 @@ const Contestleaderboard = () => {
                   />
                 </div>
 
-                <div className="pt-4 xl:pt-2 flex gap-2 xl:gap-5">
+                <div className="pt-4 xl:pt-2 flex gap-2 xl:gap-5 justify-center">
                   <Link
                     href={
                       "https://client.fliptradegroup.com/trader/registration"
                     }
                   >
                     <Button
-                      btn_name={`Join the Contest Now`}
+                      btn_name={btn_name}
                       btn_bg="bg-primary"
                       text_color="text-white"
                       border_color="border-transparent"

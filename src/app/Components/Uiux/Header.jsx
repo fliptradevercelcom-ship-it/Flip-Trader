@@ -532,6 +532,25 @@ export default function Header() {
           }`}
       >
         {/* Navigation Content */}
+        <div className=" py-2 px-4 border-t-[1px] border-gray-200">
+          <div className="flex gap-4 items-center justify-center">
+            <Link href={"https://client.fliptradegroup.com/trader/registration"}>
+              <Button
+                icon={usericon}
+                btn_name="Sign Up"
+                btn_bg="bg-primary"
+                text_color="text-white"
+                border_color="border-primary"
+                shadow={true}
+              />
+            </Link>
+            <Link href={"https://client.fliptradegroup.com/trader"}>
+              <button className="w-full text-subprimary hover:text-primary text-base font-medium py-1.5 px-6 cursor-pointer hover:underline transition-all rounded-full border-subprimary border-[1.5px]">
+                Login
+              </button>
+            </Link>
+          </div>
+        </div>
         <div className="flex-1 overflow-y-auto">
           <div className="">
             {navlistdata.map((data) => (
@@ -565,25 +584,7 @@ export default function Header() {
         </div>
 
         {/* Footer Buttons */}
-        <div className="p-6 border-t border-gray-200 bg-gray-50">
-          <div className="flex gap-4 items-center justify-center">
-            <Link href={"https://client.fliptradegroup.com/trader/registration"}>
-              <Button
-                icon={usericon}
-                btn_name="Sign Up"
-                btn_bg="bg-primary"
-                text_color="text-white"
-                border_color="border-primary"
-                shadow={true}
-              />
-            </Link>
-            <Link href={"https://client.fliptradegroup.com/trader"}>
-              <button className="w-full text-gray-700 hover:text-primary text-base font-medium py-3 px-6 cursor-pointer hover:underline transition-all">
-                Login
-              </button>
-            </Link>
-          </div>
-        </div>
+        
       </div>
 
       {/* Hover Dropdown Section */}

@@ -80,16 +80,16 @@ export default function Signuppopup() {
         {/* main text */}
         <div className="absolute w-full h-full flex items-center justify-center top-0 left-0">
           <div className="flex flex-col items-center rotate-[355deg] relative left-2">
-            <h2 className="text-[28px] lg:text-[40px] xl:text-[48px] 2xl:text-[60px] text-primary font-bold leading-[normal]
+            <h2 className="text-[23px] lg:text-[35px] xl:text-[43px] 2xl:text-[55px] text-primary font-bold leading-[normal]
             text-center px-16">
-              Get $250
+              Black Friday 
             </h2>
-            <h2 className="text-[28px] lg:text-[40px] xl:text-[48px] 2xl:text-[60px] text-primary font-bold leading-[normal]
+            <h2 className="text-[23px] lg:text-[35px] xl:text-[43px] 2xl:text-[55px] text-primary font-bold leading-[normal]
             text-center px-16">
-              Bonus
+              Sale!
             </h2>
             <p className="text-[22px] lg:text-[30px] 2xl:text-[40px] text-secondary text-center">
-              on first Sign Up
+             Get $250 Bonus 
             </p>
 
             <div
@@ -104,7 +104,7 @@ export default function Signuppopup() {
                 className="w-[60px] absolute -left-2"
               />
               <span className="text-base 2xl:text-lg font-light font_ternary text-do aos-init aos-animate underline ps-[40px]">
-                Claim $250 Bonus Now!
+               Claim Black Friday Bonus
               </span>
             </div>
           </div>

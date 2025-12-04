@@ -197,7 +197,7 @@ const faqsmaindata = [
                     `Flip Trade Group works with some of the most trusted and globally recognized liquidity providers to ensure deep liquidity, tight spreads, and fast order execution for all our traders. <br/>
                     Our primary liquidity providers include:<br/>
                     • <strong> JP Morgan </strong> – One of the world’s largest financial institutions, providing institutional-grade liquidity and high-confidence pricing.<br/>
-                    • <strong> FinalTo </strong> – A well-established liquidity provider known for its advanced technology, fast execution, and diversified market access.<br/>
+                    • <strong> Finalto </strong> – A well-established liquidity provider known for its advanced technology, fast execution, and diversified market access.<br/>
                     • <strong> LMAX </strong> – A globally regulated institutional exchange offering transparent, no-last-look liquidity with ultra-fast execution speeds.<br/>
                     • <strong> Mass Market </strong> – A reliable institutional liquidity source offering stable pricing and consistent market depth.`
             },

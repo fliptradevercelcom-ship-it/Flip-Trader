@@ -36,22 +36,39 @@ const faqData = [
       "Yes, the calculator works for standard, mini, and micro accounts, making it useful for all traders."
   }
 ];
-
+const workstep = [
+  {
+    title: "Account Currency",
+    description: "Select your trading account <br/> currency."
+  },
+  {
+    title: "Currency Pair",
+    description: "Choose the pair you're trading <br/> (e.g., EUR/USD)."
+  },
+  {
+    title: "Currency Pair",
+    description: "Enter your position size."
+  }
+];
 function Pipcalculatormain() {
   const calculatorRef = useRef(null);
 
   const scrollToCalculator = () => {
-    calculatorRef.current?.scrollIntoView({ behavior: "smooth",top: '0' });
+    calculatorRef.current?.scrollIntoView({ behavior: "smooth", top: '0' });
   };
   return (
     <div>
-      <Pipbanner onScrollClick={scrollToCalculator}/>
-      <Pipworkstep />
+      <Pipbanner onScrollClick={scrollToCalculator} />
+      <Pipworkstep
+        title={'What Is a Pip? & <br/> How it works'}
+        dispription={"A pip (percentage in point) is the <br/> smallest price movement a currency <br/> pair can make based on market convention."}
+        pointstep={workstep}
+      />
       <div ref={calculatorRef}>
-       <Pipcalculator />
+        <Pipcalculator />
       </div>
       <Pipuse />
-      <Pipvalue onScrollClick={scrollToCalculator}/>
+      <Pipvalue onScrollClick={scrollToCalculator} />
       <div className="bg-theme pb-12 md:pb-18 lg:py-24">
         <div className="inn_container">
           <div className="text-center">

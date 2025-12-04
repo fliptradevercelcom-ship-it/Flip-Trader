@@ -4,21 +4,8 @@ import Title from "../Uiux/Title";
 import Discription from "../Uiux/Discription";
 import { useAutoScroll } from "../../../hooks/useAutoScroll";
 
-const workstep = [
-  {
-    title: "Account Currency",
-    description: "Select your trading account <br/> currency."
-  },
-  {
-    title: "Currency Pair",
-    description: "Choose the pair you're trading <br/> (e.g., EUR/USD)."
-  },
-  {
-    title: "Currency Pair",
-    description: "Enter your position size."
-  }
-];
-export default function Pipworkstep() {
+
+export default function Pipworkstep({title , dispription , pointstep}) {
   useAutoScroll("pip-cal", { delay: 800 });
   return (
     <div className="bg-theme py-12 md:py-18 lg:py-32" id="pip-cal">
@@ -26,20 +13,20 @@ export default function Pipworkstep() {
         <div className="grid grid-cols-1 lg:grid-cols-2 text-center lg:text-start">
           <div>
             <Title
-              title="What Is a Pip? & <br/> How it works"
+              title={title}
               color="gradient_text"
             />
           </div>
           <div className="flex justify-center items-center">
             <Discription
-              dispription="A pip (percentage in point) is the <br/> smallest price movement a currency <br/> pair can make based on market convention."
+              dispription={dispription}
               color="text-white"
             />
           </div>
         </div>
         <div className="pt-10">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl m-auto">
-            {workstep.map((data, index) =>
+            {pointstep.map((data, index) =>
               <div key={index}>
                 <div className="m-auto w-[75px] xl:w-[90px] 2xl:w-[122px] h-[75px] xl:h-[90px] 2xl:h-[122px] bg-primary rounded-[50%] text-2xl xl:text-3xl 2xl:text-[40px] font_ternary flex items-center justify-center text-white">
                   0{index + 1}
