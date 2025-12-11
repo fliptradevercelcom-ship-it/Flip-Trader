@@ -7,10 +7,9 @@ import Button from "../Uiux/Button";
 import Image from "next/image";
 const Spredswhy = () => {
   return (
-    <div className="inn_container">
-      <div className="pt-12 ">
+    <div className="inn_container pt-12 md:pt-18 lg:pt-28 xl:pt-32">
+      <div className="">
         <div className=" bg-cover bg-center">
-          <div className="inn_container">
             <div className="grid grid-cols-1 md:grid-cols-[3fr_4fr]">
               <div>
                 <Image
@@ -23,7 +22,7 @@ const Spredswhy = () => {
               </div>
               <div className="flex flex-col justify-center items-center ps-4">
                 <div
-                  className="text-center lg:text-start pt-12 md:pt-0 px-5 md:px-0 lg:max-w-[95%] lg:ms-auto"
+                  className="text-center lg:text-start pt-12 md:pt-0  md:px-0 lg:max-w-[95%] lg:ms-auto"
                   id="trade-download"
                 >
                   <Title
@@ -51,7 +50,6 @@ const Spredswhy = () => {
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </div>

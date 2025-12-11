@@ -21,7 +21,7 @@ function page() {
       <Exploremarket />
       <Calculatepipvalue />
       <Workprocess />
-      <Contestleaderboard />
+      <Contestleaderboard btn_name={'Join the Contest Now'}/>
       <Tradingaccounts />
       <Tradeyourway />
     </div>
