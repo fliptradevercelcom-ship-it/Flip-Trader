@@ -503,19 +503,19 @@ export default function Spreadtable() {
         <table className="w-full border-collapse">
           <thead>
             <tr className="bg-primary text-white">
-              <th className="px-6 py-5 text-left font-normal text-xl">
+              <th className="px-6 py-5 text-center md:text-left font-normal text-base  md:text-xl">
                 Instrument
               </th>
-              <th className="px-6 py-5 text-left font-normal text-xl">
+              <th className="px-6 py-5 text-center md:text-left font-normal text-base  md:text-xl">
                 Minimum Spread
               </th>
-              <th className="px-6 py-5 text-left font-normal text-xl">
+              <th className="px-6 py-5 text-center md:text-left font-normal text-base  md:text-xl">
                 Typical Spread
               </th>
-              <th className="px-6 py-5 text-left font-normal text-xl">
+              <th className="px-6 py-5 text-center md:text-left font-normal text-base  md:text-xl">
                 Long Position
               </th>
-              <th className="px-6 py-5 text-left font-normal text-xl">
+              <th className="px-6 py-5 text-center md:text-left font-normal text-base  md:text-xl">
                 Short Position
               </th>
             </tr>
