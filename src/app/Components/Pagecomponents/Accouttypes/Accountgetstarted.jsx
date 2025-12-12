@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import boxbg from "../../../../../public/banners/box-bg.webp";
+import boxbg from "../../../../../public/banners/box-bg copy.webp";
 import Title from "../../Uiux/Title";
 import Discription from "../../Uiux/Discription";
 import accountarrowsecondary from "../../../../../public/images/accountarrowsecondary.webp";

@@ -7,7 +7,7 @@ import Discription from "../Uiux/Discription";
 import Link from "next/link";
 import Button from "../Uiux/Button";
 import Image from "next/image";
-import boxbg from "../../../../public/banners/box-bg.webp";
+import boxbg from "../../../../public/banners/box-bg copy.webp";
 import joint from "../../../../public/images/joint.webp";
 import Righttextgrap from "./Righttextgrap";
 import { useAutoScroll } from "../../../hooks/useAutoScroll";

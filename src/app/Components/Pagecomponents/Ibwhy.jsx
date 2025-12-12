@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import boxbg from "../../../../public/banners/box-bg.webp";
+// import boxbg from "../../../../public/banners/box-bg.webp";
 import Title from "../Uiux/Title";
 import Discription from "../Uiux/Discription";
 import firebtn from "../../../../public/icons/firebtnicon.svg";
@@ -32,7 +32,7 @@ const Ibwhy = () => {
     <div className="bg-theme">
       <div
         className="bg-contain"
-        style={{ backgroundImage: `url(${boxbg.src})` }}
+        // style={{ backgroundImage: `url(${boxbg.src})` }}
       >
         <div className="inn_container pt-12">
           <div className="grid grid-col-1 md:grid-cols-2 pb-5 text-center md:text-start relative z-[2]" id="ib-why">
