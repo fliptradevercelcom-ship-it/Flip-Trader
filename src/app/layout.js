@@ -9,22 +9,22 @@ import Telegramlink from "./Telegramlink";
 import Aosinit from "./Components/Pagecomponents/Aosinit";
 import Signuppopup from "./Components/Signuppopup";
 const monaSans = localFont({
-  src: [{ path: "../../public/fonts/Mona-Sans-MediumWide.ttf" }],
+  src: [{ path: "../public/fonts/Mona-Sans-MediumWide.ttf" }],
 
   variable: "--font-mona-sans",
 });
 const monaSansnormal = localFont({
-  src: [{ path: "../../public/fonts/Mona-Sans.ttf" }],
+  src: [{ path: "../public/fonts/Mona-Sans.ttf" }],
 
   variable: "--font-mona-sans-normal",
 });
 const monaSansnormallight = localFont({
-  src: [{ path: "../../public/fonts/Mona-Sans-LightWide.ttf" }],
+  src: [{ path: "../public/fonts/Mona-Sans-LightWide.ttf" },],
 
   variable: "--font-mona-sans-normallight",
 });
 const monaSanswidenormal = localFont({
-  src: [{ path: "../../public/fonts/Mona-Sans-UltraLightWide.ttf" }],
+  src: [{ path: "../public/fonts/Mona-Sans-UltraLightWide.ttf" }],
 
   variable: "--font-mona-sans-monaSanswidenormal",
 });
