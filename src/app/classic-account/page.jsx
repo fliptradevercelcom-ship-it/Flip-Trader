@@ -9,9 +9,9 @@ import classicaccgrapph from "../../../public/images/classicaccgrapph.webp";
 import Title from "../Components/Uiux/Title";
 import Faq from "../Components/Pagecomponents/Faq";
 import classicbannerright from "/public/images/classicbannerright.webp";
-import acountcard1 from "/public/icons/acountcard1.svg";
-import acountcard2 from "/public/icons/acountcard2.svg";
-import acountcard3 from "/public/icons/acountcard3.svg";
+import acountcard1 from "../../../public/icons/acountcard1.svg";
+import acountcard2 from "../../../public/icons/acountcard2.svg";
+import acountcard3 from "../../../public/icons/acountcard3.svg";
 import Righttextgrap from "../Components/Pagecomponents/Righttextgrap";
 
 export const metadata = {
