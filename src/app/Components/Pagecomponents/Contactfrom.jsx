@@ -3,7 +3,7 @@ import React from "react";
 // import formsidebanner from "../../../../public/images/formsidebanner.webp";
 import Image from "next/image";
 import Maincontactform from "./Maincontactform";
-import contactusbanner from "../../../../public/banners/contactusbanner.webp";
+import contactusbanner from "../../../../public/banners/contactusbannernew.webp";
 import facebookwhite from "../../../../public/icons/facebookwhite.svg";
 import instawhite from "../../../../public/icons/instawhite.svg";
 import youtubewhite from "../../../../public/icons/youtubewhite.svg";
