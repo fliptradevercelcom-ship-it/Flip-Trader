@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "../../Uiux/Title";
 import Discription from "../../Uiux/Discription";
-import boxbg from "../../../../../public/banners/box-bg.webp";
+// import boxbg from "../../../../../public/banners/box-bg.webp";
 import Image from "next/image";
 import accountriver from "../../../../../public/images/accountriver.webp";
 const Accountgetstart = ({
@@ -30,7 +30,7 @@ const Accountgetstart = ({
       <div className="pt-12 md:pt-24">
         <div
           className="relative bg-cover hidden xl:block"
-          style={{ backgroundImage: `url(${boxbg.src})` }}
+          // style={{ backgroundImage: `url(${boxbg.src})` }}
         >
           <div className="pt-[15%]">
             <Image
