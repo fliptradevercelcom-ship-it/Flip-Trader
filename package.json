@@ -2,7 +2,9 @@
   "name": "fliptrade",
   "version": "0.1.0",
   "private": true,
-  "engines": { "node": "20.x" },
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -13,7 +15,7 @@
     "@lottiefiles/react-lottie-player": "^3.6.0",
     "aos": "^2.3.4",
     "lucide-react": "^0.553.0",
-    "next": "15.5.3",
+    "next": "15.5.9",
     "nodemailer": "^7.0.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",
