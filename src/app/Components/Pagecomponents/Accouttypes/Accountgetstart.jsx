@@ -106,7 +106,7 @@ const Accountgetstart = ({
 
         <div
           className=" bg-cover block xl:hidden"
-          style={{ backgroundImage: `url(${boxbg.src})` }}
+          // style={{ backgroundImage: `url(${boxbg.src})` }}
         >
           <div className="inn_container  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-3 pb-12">
             {cardphdata.map((data, index) =>
