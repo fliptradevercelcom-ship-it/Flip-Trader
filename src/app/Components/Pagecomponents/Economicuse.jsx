@@ -7,7 +7,7 @@ import Discription from "../Uiux/Discription";
 import Link from "next/link";
 import Button from "../Uiux/Button";
 import Image from "next/image";
-import boxbg from "../../../../public/banners/box-bg copy.webp";
+// import boxbg from "../../../../public/banners/box-bg copy.webp";
 import joint from "../../../../public/images/joint.webp";
 import Righttextgrap from "./Righttextgrap";
 import { useAutoScroll } from "../../../hooks/useAutoScroll";
@@ -46,7 +46,7 @@ function Economicuse() {
       <div className="md:py-12">
         <div
           className="bg-contain md:bg-cover py-12 md:py-18"
-          style={{ backgroundImage: `url(${boxbg.src})` }}
+          // style={{ backgroundImage: `url(${boxbg.src})` }}
         >
           <div className="inn_container">
             <div className="text-center lg:text-start pb-8 md:pb-0" id="eco-calender">

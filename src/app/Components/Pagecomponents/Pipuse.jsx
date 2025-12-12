@@ -1,5 +1,5 @@
 import React from "react";
-import boxbg from "../../../../public/banners/box-bg copy.webp";
+// import boxbg from "../../../../public/banners/box-bg copy.webp";
 import Title from "../Uiux/Title";
 const tradeInfo = [
   {
@@ -26,7 +26,7 @@ const Pipuse = () => {
     <div className="bg-theme">
       <div
         className="bg-contain"
-        style={{ backgroundImage: `url(${boxbg.src})` }}
+        // style={{ backgroundImage: `url(${boxbg.src})` }}
       >
         <div className="max-w-[1340px] m-auto py-18 px-[3%] xl:px-0">
           <div className="text-center">

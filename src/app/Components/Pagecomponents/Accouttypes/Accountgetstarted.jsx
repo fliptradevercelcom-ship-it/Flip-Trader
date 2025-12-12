@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import boxbg from "../../../../../public/banners/box-bg copy.webp";
+// import boxbg from "../../../../../public/banners/box-bg copy.webp";
 import Title from "../../Uiux/Title";
 import Discription from "../../Uiux/Discription";
 import accountarrowsecondary from "../../../../../public/images/accountarrowsecondary.webp";
@@ -29,7 +29,7 @@ const Accountgetstarted = ({
       />
       <div
         className="bg-cover bg-no-repeat "
-        style={{ backgroundImage: `url(${boxbg.src})` }}
+        // style={{ backgroundImage: `url(${boxbg.src})` }}
       >
         <div className="inn_container  py-16 md:py-20 lg:py-40 bg-contain">
           <div
