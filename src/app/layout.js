@@ -8,25 +8,48 @@ import Metalinksseo from "./Metalinksseo";
 import Telegramlink from "./Telegramlink";
 import Aosinit from "./Components/Pagecomponents/Aosinit";
 import Signuppopup from "./Components/Signuppopup";
+// const monaSans = localFont({
+//   src: [{ path: "../fonts/Mona-Sans-MediumWide.ttf" }],
+
+//   variable: "--font-mona-sans",
+// });
+// const monaSansnormal = localFont({
+//   src: [{ path: "../fonts/Mona-Sans.ttf" }],
+
+//   variable: "--font-mona-sans-normal",
+// });
+// const monaSansnormallight = localFont({
+//   src: [{ path: "../fonts/Mona-Sans-LightWide.ttf" }],
+
+//   variable: "--font-mona-sans-normallight",
+// });
+// const monaSanswidenormal = localFont({
+//   src: [{ path: "../fonts/Mona-Sans-UltraLightWide.ttf" }],
+
+//   variable: "--font-mona-sans-monaSanswidenormal",
+// });
 const monaSans = localFont({
-  src: [{ path: "../fonts/Mona-Sans-MediumWide.ttf" }],
-
+  src: "../fonts/Mona-Sans-MediumWide.ttf",
   variable: "--font-mona-sans",
+  display: "swap",
 });
+
 const monaSansnormal = localFont({
-  src: [{ path: "../fonts/Mona-Sans.ttf" }],
-
+  src: "../fonts/Mona-Sans.ttf",
   variable: "--font-mona-sans-normal",
+  display: "swap",
 });
+
 const monaSansnormallight = localFont({
-  src: [{ path: "../fonts/Mona-Sans-LightWide.ttf" }],
-
+  src: "../fonts/Mona-Sans-LightWide.ttf",
   variable: "--font-mona-sans-normallight",
+  display: "swap",
 });
-const monaSanswidenormal = localFont({
-  src: [{ path: "../fonts/Mona-Sans-UltraLightWide.ttf" }],
 
+const monaSanswidenormal = localFont({
+  src: "../fonts/Mona-Sans-UltraLightWide.ttf",
   variable: "--font-mona-sans-monaSanswidenormal",
+  display: "swap",
 });
 export const metadata = {
   title: "Best Forex & Multi-Asset Trading Platform | FlipTrade Group",
