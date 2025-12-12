@@ -1,5 +1,5 @@
 import React from "react";
-import contactus from "../../../../public/banners/contactus.webp";
+import contactus from "../../../../public/banners/contactusnew.webp";
 import Title from "../Uiux/Title";
 import Discription from "../Uiux/Discription";
 import Button from "../Uiux/Button";
