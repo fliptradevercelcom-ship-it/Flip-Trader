@@ -28,29 +28,6 @@ import Signuppopup from "./Components/Signuppopup";
 
 //   variable: "--font-mona-sans-monaSanswidenormal",
 // });
-const monaSans = localFont({
-  src: "../fonts/Mona-Sans-MediumWide.ttf",
-  variable: "--font-mona-sans",
-  display: "swap",
-});
-
-const monaSansnormal = localFont({
-  src: "../fonts/Mona-Sans.ttf",
-  variable: "--font-mona-sans-normal",
-  display: "swap",
-});
-
-const monaSansnormallight = localFont({
-  src: "../fonts/Mona-Sans-LightWide.ttf",
-  variable: "--font-mona-sans-normallight",
-  display: "swap",
-});
-
-const monaSanswidenormal = localFont({
-  src: "../fonts/Mona-Sans-UltraLightWide.ttf",
-  variable: "--font-mona-sans-monaSanswidenormal",
-  display: "swap",
-});
 export const metadata = {
   title: "Best Forex & Multi-Asset Trading Platform | FlipTrade Group",
   description:
@@ -80,7 +57,7 @@ export default function RootLayout({ children }) {
         <Metalinksseo />
       </head>
       <body
-        className={`${monaSans.variable} ${monaSansnormal.variable} ${monaSansnormallight.variable} ${monaSanswidenormal.variable} antialiased`}
+        className={` antialiased`}
         cz-shortcut-listen="true"
       >
         <noscript>
