@@ -1,5 +1,5 @@
 import React from "react";
-import boxbg from "../../../../public/banners/box-bg.webp";
+import boxbg from "public/banners/box-bg.webp";
 import Image from "next/image";
 import copytradingwork from "../../../../public/images/copytradingwork.webp";
 import Title from "../Uiux/Title";
