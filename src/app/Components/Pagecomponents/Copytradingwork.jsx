@@ -1,5 +1,4 @@
 import React from "react";
-import boxbg from "public/banners/box-bg.webp";
 import Image from "next/image";
 import copytradingwork from "../../../../public/images/copytradingwork.webp";
 import Title from "../Uiux/Title";
@@ -8,7 +7,6 @@ const Copytradingwork = () => {
     <div className="bg-theme pt-12 md:pt-18">
       <div
         className="bg-no-repeat bg-cover"
-        style={{ backgroundImage: `url(${boxbg.src})` }}
       >
         <div className="inn_container grid grid-cols-1 lg:grid-cols-2 py-12 md:py-18">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-18 relative lg:left-[7%]">
