@@ -8,26 +8,26 @@ import Metalinksseo from "./Metalinksseo";
 import Telegramlink from "./Telegramlink";
 import Aosinit from "./Components/Pagecomponents/Aosinit";
 import Signuppopup from "./Components/Signuppopup";
-// const monaSans = localFont({
-//   src: [{ path: "../fonts/Mona-Sans-MediumWide.ttf" }],
+const monaSans = localFont({
+  src: [{ path: "../fonts/Mona-Sans-MediumWide.ttf" }],
 
-//   variable: "--font-mona-sans",
-// });
-// const monaSansnormal = localFont({
-//   src: [{ path: "../fonts/Mona-Sans.ttf" }],
+  variable: "--font-mona-sans",
+});
+const monaSansnormal = localFont({
+  src: [{ path: "../fonts/Mona-Sans.ttf" }],
 
-//   variable: "--font-mona-sans-normal",
-// });
-// const monaSansnormallight = localFont({
-//   src: [{ path: "../fonts/Mona-Sans-LightWide.ttf" }],
+  variable: "--font-mona-sans-normal",
+});
+const monaSansnormallight = localFont({
+  src: [{ path: "../fonts/Mona-Sans-LightWide.ttf" }],
 
-//   variable: "--font-mona-sans-normallight",
-// });
-// const monaSanswidenormal = localFont({
-//   src: [{ path: "../fonts/Mona-Sans-UltraLightWide.ttf" }],
+  variable: "--font-mona-sans-normallight",
+});
+const monaSanswidenormal = localFont({
+  src: [{ path: "../fonts/Mona-Sans-UltraLightWide.ttf" }],
 
-//   variable: "--font-mona-sans-monaSanswidenormal",
-// });
+  variable: "--font-mona-sans-monaSanswidenormal",
+});
 export const metadata = {
   title: "Best Forex & Multi-Asset Trading Platform | FlipTrade Group",
   description:
@@ -57,7 +57,7 @@ export default function RootLayout({ children }) {
         <Metalinksseo />
       </head>
       <body
-        className={` antialiased`}
+        className={`${monaSans.variable} ${monaSansnormal.variable} ${monaSansnormallight.variable} ${monaSanswidenormal.variable} antialiased`}
         cz-shortcut-listen="true"
       >
         <noscript>
