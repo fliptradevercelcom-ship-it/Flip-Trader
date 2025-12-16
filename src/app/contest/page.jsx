@@ -51,6 +51,8 @@ function page() {
   return (
     <div className="pt-18 lg:pt-28 xl:pt-32">
       <Contestleaderboard btn_name={"Open Account"} />
+      <Contestdescription />
+      <Contesttime />
       <Pipworkstep
         title={"What Is a Pip? & <br/> How it works"}
         dispription={
@@ -58,8 +60,6 @@ function page() {
         }
         pointstep={conteststepdata}
       />
-      <Contesttime />
-      <Contestdescription />
       <div className="bg-theme">
         <div className="inn_container pt-12 pb-16">
           <div className="text-center">

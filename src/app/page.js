@@ -16,7 +16,6 @@ function page() {
       <Banner />
       <Homemarquee />
       <Buildtrader />
-      {/* <Nextgen /> */}
       <Nextgennew />
       <Exploremarket />
       <Calculatepipvalue />

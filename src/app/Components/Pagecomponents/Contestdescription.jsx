@@ -45,7 +45,7 @@ const Contestdescription = () => {
                   Prize Sponsorships
                 </h3>
                 <p className="text-base md:text-2xl text-white font-normal font_ternarynormal pt-3">
-                  We sponsor up to $1000 in prizes for your community.
+                  We sponsor  prizes for your community.
                 </p>
               </div>
             <div>
@@ -59,7 +59,7 @@ const Contestdescription = () => {
                   className=""
                 />
                 <p className="text-green-600 text-2xl md:text-4xl md:ps-12">
-                  $ 1000
+                  $ 15000 , $10000 , $5000
                 </p>
               </div>
             </div>

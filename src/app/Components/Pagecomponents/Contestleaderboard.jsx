@@ -32,12 +32,12 @@ const Contestleaderboard = ({btn_name}) => {
           <div className="absolute bottom-0 h-[85%] flex items-center w-[57%] lg:w-[60%] xl:w-[57%] 2xl:w-[50%]">
             <div className="relative top-[-2%] left-[4%] lg:left-[3%] xl:left-[1%] 2xl:left-[10%] pl-2 lg:pl-4">
               <Title
-                title={`Win up to $10,000 <br/>  in free <span class='text-primary'> weekly <br/> contests. </span>`}
+                title={`Win up to $15,000 <br/>  in free <span class='text-primary'> weekly <br/> contests. </span>`}
                 color="text-black"
               />
               <div className="xl:pt-4">
                 <Discription
-                  dispription={`Join free trading contests, climb the leaderboard, <br/> and win real rewards with zero risk.`}
+                  dispription={`Join trading contests, climb the leaderboard, <br/> and win real rewards with zero risk.`}
                   color="text-black"
                 />
               </div>
