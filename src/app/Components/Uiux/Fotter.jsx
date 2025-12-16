@@ -14,7 +14,8 @@ import telegram from "../../../../public/icons/telegram.svg";
 import twitter from "../../../../public/icons/twitter.svg";
 import Reviewshowcase from "../Pagecomponents/Reviewshowcase";
 import { usePathname } from "next/navigation";
-
+import appqr from "../../../../public/images/appqr.png"
+import Title from "./Title";
 const footerdata = {
   policydata: [
     { pagelink: "/privacy-policy", pagename: "Privacy Policy" },
@@ -153,14 +154,28 @@ const Fotter = () => {
       <Reviewshowcase />
       <div className="bg-theme pb-18">
         <div className="inn_container">
+          <div className="grid grid-cols-[4fr_2fr]">
+            <Title
+              title={'Your Trading Partner – Download the App'}
+              color={'text-white'}
+            />
+            <div>
+              <Image
+                src={appqr}
+                alt="appqr"
+                width={1000}
+                height={500}
+                className="max-w-50 m-auto"
+              />
+            </div>
+          </div>
           <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 bg-primary py-8 md:py-12 my-[2em]">
             {footerdata.carddata.map((data, index) => (
               <div
-                className={`font_secondary  ${
-                  index === 4
-                    ? null
-                    : " md:border-r-[3px] border-dashed md:border-[#C5C6FF80]"
-                }`}
+                className={`font_secondary  ${index === 4
+                  ? null
+                  : " md:border-r-[3px] border-dashed md:border-[#C5C6FF80]"
+                  }`}
                 key={index}
               >
                 <div className="w-auto xl:w-max md:m-auto pt-3 md:px-2">
@@ -220,9 +235,8 @@ const Fotter = () => {
               <div className="grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 border-b-[0.5px] border-[#ffffff2e]">
                 {footerdata.linkingdata.map((data, index) => (
                   <div
-                    className={`pt-4 md:pt-8 xl:pt-12 pb-4 md:pb-12 xl:pb-16 ${
-                      index === 4 ? null : "border-r-[0.5px] border-[#ffffff2e]"
-                    }`}
+                    className={`pt-4 md:pt-8 xl:pt-12 pb-4 md:pb-12 xl:pb-16 ${index === 4 ? null : "border-r-[0.5px] border-[#ffffff2e]"
+                      }`}
                     key={index}
                   >
                     <Fotterlinks title={data.title} linklist={data.pagelinks} />
@@ -244,11 +258,10 @@ const Fotter = () => {
                 {footerdata.social_links.map((data, index) => (
                   <div
                     key={index}
-                    className={`${
-                      index === 4
-                        ? null
-                        : "border-r-[0.5px] border-t-[0.5px] border-[#ffffff2e]"
-                    }`}
+                    className={`${index === 4
+                      ? null
+                      : "border-r-[0.5px] border-t-[0.5px] border-[#ffffff2e]"
+                      }`}
                   >
                     <Link href={data.pagelink} target="_blank">
                       <div
@@ -278,11 +291,10 @@ const Fotter = () => {
                 <div className="p-6">
                   {footerdata.carddata.map((data, index) => (
                     <div
-                      className={`font_secondary ${
-                        index === 4
-                          ? null
-                          : " md:border-r-[3px] border-dashed md:border-[#C5C6FF80]"
-                      }`}
+                      className={`font_secondary ${index === 4
+                        ? null
+                        : " md:border-r-[3px] border-dashed md:border-[#C5C6FF80]"
+                        }`}
                       key={index}
                     >
                       <div className="w-auto xl:w-max md:m-auto pt-3 md:px-2">
