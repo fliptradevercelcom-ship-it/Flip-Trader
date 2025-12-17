@@ -6,20 +6,7 @@
 export const navScrollMap = {
   // Quick Start dropdown items
   // "Quick Start": {
-  //   "Why FlipTrade?": { sectionId: "buildtrader", path: "/" },
-  //   "How to Start Trading": { sectionId: "workprocess", path: "/" },
-  //   "Why Traders Choose Us": { sectionId: "whyflipstep", path: "/why-fliptrade" },
-  //   "Contact Us": { sectionId: "contact", path: "/contact-us" },
-  //   "FAQs": { sectionId: "faq-scroll", path: "/faq" },
-  //   "Types of Markets": { sectionId: "exploremarket", path: "/" },
-  //   "Account Types Overview": { sectionId: "account-type", path: "/" },
-  //   "Risk Management Tips": { sectionId: "starttrading", path: "/" },
-  //   "Mobile App": { sectionId: "trade-anywhere", path: "/" },
-  //   "Platform Features": { sectionId: "platform-features", path: "/platform" },
-  //   "Pip Calculator": { sectionId: "pip-calculator", path: "/" },
-  //   "Economic Calendar": { sectionId: "calender", path: "/economic-calendar" },
-  //   "IB Partner": { sectionId: "ib-partners", path: "/ib-partner" },
-  //   "Why Partner with Us": { sectionId: "ib-why", path: "/ib-partner" },
+  //   "Download Our App": { sectionId: "Download Our App", path: "/" },
   // },
   
   // Markets dropdown items
@@ -57,6 +44,7 @@ export const navScrollMap = {
     // "Trade Anywhere": { sectionId: "trade", path: "/platform" },
     "What is a Pip": { sectionId: "pip-cal", path: "/pip-calculator" },
     "Calculator": { sectionId: "calculator", path: "/pip-calculator" },
+    "Download Our App": { sectionId: "Download-app", path: "/" },
     "FAQs": { sectionId: "faq-scroll", path: "/pip-calculator" },
   },
   

@@ -16,6 +16,7 @@ import Reviewshowcase from "../Pagecomponents/Reviewshowcase";
 import { usePathname } from "next/navigation";
 import appqr from "../../../../public/icons/app-download.svg"
 import Title from "./Title";
+import { useAutoScroll } from "../../../hooks/useAutoScroll";
 const footerdata = {
   policydata: [
     { pagelink: "/privacy-policy", pagename: "Privacy Policy" },
@@ -143,6 +144,7 @@ const footerdata = {
   ],
 };
 const Fotter = () => {
+  useAutoScroll("Download-app", { delay: 800 });
   const pathname = usePathname();
 
   if (pathname?.startsWith('/promo')) {
@@ -155,27 +157,27 @@ const Fotter = () => {
       <div className="bg-theme pb-18">
         <div className="inn_container">
           <div className="grid grid-cols-[4fr_2fr]">
-            <div className=" relative">
+            <div className=" relative"  id="Download-app">
               <Title
-                title={'Your Trading Partner – Download the App'}
+                title={'Your Trading Partner Download the App'}
                 color={'text-white'}
-              />
-              <Image
-                src={'/images/Android_robot.svg.webp'}
-                alt=""
-                width={1000}
-                height={500}
-                className="max-w-12 absolute right-[28%] bottom-[20%] hidden md:block"
               />
             </div>
             <div>
-              <div className="bg-white w-fit m-auto p-2">
+              <div className="bg-white w-fit m-auto p-2 flex flex-col gap-2 rounded-lg">
+                <Image
+                  src={'/images/googleplay.webp'}
+                  alt=""
+                  width={1000}
+                  height={500}
+                  className="max-w-42 m-auto"
+                />
                 <Image
                   src={appqr}
                   alt="appqr"
                   width={1000}
                   height={500}
-                  className="max-w-50 m-auto"
+                  className="max-w-42 m-auto"
                 />
               </div>
             </div>
