@@ -14,7 +14,7 @@ import telegram from "../../../../public/icons/telegram.svg";
 import twitter from "../../../../public/icons/twitter.svg";
 import Reviewshowcase from "../Pagecomponents/Reviewshowcase";
 import { usePathname } from "next/navigation";
-import appqr from "../../../../public/images/appqr.png"
+import appqr from "../../../../public/icons/app-download.svg"
 import Title from "./Title";
 const footerdata = {
   policydata: [
@@ -155,18 +155,29 @@ const Fotter = () => {
       <div className="bg-theme pb-18">
         <div className="inn_container">
           <div className="grid grid-cols-[4fr_2fr]">
-            <Title
-              title={'Your Trading Partner – Download the App'}
-              color={'text-white'}
-            />
-            <div>
+            <div className=" relative">
+              <Title
+                title={'Your Trading Partner – Download the App'}
+                color={'text-white'}
+              />
               <Image
-                src={appqr}
-                alt="appqr"
+                src={'/images/Android_robot.svg.webp'}
+                alt=""
                 width={1000}
                 height={500}
-                className="max-w-50 m-auto"
+                className="max-w-12 absolute right-[28%] bottom-[20%] hidden md:block"
               />
+            </div>
+            <div>
+              <div className="bg-white w-fit m-auto p-2">
+                <Image
+                  src={appqr}
+                  alt="appqr"
+                  width={1000}
+                  height={500}
+                  className="max-w-50 m-auto"
+                />
+              </div>
             </div>
           </div>
           <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 bg-primary py-8 md:py-12 my-[2em]">
