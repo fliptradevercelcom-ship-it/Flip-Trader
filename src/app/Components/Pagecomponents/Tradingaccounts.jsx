@@ -155,7 +155,7 @@ function Tradingaccounts() {
             </div>
           </div>
 
-          <div className="relative hidden xl:block overflow-hidden pt-[15rem] 2xl:pt-[19rem] h-[750px] xl:h-auto ">
+          <div className="relative hidden xl:block overflow-hidden pt-[15rem] 2xl:pt-[19rem] h-[750px] xl:h-auto">
             <Image
               src={accountsserface.src}
               alt="Banner"
