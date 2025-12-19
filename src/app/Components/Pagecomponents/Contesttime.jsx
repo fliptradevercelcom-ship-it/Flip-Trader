@@ -55,7 +55,7 @@ const accounttype_data = [
   },
 ]
 export default function Contesttime() {
-  const END_DATE = "2025-12-18T00:00:00";
+  const END_DATE = "2025-12-25T00:00:00";
 
   const calculateTimeLeft = () => {
     const end = new Date(END_DATE).getTime();

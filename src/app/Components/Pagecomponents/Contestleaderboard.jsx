@@ -2,7 +2,7 @@ import React from "react";
 import Title from "../Uiux/Title";
 import Discription from "../Uiux/Discription";
 import Image from "next/image";
-import contestdesktopbg from "../../../../public/images/contestdesktopbg.webp";
+import contestdesktopbg from "../../../../public/images/contestdesktopbg.png";
 import buildtraderimagelowerph from "../../../../public/images/explorelowerphgradient.webp";
 import contestleaderboard from "../../../../public/images/contestleaderboard.webp";
 import Button from "../Uiux/Button";
@@ -25,8 +25,8 @@ const Contestleaderboard = ({btn_name}) => {
           <Image
             src={contestdesktopbg}
             alt="banner"
-            width={3000}
-            height={500}
+            width={5000}
+            height={1000}
           />
 
           <div className="absolute bottom-0 h-[85%] flex items-center w-[57%] lg:w-[60%] xl:w-[57%] 2xl:w-[50%]">

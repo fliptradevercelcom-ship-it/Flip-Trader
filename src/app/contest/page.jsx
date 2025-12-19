@@ -5,6 +5,7 @@ import Contesttime from "../Components/Pagecomponents/Contesttime";
 import Contestdescription from "../Components/Pagecomponents/Contestdescription";
 import Title from "../Components/Uiux/Title";
 import Faq from "../Components/Pagecomponents/Faq";
+import ContestTestimonial from "../Components/Pagecomponents/ContestTestimonial";
 
 const conteststepdata = [
   {
@@ -60,6 +61,7 @@ function page() {
         }
         pointstep={conteststepdata}
       />
+      <ContestTestimonial />
       <div className="bg-theme">
         <div className="inn_container pt-12 pb-16">
           <div className="text-center">
