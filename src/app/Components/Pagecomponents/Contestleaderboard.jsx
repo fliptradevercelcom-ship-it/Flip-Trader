@@ -4,7 +4,7 @@ import Discription from "../Uiux/Discription";
 import Image from "next/image";
 import contestdesktopbg from "../../../../public/images/contestdesktopbg.png";
 import buildtraderimagelowerph from "../../../../public/images/explorelowerphgradient.webp";
-import contestleaderboard from "../../../../public/images/contestleaderboard.webp";
+import contestleaderboard from "../../../../public/images/contestleaderboard.png";
 import Button from "../Uiux/Button";
 import Link from "next/link";
 const Contestleaderboard = ({btn_name}) => {

@@ -134,7 +134,7 @@ const ContestTestimonial = () => {
             <div className="inn_container pb-12">
                 <div className="text-center">
                     <Title
-                        title={'Clients Testiminial'}
+                        title={'Clients Testimonial'}
                         color={'text-white'}
                     />
                 </div>

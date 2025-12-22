@@ -153,11 +153,15 @@ const Fotter = () => {
   return (
     <div>
       <Worldbroker />
-      <Reviewshowcase />
+      {
+        pathname === '/reviews' ?
+          null :
+          <Reviewshowcase />
+      }
       <div className="bg-theme pb-18">
         <div className="inn_container">
           <div className="grid grid-cols-[4fr_2fr]">
-            <div className=" relative"  id="Download-app">
+            <div className=" relative" id="Download-app">
               <Title
                 title={'Your Trading Partner Download the App'}
                 color={'text-white'}
