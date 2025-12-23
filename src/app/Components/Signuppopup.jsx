@@ -82,7 +82,7 @@ export default function Signuppopup() {
           <div className="flex flex-col items-center rotate-[355deg] relative left-2">
             <h2 className="text-[23px] lg:text-[35px] xl:text-[43px] 2xl:text-[55px] text-primary font-bold leading-[normal]
             text-center px-16">
-              Black Friday 
+              New Year 
             </h2>
             <h2 className="text-[23px] lg:text-[35px] xl:text-[43px] 2xl:text-[55px] text-primary font-bold leading-[normal]
             text-center px-16">
@@ -104,7 +104,7 @@ export default function Signuppopup() {
                 className="w-[60px] absolute -left-2"
               />
               <span className="text-base 2xl:text-lg font-light font_ternary text-do aos-init aos-animate underline ps-[40px]">
-               Claim Black Friday Bonus
+               Claim New Year Bonus
               </span>
             </div>
           </div>

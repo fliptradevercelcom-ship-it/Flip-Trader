@@ -22,31 +22,57 @@ const conteststepdata = [
 ];
 const faqData = [
   {
-    question: "Which cryptocurrencies are supported?",
+    question: "What is a trading contest?",
     answer:
-      "FlipTrade offers trading on major cryptocurrencies like Bitcoin, Ethereum, Litecoin, and various altcoins, available with secure and fast execution."
+      "A trading contest allows traders to compete with each other over a fixed period. Participants are ranked on the leaderboard based on their trading performance."
   },
   {
-    question: "Is crypto trading 24/7?",
+    question: "How can I join a trading contest?",
     answer:
-      "Yes, cryptocurrency markets are open 24/7, and FlipTrade provides continuous access for traders worldwide without market closing times."
+      "Simply sign up, complete KYC (for live contests), open the required account (demo or live), and click on the 'Join Contest' button."
   },
   {
-    question: "Are there fees for crypto trading?",
+    question: "What is the difference between Demo and Live Trading contests?",
     answer:
-      "Yes, spreads and swap fees may apply, but FlipTrade ensures transparent pricing with competitive spreads on crypto trades."
+      "Demo contests use virtual funds for practice and learning, while Live Trading contests require real accounts and offer real cash prizes."
   },
   {
-    question: "Does FlipTrade offer leverage on crypto?",
+    question: "Are there any entry fees for contests?",
     answer:
-      "Yes, leverage options are available, allowing traders to maximize exposure while managing risks responsibly within regulatory limits."
+      "Demo contests are usually free to join. Live Trading contests may require a minimum deposit depending on the contest type."
   },
   {
-    question: "Is my crypto trading account secure?",
+    question: "How are winners selected?",
     answer:
-      "Yes, FlipTrade uses advanced security measures like encryption and compliance protocols to ensure safe cryptocurrency trading."
+      "Winners are ranked based on performance metrics such as profit percentage and trading results displayed on the leaderboard."
+  },
+  {
+    question: "What prizes can I win?",
+    answer:
+      "Prizes include real trading funds and cash rewards such as $5,000, $10,000, or $15,000 depending on the contest."
+  },
+  {
+    question: "Is KYC mandatory to participate?",
+    answer:
+      "KYC is mandatory for Live Trading contests to ensure compliance and secure prize distribution. Demo contests do not require KYC."
+  },
+  {
+    question: "How many participants can join a contest?",
+    answer:
+      "Each contest has a limited number of slots, such as 100 or 500 participants. Slots are filled on a first-come, first-served basis."
+  },
+  {
+    question: "Can I participate in multiple contests?",
+    answer:
+      "Yes, you can join multiple contests as long as you meet the requirements for each contest."
+  },
+  {
+    question: "When will I receive my prize?",
+    answer:
+      "Prizes are credited to the winner’s account after the contest ends and results are verified."
   }
 ];
+
 function page() {
   return (
     <div className="pt-18 lg:pt-28 xl:pt-32">

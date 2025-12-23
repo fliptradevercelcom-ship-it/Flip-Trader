@@ -2,6 +2,7 @@ import React from 'react'
 import PaymentMethods from '../Components/Pagecomponents/PaymentMethods'
 import Title from '../Components/Uiux/Title'
 import Faq from '../Components/Pagecomponents/Faq'
+import DepositWithdrawalBanner from '../Components/Pagecomponents/DepositWithdrawalBanner';
 const faqData = [
     {
         question: "What payment methods are available for deposits and withdrawals?",
@@ -48,6 +49,7 @@ const faqData = [
 const page = () => {
     return (
         <div>
+            <DepositWithdrawalBanner />
             <PaymentMethods />
             <div className="bg-theme">
                 <div className="inn_container pt-16 pb-16">
