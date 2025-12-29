@@ -3,6 +3,7 @@ import PaymentMethods from '../Components/Pagecomponents/PaymentMethods'
 import Title from '../Components/Uiux/Title'
 import Faq from '../Components/Pagecomponents/Faq'
 import DepositWithdrawalBanner from '../Components/Pagecomponents/DepositWithdrawalBanner';
+import Image from 'next/image';
 const faqData = [
     {
         question: "What payment methods are available for deposits and withdrawals?",
@@ -51,6 +52,31 @@ const page = () => {
         <div>
             <DepositWithdrawalBanner />
             <PaymentMethods />
+            <div className='inn_container py-12 md:py-16'>
+                <div className="text-center">
+                    <Title
+                        title={"Payment Partner"}
+                        color={"gradient_text"}
+                    />
+                </div>
+
+                <div className='pt-12'>
+                   <Image
+                    src={'/images/paymentpartnerimage.webp'}
+                    alt=''
+                    width={2000}
+                    height={500}
+                    className='m-auto rounded-2xl hidden md:block'
+                    />
+                    <Image
+                    src={'/images/paymentpartnerimageph.webp'}
+                    alt=''
+                    width={2000}
+                    height={500}
+                    className='m-auto rounded-2xl block md:hidden'
+                    />
+                </div>
+            </div>
             <div className="bg-theme">
                 <div className="inn_container pt-16 pb-16">
                     <div className="text-center">

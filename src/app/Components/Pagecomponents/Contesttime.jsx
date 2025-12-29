@@ -55,27 +55,46 @@ const accounttype_data = [
   },
 ]
 export default function Contesttime() {
-  const END_DATE = "2025-12-25T00:00:00";
+  const getEndDate = () => {
+    const savedEndDate = localStorage.getItem("contestEndDate");
+
+    if (savedEndDate) {
+      return new Date(savedEndDate);
+    }
+
+    const newEnd = new Date();
+    newEnd.setDate(newEnd.getDate() + 7);
+    localStorage.setItem("contestEndDate", newEnd.toISOString());
+    return newEnd;
+  };
+
 
   const calculateTimeLeft = () => {
-    const end = new Date(END_DATE).getTime();
+    const end = getEndDate().getTime();
     const now = new Date().getTime();
     const diff = end - now;
+
     if (diff <= 0) {
+      const nextEnd = new Date();
+      nextEnd.setDate(nextEnd.getDate() + 7);
+      localStorage.setItem("contestEndDate", nextEnd.toISOString());
+
       return {
-        days: "00",
+        days: "07",
         hours: "00",
         minutes: "00",
-        seconds: "00"
+        seconds: "00",
       };
     }
+
     return {
       days: Math.floor(diff / (1000 * 60 * 60 * 24)),
-      hours: Math.floor(diff / (1000 * 60 * 60) % 24),
-      minutes: Math.floor(diff / (1000 * 60) % 60),
-      seconds: Math.floor(diff / 1000 % 60)
+      hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
+      minutes: Math.floor((diff / (1000 * 60)) % 60),
+      seconds: Math.floor((diff / 1000) % 60),
     };
   };
+
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
@@ -225,10 +244,10 @@ export default function Contesttime() {
                       Requirement
                     </h6>
 
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-2 gap-x-4 gap-y-4">
                       {
                         data.requirements.map((item, index) => (
-                          <div className={`flex items-center gap-2 text-lg 2xl:text-xl ${index % 2 === 0 ? '' : 'justify-end'}`} key={index}>
+                          <div className={`flex items-center gap-2 text-lg 2xl:text-xl ${index % 2 === 0 ? '' : 'justify-start'}`} key={index}>
                             <span className="w-3 2xl:w-4 h-3 2xl:h-4 bg-primary rounded-[50%] flex items-center justify-center p-4 m-0 text-lg 2xl:text-xl text-white">
                               {index + 1}
                             </span>{" "}

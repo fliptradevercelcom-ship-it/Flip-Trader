@@ -25,15 +25,15 @@ const TestimonialCard = ({ person_name, review, rating_start, id }) => {
     <div className="h-full flex items-center justify-center relative ">
       <div className="relative max-w-[400px] w-full rounded-[28px] p-6 bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl">
         <div className="flex items-center gap-4 mb-6">
-          <div className="w-14 h-14 rounded-full border-2 border-primary flex items-center justify-center bg-white text-primary font-bold text-xl">
+          <div className="w-12 2xl:w-14 h-12 2xl:h-14 rounded-full border-2 border-primary flex items-center justify-center bg-white text-primary font-bold text-lg 2xl:text-xl">
             {firstletter}
           </div>
           <div>
-            <h4 className="text-primary font-semibold text-lg">{name}</h4>
+            <h4 className="text-primary font-semibold text-[17px] 2xl:text-lg">{name}</h4>
           </div>
         </div>
-        <p className={`text-white text-lg leading-relaxed font-medium mb-2 ${expanded ? '' : 'line-clamp-2'} `}>
-         {review}
+        <p className={`text-white text-base 2xl:text-lg leading-relaxed font-medium mb-2 ${expanded ? '' : 'line-clamp-2'} `}>
+          {review}
         </p>
         {words.length > 4 && (
           <button
@@ -43,16 +43,19 @@ const TestimonialCard = ({ person_name, review, rating_start, id }) => {
             {expanded ? "Show less" : "Read more"}
           </button>
         )}
-        <div className="flex items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <div className="flex gap-1 bg-white/10 px-4 py-2 rounded-full">
-              {Array.from({ length: rating_start }).map((_, i) => (
-                <span key={i} className="text-lime-400 text-lg">★</span>
-              ))}
-            </div>
-            <span className="text-white/70 text-sm">5k+ more reviews</span>
-          </div>
-          <div
+
+        {
+          !expanded ?
+            <div className="flex items-center justify-between gap-4">
+              <div className="flex items-center gap-2">
+                <div className="flex gap-1 bg-white/10 px-4 py-2 rounded-full">
+                  {Array.from({ length: rating_start }).map((_, i) => (
+                    <span key={i} className="text-lime-400 text-lg">★</span>
+                  ))}
+                </div>
+                <span className="text-white/70 text-sm">5k+ more reviews</span>
+              </div>
+              {/* <div
             className="flex gap-4"
             onClick={() => setLikecomment(!likecomment)}
           >
@@ -60,13 +63,17 @@ const TestimonialCard = ({ person_name, review, rating_start, id }) => {
               icon={likecomment ? "❤" : "♡"}
               text_color={likecomment ? "text-primary" : "text-white"}
             />
-          </div>
+          </div> */}
 
-        </div>
+            </div>
+            :
+            null
+        }
 
-        <div className="absolute -top-6 right-10 w-12 h-12 rounded-full bg-white/10 backdrop-blur-lg border border-white/20 flex items-center justify-center">
+
+        {/* <div className="absolute -top-6 right-10 w-12 h-12 rounded-full bg-white/10 backdrop-blur-lg border border-white/20 flex items-center justify-center">
           <span className="text-subprimary text-xl">❤</span>
-        </div>
+        </div> */}
       </div>
     </div>
   );

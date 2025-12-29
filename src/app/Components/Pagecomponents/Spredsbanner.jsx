@@ -11,7 +11,7 @@ const Spredsbanner = () => {
       className="bg-cover relative"
       style={{ backgroundImage: `url(${spredbg.src})` }}
     >
-      <div className="inn_container pt-42 md:pt-46 xl:pt-48 2xl:pt-54 pb-32 ">
+      <div className="inn_container pt-42 md:pt-46 xl:pt-48 2xl:pt-54 pb-8 md:pb-32 ">
         <div className="flex flex-col gap-7 items-center relative z-[1]">
           <div className="text-center">
             <Title

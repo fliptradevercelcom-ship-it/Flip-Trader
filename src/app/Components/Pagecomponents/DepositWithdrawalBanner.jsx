@@ -10,7 +10,7 @@ import Link from "next/link";
 const DepositWithdrawalBanner = () => {
   return (
     <div className="" style={{ backgroundImage: `url(${faqbanner.src})` }}>
-      <div className="inn_container pt-40 pb-20 lg:py-40">
+      <div className="inn_container pt-40  md:pb-20 lg:py-40">
         <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] ">
           <div className="flex flex-col justify-center text-center lg:text-start">
             <Title title={"Fast & Secure Deposits and Withdrawals"} color={"gradient_text"} ish1={true} />

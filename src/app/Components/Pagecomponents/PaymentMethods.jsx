@@ -51,7 +51,7 @@ const paymentMethods = [
     {
         id: 5,
         name: "PayPal",
-        logo: "/images/paypal.png",
+        logo: "/images/paypal.png?sfsdf",
         currencies: "USD, EUR, GBP",
         minDeposit: "$500",
         minWithdrawal: "$500",
@@ -71,7 +71,7 @@ const paymentMethods = [
 ];
 const PaymentMethods = () => {
     return (
-        <div className="cus_container py-12 md:py-16">
+        <div className="inn_container py-12 md:py-16">
             <div className="text-center">
                 <Title
                     title={"Payment Methods"}
@@ -87,7 +87,7 @@ const PaymentMethods = () => {
                                 className="max-w-[95%] md:max-w-[350px] xl:max-w-[350px] 2xl:max-w-[380px] m-auto rounded-3xl border-transparent relative z-[2] bg-no-repeat bg-cover"
                                 style={{ backgroundImage: `url(${accountcardbg.src})` }}
                             >
-                                {
+                                {/* {
                                     data.name === "Crypto Payments" ?
                                         <div className="absolute left-[-10%] md:left-[-14%] top-[2%] rotate-318 bg-white p-3 rounded-2xl shadow-[0px_1px_5px_#997DF2]">
                                             <p className="text-[12px] md:text-base text-center">
@@ -116,7 +116,7 @@ const PaymentMethods = () => {
                                         </div>
                                         :
                                         null
-                                }
+                                } */}
                                 <div className="p-3">
                                     <div className={`py-1 xl:py-3 2xl:py-5 px-16 lg:px-10 2xl:px-12 text-center bg-white rounded-tl-[18px] rounded-tr-[18px]`}>
                                         <Image
@@ -124,7 +124,7 @@ const PaymentMethods = () => {
                                             alt=""
                                             width={1000}
                                             height={500}
-                                            className={`max-w-[80%] ${data.name === 'Crypto Payments' ? 'ms-auto' : 'm-auto'}  h-[66px] object-contain`}
+                                            className={`max-w-[80%] m-auto  h-[66px] object-contain`}
                                         />
                                     </div>
                                     <div className="bg-traborder-transparent border-2 border-white rounded-bl-[14px] rounded-br-[14px] flex flex-col items-center">
