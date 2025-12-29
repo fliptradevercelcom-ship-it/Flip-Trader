@@ -79,6 +79,7 @@ function page() {
       <Contestleaderboard btn_name={"Open Account"} />
       <Contestdescription />
       <Contesttime />
+      
       <Pipworkstep
         title={"What Is a Pip? & <br/> How it works"}
         dispription={
