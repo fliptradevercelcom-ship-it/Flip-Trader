@@ -125,7 +125,7 @@ export default function Contesttime() {
         </div>
 
         {/* CONTEST CARDS */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-24 max-w-360 m-auto">
           {accounttype_data.map((data, index) => (
             <div key={index} className="bg-white rounded-4xl py-5 px-4 shadow-lg w-full m-auto h-full">
               <h5

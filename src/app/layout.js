@@ -8,6 +8,7 @@ import Metalinksseo from "./Metalinksseo";
 import Telegramlink from "./Telegramlink";
 import Aosinit from "./Components/Pagecomponents/Aosinit";
 import Signuppopup from "./Components/Signuppopup";
+import WhtasAppLink from "./Components/Pagecomponents/WhtasAppLink";
 const monaSans = localFont({
   src: [{ path: "../fonts/Mona-Sans-MediumWide.ttf" }],
 
@@ -79,7 +80,11 @@ export default function RootLayout({ children }) {
           <div className="fixed left-0 bottom-0 z-[999]">
             <Telegramlink />
           </div>
-          <Signuppopup/>
+
+           <div className="fixed left-5 bottom-25 z-[999]">
+            <WhtasAppLink width={'60px'} height={'60px'}/>
+          </div>
+          {/* <Signuppopup/> */}
         </div>
         <script>{` ;(function(_, m) { const orufyConnectSettings = { appId: 'wsxQa3dGW436zgdZgOzyNHB47qdKdl7S' }; const s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = 'https://widget.connect.orufy.com/widget.js'; const head = document.getElementsByTagName("head")[0]; head?.appendChild(s); window.orufy_connect = m; m._globals = orufyConnectSettings; })(document, window.orufy_connect || {}) `}</script>
       </body>

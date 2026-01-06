@@ -118,7 +118,7 @@ const Reviewshowcase = () => {
   }, []);
 
   return (
-    <section className="bg-theme pb-16">
+    <section className="bg-theme py-16">
       {/* <!-- TrustBox widget - Review Collector --> */}
       <div
         className="trustpilot-widget mb-[2rem]"

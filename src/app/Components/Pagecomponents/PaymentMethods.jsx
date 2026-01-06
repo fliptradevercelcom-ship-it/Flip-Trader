@@ -87,36 +87,6 @@ const PaymentMethods = () => {
                                 className="max-w-[95%] md:max-w-[350px] xl:max-w-[350px] 2xl:max-w-[380px] m-auto rounded-3xl border-transparent relative z-[2] bg-no-repeat bg-cover"
                                 style={{ backgroundImage: `url(${accountcardbg.src})` }}
                             >
-                                {/* {
-                                    data.name === "Crypto Payments" ?
-                                        <div className="absolute left-[-10%] md:left-[-14%] top-[2%] rotate-318 bg-white p-3 rounded-2xl shadow-[0px_1px_5px_#997DF2]">
-                                            <p className="text-[12px] md:text-base text-center">
-                                                Payment Partner
-                                            </p>
-                                            <div className="grid grid-cols-2">
-                                                <div>
-                                                    <Image
-                                                        src={'/images/logo-match2pay.png'}
-                                                        alt=""
-                                                        width={1000}
-                                                        height={500}
-                                                        className="max-w-[60px] md:max-w-[100px]"
-                                                    />
-                                                </div>
-                                                <div>
-                                                    <Image
-                                                        src={'/images/coingate 1.png'}
-                                                        alt=""
-                                                        width={1000}
-                                                        height={500}
-                                                        className="max-w-[60px] md:max-w-[100px]"
-                                                    />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        :
-                                        null
-                                } */}
                                 <div className="p-3">
                                     <div className={`py-1 xl:py-3 2xl:py-5 px-16 lg:px-10 2xl:px-12 text-center bg-white rounded-tl-[18px] rounded-tr-[18px]`}>
                                         <Image
@@ -180,10 +150,10 @@ const PaymentMethods = () => {
                                                     Commission
                                                 </p>
                                                 <p className="text-[14px] leading-4 text-ternary ">
-                                                    Deposit 1%
+                                                    Deposit {data.id === 1 || data.id === 2 ? 'Free' : '1%'}
                                                 </p>
                                                 <p className="text-[14px] leading-4 text-ternary ">
-                                                    Withdrawal 1%
+                                                    Withdrawal {data.id === 1 || data.id === 2 ? 'Free' : '1%'}
                                                 </p>
                                             </li>
                                             <li className="list-none  py-2 text-center border-b-3 border-dashed border-white ">

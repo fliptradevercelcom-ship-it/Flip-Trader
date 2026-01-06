@@ -1,12 +1,16 @@
 import React from 'react';
 import ContestTestimonial from '../Components/Pagecomponents/ContestTestimonial';
 import Reviewshowcase from '../Components/Pagecomponents/Reviewshowcase';
-import Wikifxreview from '../Components/Pagecomponents/Wikifxreview';
+import Reviewbanner from '../Components/Pagecomponents/Reviewbanner';
+import ReviewpageBanner from '../Components/Pagecomponents/ReviewpageBanner';
+import Reviewcontent from '../Components/Pagecomponents/Reviewcontent';
 
 const page = () => {
   return (
     <div>
-      <Wikifxreview />
+      {/* <Wikifxreview /> */}
+      <Reviewbanner />
+      <Reviewcontent />
       <Reviewshowcase />
       <ContestTestimonial />
     </div>

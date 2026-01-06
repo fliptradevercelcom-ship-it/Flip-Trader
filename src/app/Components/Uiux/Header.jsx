@@ -208,7 +208,8 @@ const navlistdata = [
         heading: "Partnership & Support",
         items: [
           { name: "IB Partner", link: "/ib-partner" },
-          { name: "Contact Us", link: "/contact-us" }
+          { name: "Contact Us", link: "/contact-us" },
+          { name: "About Us", link: "/about-us" },
         ]
       },
       {
