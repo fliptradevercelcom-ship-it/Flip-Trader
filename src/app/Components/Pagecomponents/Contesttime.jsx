@@ -43,40 +43,7 @@ const accounttype_data = [
 ];
 
 export default function Contesttime() {
-  const getEndDate = () => {
-    if (typeof window === "undefined") return new Date();
-
-    const savedEndDate = localStorage.getItem("contestEndDate");
-    if (savedEndDate) return new Date(savedEndDate);
-
-    const newEnd = new Date();
-    newEnd.setDate(newEnd.getDate() + 7);
-    localStorage.setItem("contestEndDate", newEnd.toISOString());
-    return newEnd;
-  };
-
-  const calculateTimeLeft = () => {
-    const diff = getEndDate().getTime() - new Date().getTime();
-
-    if (diff <= 0) {
-      const nextEnd = new Date();
-      nextEnd.setDate(nextEnd.getDate() + 7);
-      localStorage.setItem("contestEndDate", nextEnd.toISOString());
-      return { days: "07", hours: "00", minutes: "00", seconds: "00" };
-    }
-
-    return {
-      days: String(Math.floor(diff / (1000 * 60 * 60 * 24))).padStart(2, "0"),
-      hours: String(
-        Math.floor((diff / (1000 * 60 * 60)) % 24)
-      ).padStart(2, "0"),
-      minutes: String(
-        Math.floor((diff / (1000 * 60)) % 60)
-      ).padStart(2, "0"),
-      seconds: String(Math.floor((diff / 1000) % 60)).padStart(2, "0"),
-    };
-  };
-
+  const [endDate, setEndDate] = useState(null);
   const [timeLeft, setTimeLeft] = useState({
     days: "00",
     hours: "00",
@@ -84,14 +51,50 @@ export default function Contesttime() {
     seconds: "00",
   });
 
+  // 🔹 Get / Set contest end date only once
   useEffect(() => {
-    setTimeLeft(calculateTimeLeft());
-    const interval = setInterval(
-      () => setTimeLeft(calculateTimeLeft()),
-      1000
-    );
-    return () => clearInterval(interval);
+    if (typeof window === "undefined") return;
+
+    const savedEndDate = localStorage.getItem("contestEndDate");
+
+    if (savedEndDate) {
+      setEndDate(new Date(savedEndDate));
+    } else {
+      const newEnd = new Date();
+      newEnd.setDate(newEnd.getDate() + 7);
+      localStorage.setItem("contestEndDate", newEnd.toISOString());
+      setEndDate(newEnd);
+    }
   }, []);
+
+  // 🔹 Time calculation
+  const calculateTimeLeft = (end) => {
+    const diff = end - new Date();
+
+    if (diff <= 0) {
+      return { days: "00", hours: "00", minutes: "00", seconds: "00" };
+    }
+
+    return {
+      days: String(Math.floor(diff / (1000 * 60 * 60 * 24))).padStart(2, "0"),
+      hours: String(Math.floor((diff / (1000 * 60 * 60)) % 24)).padStart(2, "0"),
+      minutes: String(Math.floor((diff / (1000 * 60)) % 60)).padStart(2, "0"),
+      seconds: String(Math.floor((diff / 1000) % 60)).padStart(2, "0"),
+    };
+  };
+
+  // 🔹 Start countdown after endDate is ready
+  useEffect(() => {
+    if (!endDate) return;
+
+    setTimeLeft(calculateTimeLeft(endDate));
+
+    const interval = setInterval(() => {
+      setTimeLeft(calculateTimeLeft(endDate));
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [endDate]);
 
   return (
     <div>
@@ -108,18 +111,33 @@ export default function Contesttime() {
             </h6>
 
             <div className="flex items-center gap-4 justify-center">
-              <Image src={trophy} alt="trophy" width={1000} height={500} className="max-w-16 hidden md:block" />
+              <Image
+                src={trophy}
+                alt="trophy"
+                width={1000}
+                height={500}
+                className="max-w-16 hidden md:block"
+              />
 
               <div className="grid grid-cols-4 bg-primary py-8 px-1 rounded-3xl w-[85%]">
                 {Object.entries(timeLeft).map(([key, value]) => (
-                  <div key={key} className="text-white text-3xl lg:text-5xl font-bold text-center">
+                  <div
+                    key={key}
+                    className="text-white text-3xl lg:text-5xl font-bold text-center"
+                  >
                     {value}
                     <p className="text-sm font-normal capitalize">{key}</p>
                   </div>
                 ))}
               </div>
 
-              <Image src={trophy} alt="trophy" width={1000} height={500} className="max-w-16 hidden md:block" />
+              <Image
+                src={trophy}
+                alt="trophy"
+                width={1000}
+                height={500}
+                className="max-w-16 hidden md:block"
+              />
             </div>
           </div>
         </div>
@@ -127,7 +145,10 @@ export default function Contesttime() {
         {/* CONTEST CARDS */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-24 max-w-360 m-auto">
           {accounttype_data.map((data, index) => (
-            <div key={index} className="bg-white rounded-4xl py-5 px-4 shadow-lg w-full m-auto h-full">
+            <div
+              key={index}
+              className="bg-white rounded-4xl py-5 px-4 shadow-lg w-full m-auto h-full"
+            >
               <h5
                 className="text-center text-2xl font-bold mb-6"
                 dangerouslySetInnerHTML={{ __html: data.title }}
@@ -135,11 +156,16 @@ export default function Contesttime() {
 
               {/* PRICE */}
               <div className="border-l-4 border-b-4 border-primary rounded-2xl p-4">
-                <h6 className="text-xl font-semibold text-center mb-4">Price</h6>
+                <h6 className="text-xl font-semibold text-center mb-4">
+                  Price
+                </h6>
 
                 {[data.price1st, data.price2nd, data.price3rd].map(
                   (price, i) => (
-                    <p key={i} className="flex justify-between border-b pb-2 mb-2">
+                    <p
+                      key={i}
+                      className="flex justify-between border-b pb-2 mb-2"
+                    >
                       <span className="flex items-center gap-2">
                         <Image
                           src={[trophy, trophysilver, trophy3rd][i]}
