@@ -165,21 +165,21 @@ export default function Spreadtable() {
         <table className="w-full border-collapse">
           <thead>
             <tr className="bg-primary text-white">
-              <th className="px-6 py-4 text-center">Instrument</th>
-              <th className="px-6 py-4 text-center">Standard Floating</th>
-              <th className="px-6 py-4 text-center">Standard Fixed</th>
-              <th className="px-6 py-4 text-center">ECN Raw</th>
-              <th className="px-6 py-4 text-center">VIP ECN</th>
+              <th className="px-3 py-4 text-center">Instrument</th>
+              <th className="px-3 py-4 text-center">Standard Account</th>
+              <th className="px-3 py-4 text-center">Classic Account</th>
+              <th className="px-3 py-4 text-center">ECN Raw</th>
+              <th className="px-3 py-4 text-center">Professional Account</th>
             </tr>
           </thead>
           <tbody>
             {visibleData.map((row, index) => (
               <tr key={index} className="bg-white">
-                <td className={`px-6 py-3 font-medium text-center ${index % 2 === 0 ? "gradient_bg" : "bg-white"}`}>{row.instrument}</td>
-                <td className={`px-6 py-3 font-medium text-center ${index % 2 === 0 ? "bg-white" : "gradient_bg"}`}>{row.standardFloating ?? "-"}</td>
-                <td className={`px-6 py-3 font-medium text-center ${index % 2 === 0 ? "gradient_bg" : "bg-white"}`}>{row.standardFixed ?? "-"}</td>
-                <td className={`px-6 py-3 font-medium text-center ${index % 2 === 0 ? "bg-white" : "gradient_bg"}`}>{row.ecnRaw ?? "-"}</td>
-                <td className={`px-6 py-3 font-medium text-center ${index % 2 === 0 ? "gradient_bg" : "bg-white"}`}>{row.vipEcn ?? "-"}</td>
+                <td className={`px-3 py-3 font-medium text-center ${index % 2 === 0 ? "gradient_bg" : "bg-white"}`}>{row.instrument}</td>
+                <td className={`px-3 py-3 font-medium text-center ${index % 2 === 0 ? "bg-white" : "gradient_bg"}`}>{row.standardFloating ?? "-"}</td>
+                <td className={`px-3 py-3 font-medium text-center ${index % 2 === 0 ? "gradient_bg" : "bg-white"}`}>{row.standardFixed ?? "-"}</td>
+                <td className={`px-3 py-3 font-medium text-center ${index % 2 === 0 ? "bg-white" : "gradient_bg"}`}>{row.ecnRaw ?? "-"}</td>
+                <td className={`px-3 py-3 font-medium text-center ${index % 2 === 0 ? "gradient_bg" : "bg-white"}`}>{row.vipEcn ?? "-"}</td>
               </tr>
             ))}
           </tbody>

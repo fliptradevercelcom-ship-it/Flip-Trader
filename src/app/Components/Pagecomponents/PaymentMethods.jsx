@@ -51,7 +51,7 @@ const paymentMethods = [
     {
         id: 5,
         name: "PayPal",
-        logo: "/images/paypal.png?sfsdf",
+        logo: "/images/paypal.webp",
         currencies: "USD, EUR, GBP",
         minDeposit: "$500",
         minWithdrawal: "$500",
