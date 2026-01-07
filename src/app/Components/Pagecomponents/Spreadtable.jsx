@@ -40,7 +40,7 @@ export default function Spreadtable() {
     { instrument: "GBPZAR", standardFloating: 95.1, standardFixed: 90, ecnRaw: 89, vipEcn: 76 },
 
     { instrument: "XAGUSD", standardFloating: 67, standardFixed: 64, ecnRaw: 61, vipEcn: 45 },
-    { instrument: "XAUUSD", standardFloating: 2.3, standardFixed: 2, ecnRaw: 1.8, vipEcn: 1.6 },
+    { instrument: "XAUUSD", standardFloating: 2.3, standardFixed: 1.6, ecnRaw: 0.7, vipEcn: 0.7 },
     { instrument: "XAGAUD", standardFloating: 5.6, standardFixed: 4.9, ecnRaw: 1, vipEcn: 0.5 },
     { instrument: "XAUAUD", standardFloating: 171, standardFixed: 164, ecnRaw: 155, vipEcn: 145 },
     { instrument: "XPDUSD", standardFloating: 440, standardFixed: 400, ecnRaw: 424, vipEcn: 345 },
