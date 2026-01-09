@@ -145,7 +145,35 @@ export default function AboutUs() {
                     />
                 </div>
             </div>
+               <div className="inn_container py-6">
+                <div className="max-w-7xl m-auto flex flex-col-reverse md:grid grid-cols-2 gap-x-6 gap-y-6">
+                    <div className="m-auto">
+                        <div>
+                            <Title
+                                title={'CEO Massge'}
+                                color={'text-white'}
+                            />
+                            <h4 className="text-xl lg:text-2xl 2xl:text-3xl text-primary italic mb-5">
+                                Chris Henry
+                            </h4>
 
+                            <Discription
+                                dispription={`Chris Henry, CEO of Flip Trade Group, brings over 7 years of proven experience in the Forex industry. His deep market expertise and strong leadership have helped Flip Trade Group earn the trust of 60,000+ satisfied clients worldwide. With a clear focus on transparency, innovation, and client success, he continues to lead the company toward sustainable global growth.`}
+                                color={'text-white'}
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <Image
+                            src={'/images/ceoimage.png'}
+                            alt="CEO"
+                            width={1000}
+                            height={500}
+                            className="h-full"
+                        />
+                    </div>
+                </div>
+            </div>
             <section className="py-6 md:py-12 inn_container">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
 
@@ -209,7 +237,7 @@ export default function AboutUs() {
             <div className="inn_container py-6 md:py-12">
                 <div className="text-center">
                     <Title
-                        title={'Fliptrade In Numbers'}
+                        title={'Fliptrade Group In Numbers'}
                         color={'gradient_text'}
                     />
                 </div>
@@ -299,35 +327,7 @@ export default function AboutUs() {
 
                 </div>
             </section>
-            <div className="inn_container">
-                <div className="max-w-7xl m-auto flex flex-col-reverse md:grid grid-cols-2 gap-x-6 gap-y-6">
-                    <div className="m-auto">
-                        <div>
-                            <Title
-                                title={'CEO Massge'}
-                                color={'text-white'}
-                            />
-                            <h4 className="text-xl lg:text-2xl 2xl:text-3xl text-primary italic mb-5">
-                                Chris Henry
-                            </h4>
-
-                            <Discription
-                                dispription={`Chris Henry, CEO of Flip Trade Group, brings over 7 years of proven experience in the Forex industry. His deep market expertise and strong leadership have helped Flip Trade Group earn the trust of 60,000+ satisfied clients worldwide. With a clear focus on transparency, innovation, and client success, he continues to lead the company toward sustainable global growth.`}
-                                color={'text-white'}
-                            />
-                        </div>
-                    </div>
-                    <div>
-                        <Image
-                            src={'/images/ceoimage.png'}
-                            alt="CEO"
-                            width={1000}
-                            height={500}
-                            className="h-full"
-                        />
-                    </div>
-                </div>
-            </div>
+          
             <style jsx global>{`
         @keyframes gradient-x {
           0%, 100% { background-position: 0% 50%; }

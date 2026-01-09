@@ -82,7 +82,7 @@ export default function RootLayout({ children }) {
           </div>
 
            <div className="fixed right-5 bottom-3 z-[999]">
-            <WhtasAppLink width={'60px'} height={'60px'}/>
+            <WhtasAppLink width={'50px'} height={'50px'}/>
           </div>
           {/* <Signuppopup/> */}
         </div>

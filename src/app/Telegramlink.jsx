@@ -11,7 +11,7 @@ const Telegramlink = () => {
           alt="Telegramlogo"
           width={3000}
           height={500}
-          className="max-w-[80px] md:max-w-[100px] object-cover"
+          className="max-w-[60px] md:max-w-[80px] object-cover"
         />
       </Link>
     </div>
