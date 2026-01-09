@@ -12,7 +12,7 @@ const AboutBanner = () => {
     <div className="" style={{ backgroundImage: `url(${ibbanner.src})` }}>
       <div className="inn_container">
         <div className="grid grid-cols-1">
-          <div className="flex flex-col justify-center text-center  pt-40 pb-20 lg:pt-48">
+          <div className="flex flex-col justify-center text-center  pt-40 pb-2 md:pb-20 lg:pt-48">
             <Title
               title={"FlipTrade Group — Trade Smarter,<br/> Trade Faster"}
               color={"gradient_text"}
