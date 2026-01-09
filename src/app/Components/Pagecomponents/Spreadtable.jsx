@@ -122,8 +122,6 @@ export default function Spreadtable() {
 
     { instrument: "NGCUSD", standardFloating: 175, standardFixed: 172, ecnRaw: 162, vipEcn: 160 }
   ];
-
-
   const STEP = 20;
   const [visible, setVisible] = useState(STEP);
   const [search, setSearch] = useState("");
@@ -138,7 +136,6 @@ export default function Spreadtable() {
 
   return (
     <div className="w-full max-w-7xl mx-auto mt-6 px-2">
-      {/* Search */}
       <div>
         <div className="flex w-full md:w-max md:mx-auto my-6 items-center gap-4 py-3 md:py-4.5 px-10 border-2 border-primary rounded-full md:min-w-[55%] bg-white">
           <Image
