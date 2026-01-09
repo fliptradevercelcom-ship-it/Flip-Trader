@@ -218,7 +218,7 @@ export default function AboutUs() {
                     <div className="text-center">
                         <div>
                             <Title
-                                title={'100K<span class="text-primary font-bold">+ </span>'}
+                                title={'60K<span class="text-primary font-bold">+ </span>'}
                                 color={'text-white'}
                             />
                             <Discription
@@ -250,7 +250,7 @@ export default function AboutUs() {
                     <div className="text-center">
                         <div>
                             <Title
-                                title={'10<span class="text-primary font-bold">+ </span>'}
+                                title={'4<span class="text-primary font-bold">+ </span>'}
                                 color={'text-white'}
                             />
                             <Discription
