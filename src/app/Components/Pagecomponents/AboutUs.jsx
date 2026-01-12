@@ -145,7 +145,7 @@ export default function AboutUs() {
                     />
                 </div>
             </div>
-               <div className="inn_container py-6">
+            <div className="inn_container py-6">
                 <div className="max-w-7xl m-auto flex flex-col-reverse md:grid grid-cols-2 gap-x-6 gap-y-6">
                     <div className="m-auto">
                         <div>
@@ -187,7 +187,7 @@ export default function AboutUs() {
                                 Building a <span className="text-[#6a40ec]">Fair Trading</span> Ecosystem
                             </h2>
                             <p className="text-gray-400 text-lg leading-relaxed">
-                              At Flip Trade Group, our mission is to empower traders by providing secure, transparent, and technology-driven Forex trading solutions. We are committed to delivering fast execution, reliable platforms, and professional support that help our clients trade with confidence.
+                                At Flip Trade Group, our mission is to empower traders by providing secure, transparent, and technology-driven Forex trading solutions. We are committed to delivering fast execution, reliable platforms, and professional support that help our clients trade with confidence.
                             </p>
                         </div>
                     </div>
@@ -315,20 +315,28 @@ export default function AboutUs() {
                         {values.map((v, i) => (
                             <div
                                 key={i}
-                                className={`group p-8 rounded-3xl bg-gradient-to-br from-[#6a40ec] to-[#b46aff] border border-white/5 hover:border-[#6a40ec]/40 transition-all duration-500 ${i < 3 ? "md:col-span-2" : i < 5 ? "md:col-span-3" : "md:col-span-6"}`}>
-                                <div className="w-14 h-14 rounded-2xl bg-[#6a40ec]/10 flex items-center justify-center mb-6 border-2 border-white group-hover:bg-[#6a40ec] group-hover:text-white transition">
+                                className={`group p-8 rounded-3xl bg-transparent border border-white/30 backdrop-blur-sm hover:border-white hover:shadow-[0_0_40px_rgba(180,106,255,0.25)] transition-all duration-500 ${i < 3 ? "md:col-span-2" : i < 5 ? "md:col-span-3" : "md:col-span-6"}`}
+                            >
+                                <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 border-2 border-white bg-gradient-to-br from-[#6a40ec] via-[#9b5cff] to-[#b46aff] group-hover:scale-110 group-hover:shadow-[0_0_25px_rgba(180,106,255,0.7)] transition-all duration-500">
                                     {v.icon}
                                 </div>
-                                <h3 className="text-xl font-bold mb-3">{v.title}</h3>
-                                <p className="text-white leading-relaxed">{v.desc}</p>
+
+                                <h3 className="text-xl font-bold mb-3 text-white">
+                                    {v.title}
+                                </h3>
+
+                                <p className="text-white/80 leading-relaxed">
+                                    {v.desc}
+                                </p>
                             </div>
                         ))}
                     </div>
 
+
                 </div>
             </section>
-          
-            <style jsx global>{`
+
+            {/* <style jsx global>{`
         @keyframes gradient-x {
           0%, 100% { background-position: 0% 50%; }
           50% { background-position: 100% 50%; }
@@ -337,7 +345,7 @@ export default function AboutUs() {
           background-size: 200% 200%;
           animation: gradient-x 15s ease infinite;
         }
-      `}</style>
+      `}</style> */}
         </div>
     );
 }

@@ -23,23 +23,23 @@ export default function Contactfrom() {
       >
         <div className="inn_container">
           <div className="text-center">
-             <Title
+            <Title
               title={' Get in Touch'}
               color={'text-white'}
+            />
+            <div>
+              <Discription
+                dispription={'Have a question about our services or need <br/> trading support? Let us know.'}
+                color={'text-white'}
               />
-              <div>
-                <Discription
-                 dispription={'Have a question about our services or need <br/> trading support? Let us know.'}
-                 color={'text-white'}
-                 />
-              </div>
+            </div>
           </div>
           <div className=" max-w-[1380px] m-auto pt-10">
             <div className="flex justify-center xl:justify-center">
               <Maincontactform />
             </div>
             <div className="flex">
-            {/* <div className="hidden xl:block absolute max-w-[450px] 2xl:max-w-[600px] bottom-0 left-0.5 w-full">
+              {/* <div className="hidden xl:block absolute max-w-[450px] 2xl:max-w-[600px] bottom-0 left-0.5 w-full">
               <Image
                 src={formsidebanner}
                 alt="formsidebanner"
@@ -77,13 +77,20 @@ export default function Contactfrom() {
             <div className=" border-b-[3px] md:border-b-0 w-max m-auto md:w-full py-6 md:py-0 md:border-r-[3px] border-dashed border-[#BCC1FFB2] cursor-pointer">
               <div className="w-max m-auto">
                 <div className="flex justify-center">
-                  <Image
-                    src={facebookwhite}
-                    alt="facebook"
-                    width={1000}
-                    height={500}
-                    className="max-w-[55px]"
-                  />
+                  <Link
+                    href={
+                      "https://www.facebook.com/profile.php?id=61580314210503"
+                    }
+                    target="_blank"
+                  >
+                    <Image
+                      src={facebookwhite}
+                      alt="facebook"
+                      width={1000}
+                      height={500}
+                      className="max-w-[55px]"
+                    />
+                  </Link>
                 </div>
                 <Link
                   href={
@@ -122,13 +129,18 @@ export default function Contactfrom() {
             <div className=" border-b-[3px] md:border-b-0 w-max m-auto md:w-full py-6 md:py-0 md:border-r-[3px] border-dashed border-[#BCC1FFB2] cursor-pointer">
               <div className="w-max m-auto">
                 <div className="flex justify-center">
-                  <Image
-                    src={instawhite}
-                    alt="insta"
-                    width={1000}
-                    height={500}
-                    className="max-w-[55px]"
-                  />
+                  <Link
+                    href={"https://www.instagram.com/fliptradegroup/"}
+                    target="_blank"
+                  >
+                    <Image
+                      src={instawhite}
+                      alt="insta"
+                      width={1000}
+                      height={500}
+                      className="max-w-[55px]"
+                    />
+                  </Link>
                 </div>
                 <Link
                   href={"https://www.instagram.com/fliptradegroup/"}
@@ -165,13 +177,18 @@ export default function Contactfrom() {
             <div className="cursor-pointer  py-6 md:py-0">
               <div className="w-max m-auto">
                 <div className="flex justify-center">
-                  <Image
-                    src={youtubewhite}
-                    alt="youtube"
-                    width={1000}
-                    height={500}
-                    className="max-w-[55px]"
-                  />
+                  <Link
+                    href={"https://www.youtube.com/@fliptradegroup"}
+                    target="_blank"
+                  >
+                    <Image
+                      src={youtubewhite}
+                      alt="youtube"
+                      width={1000}
+                      height={500}
+                      className="max-w-[55px]"
+                    />
+                  </Link>
                 </div>
                 <Link
                   href={"https://www.youtube.com/@fliptradegroup"}
