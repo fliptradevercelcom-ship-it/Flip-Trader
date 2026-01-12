@@ -117,7 +117,9 @@ const navlistdata = [
           { id: "typesmarkets", name: "Standard Account", link: "/standard-account" },
           { id: "tradingconditions", name: "Classic Account", link: "/classic-account" },
           { id: "accounttypes", name: "ECN Account", link: "/enc-account" },
-          { id: "riskmanagement", name: "Professional Account", link: "/professional-account" }
+          { id: "riskmanagement", name: "Professional Account", link: "/professional-account" },
+            { name: "Spreads Swaps", link: "/spreads-swaps" },
+          { name: "Reviews", link: "/reviews" } 
         ]
       },
       {
@@ -163,7 +165,6 @@ const navlistdata = [
           { id: "2", name: "MetaTrader 5 (MT5)", link: "/platform" },
           { id: "tradingcondidstions", name: "WebTrader", link: "/web-trading" },
           { id: "accounttfdsfypes", name: "Mobile App", link: "/" },
-          { id: "riskmanafdsgement", name: "Social & Copy Trading", link: "/social-copy-trading" }
         ]
       },
       {
@@ -187,7 +188,11 @@ const navlistdata = [
         items: [
           { name: "Pip Calculator", link: "/pip-calculator" },
           { name: "Economic Calendar", link: "/economic-calendar" },
-          { name: "Learn Trading", link: "/learn-trading" }
+          { name: "Learn Trading", link: "/learn-trading" },
+          { id: "riskmanafdsgement", name: "Social & Copy Trading", link: "/social-copy-trading" },
+           { name: "Contest", link: "/contest" },
+          { name: "Deposit & Withdrawal", link: "/deposit-and-withdrawal" },
+
         ]
       },
       {

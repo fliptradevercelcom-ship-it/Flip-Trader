@@ -129,7 +129,7 @@ export default function Metalinksseo() {
             logo: "",
             sameAs: [
               "https://www.facebook.com/profile.php?id=61580314210503",
-              "https://www.instagram.com/fliptradegroup/",
+              "https://www.instagram.com/fliptradegroupglobal/",
               "https://www.youtube.com/@fliptradegroup",
             ],
           }),

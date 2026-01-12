@@ -127,12 +127,12 @@ const footerdata = {
     },
     {
       alt: "Instagram",
-      pagelink: "https://www.instagram.com/fliptradegroup/",
+      pagelink: "https://www.instagram.com/fliptradegroupglobal/",
       icon: Instaicon,
     },
     // {
     //   alt: "Twitter",
-    //   pagelink: "https://www.instagram.com/fliptradegroup/",
+    //   pagelink: "https://www.instagram.com/fliptradegroupglobal/",
     //   icon: twitter
     // },
     {

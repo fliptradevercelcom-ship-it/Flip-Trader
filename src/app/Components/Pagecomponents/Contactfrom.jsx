@@ -130,7 +130,7 @@ export default function Contactfrom() {
               <div className="w-max m-auto">
                 <div className="flex justify-center">
                   <Link
-                    href={"https://www.instagram.com/fliptradegroup/"}
+                    href={"https://www.instagram.com/fliptradegroupglobal/"}
                     target="_blank"
                   >
                     <Image
@@ -143,7 +143,7 @@ export default function Contactfrom() {
                   </Link>
                 </div>
                 <Link
-                  href={"https://www.instagram.com/fliptradegroup/"}
+                  href={"https://www.instagram.com/fliptradegroupglobal/"}
                   target="_blank"
                 >
                   <div className="text-xl md:text-3xl 2xl:text-4xl null flex justify-center pt-8 items-center gap-2.5  font-medium text-white font_ternary">
