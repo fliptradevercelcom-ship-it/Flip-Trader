@@ -9,7 +9,7 @@ import Faq from "../Components/Pagecomponents/Faq";
 const conteststepdata = [
   {
     title: "Sign up",
-    description: "Sign up for a free <br/> PrimeXBT account"
+    description: "Sign up for a free <br/> Fliptrade Group account"
   },
   {
     title: "Choose  Contest",
@@ -81,9 +81,9 @@ function page() {
       <Contesttime />
       
       <Pipworkstep
-        title={"What Is a Pip? & <br/> How it works"}
+        title={"Start Your First Trading Contest"}
         dispription={
-          "A pip (percentage in point) is the <br/> smallest price movement a currency <br/> pair can make based on market convention."
+          "No experience required. Sign up, pick a contest, and begin trading to win real rewards."
         }
         pointstep={conteststepdata}
       />
