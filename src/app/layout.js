@@ -40,6 +40,110 @@ export const metadata = {
     google: "KgCqFoO6NlFNiJg06rxf_0u6vjoiAAGn4sVMH_X-1aQ",
   },
 };
+const schemaData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Flip Trade Group",
+      "url": "https://fliptradegroup.com/",
+      "logo": "https://fliptradegroup.com/wp-content/uploads/logo.png",
+      "description": "Flip Trade Group provides professional trading education, market insights, and strategic tools to help traders grow with confidence.",
+      "sameAs": [
+        "https://www.facebook.com/fliptradegroup",
+        "https://www.instagram.com/fliptradegroup",
+        "https://www.linkedin.com/company/fliptradegroup"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "availableLanguage": ["English"]
+      }
+    },
+
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Flip Trade Group",
+      "url": "https://fliptradegroup.com/",
+      "logo": "https://fliptradegroup.com/wp-content/uploads/logo.png",
+      "image": "https://fliptradegroup.com/wp-content/uploads/logo.png",
+      "description": "Flip Trade Group offers professional trading education, market analysis, and strategic tools to support confident and informed trading decisions.",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/fliptradegroup",
+        "https://www.instagram.com/fliptradegroup",
+        "https://www.linkedin.com/company/fliptradegroup"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What services does Flip Trade Group offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Flip Trade Group provides professional trading education, market insights, and strategic tools designed to help traders improve decision-making and long-term performance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Flip Trade Group suitable for beginners?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Flip Trade Group offers structured learning resources suitable for beginners as well as advanced traders seeking to refine their trading strategies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Flip Trade Group provide trading signals?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Flip Trade Group focuses on education, analysis, and strategy development rather than guaranteed trading signals, helping traders build independent skills."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I access Flip Trade Group services online?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Flip Trade Group operates online, allowing traders to access educational content, tools, and insights from anywhere."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Flip Trade Group help with risk management?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Flip Trade Group emphasizes risk management through education on position sizing, market analysis, and disciplined trading strategies."
+          }
+        }
+      ]
+    }
+
+
+  ]
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -56,6 +160,12 @@ export default function RootLayout({ children }) {
           async
         ></script>
         <Metalinksseo />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schemaData),
+          }}
+        />
       </head>
       <body
         className={`${monaSans.variable} ${monaSansnormal.variable} ${monaSansnormallight.variable} ${monaSanswidenormal.variable} antialiased`}
@@ -81,8 +191,8 @@ export default function RootLayout({ children }) {
             <Telegramlink />
           </div>
 
-           <div className="fixed right-5 bottom-3 z-[999]">
-            <WhtasAppLink width={'50px'} height={'50px'}/>
+          <div className="fixed right-5 bottom-3 z-[999]">
+            <WhtasAppLink width={'50px'} height={'50px'} />
           </div>
           {/* <Signuppopup/> */}
         </div>
