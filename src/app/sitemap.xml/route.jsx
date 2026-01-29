@@ -34,7 +34,14 @@ export async function GET() {
     `${baseUrl}/terms-and-conditions`,
     `${baseUrl}/thank-you`,
     `${baseUrl}/web-trading`,
-    `${baseUrl}/why-fliptrade`
+    `${baseUrl}/why-fliptrade`,
+    `${baseUrl}/about-us`,
+    `${baseUrl}/contest`,
+    `${baseUrl}/deposit-and-withdrawal`,
+    `${baseUrl}/reviews`,
+    `${baseUrl}/signup-offer`,
+    `${baseUrl}/spreads-swaps`,
+
   ];
 
   const today = new Date().toISOString();
@@ -42,16 +49,16 @@ export async function GET() {
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${staticUrls
-    .map(
-      url => `
+      .map(
+        url => `
         <url>
            <loc>${url}</loc>
            <lastmod>${today}</lastmod>
            <changefreq>daily</changefreq>
            <priority>0.7</priority>
         </url>`
-    )
-    .join("")}
+      )
+      .join("")}
 </urlset>`;
 
   return new Response(sitemap, {

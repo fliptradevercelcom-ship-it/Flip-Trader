@@ -7,7 +7,7 @@ import GoogleAnalytics from "./GoogleAnalytics";
 import Metalinksseo from "./Metalinksseo";
 import Telegramlink from "./Telegramlink";
 import Aosinit from "./Components/Pagecomponents/Aosinit";
-import Signuppopup from "./Components/Signuppopup";
+// import Signuppopup from "./Components/Signuppopup";
 import WhtasAppLink from "./Components/Pagecomponents/WhtasAppLink";
 import Script from "next/script";
 const monaSans = localFont({
@@ -30,17 +30,6 @@ const monaSanswidenormal = localFont({
 
   variable: "--font-mona-sans-monaSanswidenormal"
 });
-export const metadata = {
-  title: "Best Forex & Multi-Asset Trading Platform | FlipTrade Group",
-  description:
-    "Trade forex, stocks, cryptos, commodities & metals with FlipTrade — low spreads, fast execution, secure platform. Start your trading journey today.",
-  icons: {
-    icon: "/favicon.ico"
-  },
-  verification: {
-    google: "KgCqFoO6NlFNiJg06rxf_0u6vjoiAAGn4sVMH_X-1aQ"
-  }
-};
 const schemaData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -143,6 +132,17 @@ const schemaData = {
     }
   ]
 };
+export const metadata = {
+  title: "Best Forex & Multi-Asset Trading Platform | FlipTrade Group",
+  description:
+    "Trade forex, stocks, cryptos, commodities & metals with FlipTrade — low spreads, fast execution, secure platform. Start your trading journey today.",
+  icons: {
+    icon: "/favicon.ico"
+  },
+  verification: {
+    google: "KgCqFoO6NlFNiJg06rxf_0u6vjoiAAGn4sVMH_X-1aQ"
+  }
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -151,15 +151,15 @@ export default function RootLayout({ children }) {
         <Canonical />
         <Script id="gtm-script" strategy="afterInteractive">
           {`
-    (function(w,d,s,l,i){w[l]=w[l]||[];
-    w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-    var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-    j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;
-    f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-P8DN8QDS');
-  `}
+             (function(w,d,s,l,i){w[l]=w[l]||[];
+             w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+             var f=d.getElementsByTagName(s)[0],
+             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+             j.async=true;j.src=
+             'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+             f.parentNode.insertBefore(j,f);
+             })(window,document,'script','dataLayer','GTM-P8DN8QDS');
+          `}
         </Script>
 
         <script
