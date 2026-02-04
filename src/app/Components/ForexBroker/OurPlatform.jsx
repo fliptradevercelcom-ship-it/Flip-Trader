@@ -3,58 +3,27 @@ import Title from "../Uiux/Title";
 import Discription from "../Uiux/Discription";
 import Image from "next/image";
 import tradingposterlaptop from "../../../../public/images/tradingposterlaptop.webp";
-const dataplatform = [
-  {
-    title: "Mobile app",
-    description:
-      "Our powerful mobile platform doesn’t compromise on performance. Intuitive tools and features give you full control on the move.",
-    link: "",
-    class: "lg:left-[8%]"
-  },
-  {
-    title: "Web Trader",
-    description:
-      "Our powerful mobile platform doesn’t compromise on performance. Intuitive tools and features give you full control on the move.",
-    link: "",
-    class: ""
-  },
-  {
-    title: "TradingView",
-    description:
-      "Our powerful mobile platform doesn’t compromise on performance. Intuitive tools and features give you full control on the move.",
-    link: "",
-    class: ""
-  },
-  {
-    title: "MetaTrader 5 (MT5)",
-    description:
-      "Our powerful mobile platform doesn’t compromise on performance. Intuitive tools and features give you full control on the move.",
-    link: "",
-    class: "lg:left-[8%]"
-  }
-];
-const OurPlatform = () => {
+
+const OurPlatform = ({title, description, data}) => {
   return (
     <div className="inn_container pb-12 md:pt-12">
       <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] text-center lg:text-start gap-5">
         <div>
           <Title
-            title={"Control. Power. Speed. Get the Edge"}
+            title={title}
             color="gradient_text"
           />
         </div>
         <div className="flex justify-center items-center">
           <Discription
-            dispription={
-              "Our award-winning app and platforms offer full control, powerful performance, and fast execution to keep you ahead."
-            }
+            dispription={description}
             color="text-white"
           />
         </div>
       </div>
       <div className="pt-10 grid grid-cols-1 lg:grid-cols-2">
         <div className="space-y-8">
-          {dataplatform.map((item, index) =>
+          {data.map((item, index) =>
             <div
               className={`relative lg:w-fit  bg-theme rounded-3xl lg:mr-auto border-b lg:border-b-0 border-r-0 lg:border-l-[3px] border-white shadow-[0_-15px_20px_-16px_#6a40ec,0_15px_16px_-15px_#6a40ec] max-w-150 ps-6 py-5 ${item.class}`}
               key={index}

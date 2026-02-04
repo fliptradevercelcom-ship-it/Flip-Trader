@@ -6,7 +6,7 @@ import Button from '../Uiux/Button'
 import firebtnicon from "../../../../public/icons/firebtnicon.svg"
 import Image from 'next/image'
 import sidebanner from "../../../../public/images/whyfliptrade.webp"
-const ForexBrokerBanner = () => {
+const ForexBrokerBanner = ({title, description}) => {
     return (
         <div className='relative'>
             <video
@@ -22,10 +22,10 @@ const ForexBrokerBanner = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] relative z-[1]">
                     <div className="text-center lg:text-start max-w-[700px] px-0 md:px-[12] lg:px-0 lg:max-w-[unset] m-auto lg:m-0 flex items-center">
                         <div>
-                            <Title title='Forex Trading | Online FX Trading ,Forex Trading' color="gradient_text" ish1={true} />
+                            <Title title={title} color="gradient_text" ish1={true} />
                             <div className="pt-2 2xl:pt-4 xl:max-w-4xl">
                                 <Discription
-                                    dispription='The FX market moves over $5 trillion daily, making it the world’s largest and most liquid.The FX market moves over $5 trillion daily, making it the world’s largest and most liquid.'
+                                    dispription={description}
                                     color="text-[#D0D0D0]"
                                 />
                             </div>
@@ -34,8 +34,8 @@ const ForexBrokerBanner = () => {
                                     href={"https://client.fliptradegroup.com/trader/registration"}
                                 >
                                     <Button
-                                        icon={firebtnicon.src}
                                         btn_name="Start Trading"
+                                        icon={firebtnicon.src}
                                         btn_bg="bg-primary"
                                         text_color="text-white"
                                         border_color="border-primary"

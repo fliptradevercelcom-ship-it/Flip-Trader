@@ -4,66 +4,19 @@ import Discription from "../Uiux/Discription";
 import Button from "../Uiux/Button";
 import firebtnicon from "../../../../public/icons/firebtnicon.svg";
 
-const featureCards = [
-  {
-    __id: "01",
-    title: "Elite products, value, and execution",
-    description: [
-      "Choose from thousands of CFD markets across a variety of asset classes, including EUR/USD, US SP 500, Tesla and Nvidia.",
-      "Enjoy consistently low trading costs and fast, quality execution."
-    ],
-    cta: "TRADE MARKETS",
-    link: "#"
-  },
-  {
-    __id: "02",
-    title: "Tools designed for your edge",
-    description: [
-      "Choose from a variety of platforms and refine your trading with exclusive data tools like Performance Analytics.",
-      "Take full command of your analysis with industry-leading TradingView charts and in-platform news feeds."
-    ],
-    cta: "GET TRADING TOOLS",
-    link: "#"
-  },
-  {
-    __id: "03",
-    title: "A superior customer experience",
-    description: [
-      "Access knowledgeable customer support by phone, email or chat and enjoy convenient online account management tools.",
-      "VIP traders can experience personalised service and exclusive benefits."
-    ],
-    cta: "CUSTOMER SUPPORT",
-    link: "#"
-  },
-  {
-    __id: "04",
-    title: "A trusted global leader",
-    description: [
-      "We’re a wholly-owned subsidiary of StoneX Group, a Nasdaq-listed Fortune 50 financial giant with operating revenue of $3.4 billion.",
-      "Fully regulated and financially stable, providing trading services since 2001."
-    ],
-    cta: "FINANCIAL STRENGTH",
-    link: "#"
-  }
-];
-
-const BrokerFeature = () => {
+const BrokerFeature = ({title, description, data}) => {
   return (
     <div>
       <div className="inn_container py-12 md:py-18">
         <div className="grid grid-cols-1 xl:grid-cols-[2fr_3fr] gap-3">
           <div className="text-center lg:text-start">
             <Title
-              title={"Why trade with  fliptradegroup.com"}
+              title={title}
               color={"gradient_text"}
             />
             <div>
               <Discription
-                dispription={`
-                  Proudly supporting traders worldwide, we are committed to offering cutting-edge platforms, education, insights and opportunities for market success.
-                  <br />
-                  That's why over one million traders* have chosen us as their trusted partner.
-                 `}
+                dispription={description}
                 color={"text-white"}
               />
             </div>
@@ -80,7 +33,7 @@ const BrokerFeature = () => {
           </div>
           <div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 2xl:max-w-[90%] m-auto pt-6 xl:pt-0">
-              {featureCards.map((item, index) => {
+              {data.map((item, index) => {
                 return (
                   <div
                     key={index}

@@ -3,42 +3,10 @@ import React, { useState } from "react";
 import Title from "../Uiux/Title";
 import Discription from "../Uiux/Discription";
 import Image from "next/image";
-import tradingplatformtab from "../../../../public/images/tradingplatformtab.webp";
 import Button from "../Uiux/Button";
 import firebtnicon from "../../../../public/icons/firebtnicon.svg";
-const tabsData = [
-  {
-    id: "platforms",
-    title: "Platforms",
-    description: [
-      "Find a trading platform that complements your style and strategy. Choose from our award-winning Web Trader platform, MetaTrader 4 and our powerful mobile trading app for Android and iOS. Find a trading platform that complements your style and strategy.",
-      "Find a trading platform that complements your style and strategy. Choose from our award-winning Web Trader platform."
-    ],
-    button: "PLATFORMS",
-    image: tradingplatformtab
-  },
-  {
-    id: "academy",
-    title: "Trading Academy",
-    description: [
-      "Learn the basics of CFD trading with our range of videos and guides. Develop your skills with easy-to-understand tutorials and master the fundamentals of trading.",
-      "Learn the basics of CFD trading with our range of videos and guides. Develop your skills with easy-to-understand tutorials and master the fundamentals of trading."
-    ],
-    button: "TRADING ACADEMY",
-    image: tradingplatformtab
-  },
-  {
-    id: "risk",
-    title: "Risk Management",
-    description: [
-      "Learn the basics of CFD trading with our range of videos and guides. Develop your skills with easy-to-understand tutorials and master the fundamentals of trading.",
-      "Learn the basics of CFD trading with our range of videos and guides. Develop your skills with easy-to-understand tutorials and master the fundamentals of trading."
-    ],
-    button: "RISK MANAGEMENT",
-    image: tradingplatformtab
-  }
-];
-const TradingEducation = () => {
+
+const TradingEducation = ({title, description, tabsData}) => {
   const [activeTab, setActiveTab] = useState("platforms");
   const activeContent = tabsData.find(tab => tab.id === activeTab);
   return (
@@ -47,15 +15,13 @@ const TradingEducation = () => {
         <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] text-center lg:text-start gap-5">
           <div>
             <Title
-              title={"Advanced CFD Trading Education"}
+              title={title}
               color="gradient_text"
             />
           </div>
           <div className="flex justify-center items-center">
             <Discription
-              dispription={
-                "Our award-winning app and platforms offer full control, powerful performance, and fast execution to keep you ahead."
-              }
+              dispription={description}
               color="text-white"
             />
           </div>

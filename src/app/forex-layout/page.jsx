@@ -9,6 +9,7 @@ import Spreadtable from "../Components/Pagecomponents/Spreadtable";
 import Title from "../Components/Uiux/Title";
 import OurPlatform from "../Components/ForexBroker/OurPlatform";
 import TradingEducation from "../Components/Pagecomponents/TradingEducation";
+import tradingplatformtab from "../../../public/images/tradingplatformtab.webp";
 import Faq from "../Components/Pagecomponents/Faq";
 const pointstep = [
   {
@@ -76,15 +77,166 @@ const faqData = [
       "Deposits and withdrawals can be made securely through the client portal using supported payment methods after completing the verification process."
   }
 ];
-
-
+const features = [
+  {
+    title: "INDICES",
+    description:
+      "Take a position on 21 major global indices, including US SP 500, Wall Street and Hong Kong 50. Spreads start from 0.3 pts.",
+    class: "z-[4]",
+    alt: "Global stock market indices"
+  },
+  {
+    title: "FOREX Trading",
+    description:
+      "Access the world’s most traded market with 84 FX pairs including EUR/USD and USD/JPY. Spreads as low as 0.5 pips.",
+    class: "xl:w-[120%] left-[-20%] z-[3]",
+    alt: "Forex currency trading"
+  },
+  {
+    title: "SHARES CFDs",
+    description:
+      "Trade CFDs on 6,000+ global stocks with commissions from just 0.08% and out-of-hours trading access.",
+    class: "xl:w-[120%] left-[-20%] z-[2]",
+    alt: "Global shares and stock trading"
+  },
+  {
+    title: "CRYPTO Trading",
+    description:
+      "Trade leading crypto CFDs 7 days a week including Bitcoin, Ether, Ripple and more.",
+    class: "xl:w-[120%] left-[-20%] z-[1]",
+    alt: "Cryptocurrency CFD trading"
+  }
+];
+const featureCards = [
+  {
+    __id: "01",
+    title: "Elite products, value, and execution",
+    description: [
+      "Choose from thousands of CFD markets across a variety of asset classes, including EUR/USD, US SP 500, Tesla and Nvidia.",
+      "Enjoy consistently low trading costs and fast, quality execution."
+    ],
+    cta: "TRADE MARKETS",
+    link: "#"
+  },
+  {
+    __id: "02",
+    title: "Tools designed for your edge",
+    description: [
+      "Choose from a variety of platforms and refine your trading with exclusive data tools like Performance Analytics.",
+      "Take full command of your analysis with industry-leading TradingView charts and in-platform news feeds."
+    ],
+    cta: "GET TRADING TOOLS",
+    link: "#"
+  },
+  {
+    __id: "03",
+    title: "A superior customer experience",
+    description: [
+      "Access knowledgeable customer support by phone, email or chat and enjoy convenient online account management tools.",
+      "VIP traders can experience personalised service and exclusive benefits."
+    ],
+    cta: "CUSTOMER SUPPORT",
+    link: "#"
+  },
+  {
+    __id: "04",
+    title: "A trusted global leader",
+    description: [
+      "We’re a wholly-owned subsidiary of StoneX Group, a Nasdaq-listed Fortune 50 financial giant with operating revenue of $3.4 billion.",
+      "Fully regulated and financially stable, providing trading services since 2001."
+    ],
+    cta: "FINANCIAL STRENGTH",
+    link: "#"
+  }
+];
+const dataplatform = [
+  {
+    title: "Mobile app",
+    description:
+      "Our powerful mobile platform doesn’t compromise on performance. Intuitive tools and features give you full control on the move.",
+    link: "",
+    class: "lg:left-[8%]"
+  },
+  {
+    title: "Web Trader",
+    description:
+      "Our powerful mobile platform doesn’t compromise on performance. Intuitive tools and features give you full control on the move.",
+    link: "",
+    class: ""
+  },
+  {
+    title: "TradingView",
+    description:
+      "Our powerful mobile platform doesn’t compromise on performance. Intuitive tools and features give you full control on the move.",
+    link: "",
+    class: ""
+  },
+  {
+    title: "MetaTrader 5 (MT5)",
+    description:
+      "Our powerful mobile platform doesn’t compromise on performance. Intuitive tools and features give you full control on the move.",
+    link: "",
+    class: "lg:left-[8%]"
+  }
+];
+const tabsData = [
+  {
+    id: "platforms",
+    title: "Platforms",
+    description: [
+      "Find a trading platform that complements your style and strategy. Choose from our award-winning Web Trader platform, MetaTrader 4 and our powerful mobile trading app for Android and iOS. Find a trading platform that complements your style and strategy.",
+      "Find a trading platform that complements your style and strategy. Choose from our award-winning Web Trader platform."
+    ],
+    button: "PLATFORMS",
+    image: tradingplatformtab
+  },
+  {
+    id: "academy",
+    title: "Trading Academy",
+    description: [
+      "Learn the basics of CFD trading with our range of videos and guides. Develop your skills with easy-to-understand tutorials and master the fundamentals of trading.",
+      "Learn the basics of CFD trading with our range of videos and guides. Develop your skills with easy-to-understand tutorials and master the fundamentals of trading."
+    ],
+    button: "TRADING ACADEMY",
+    image: tradingplatformtab
+  },
+  {
+    id: "risk",
+    title: "Risk Management",
+    description: [
+      "Learn the basics of CFD trading with our range of videos and guides. Develop your skills with easy-to-understand tutorials and master the fundamentals of trading.",
+      "Learn the basics of CFD trading with our range of videos and guides. Develop your skills with easy-to-understand tutorials and master the fundamentals of trading."
+    ],
+    button: "RISK MANAGEMENT",
+    image: tradingplatformtab
+  }
+];
 const page = () => {
   return (
     <div>
-      <ForexBrokerBanner />
-      <CustomersSay />
-      <BrokerFeature />
-      <OurPlatform />
+      <ForexBrokerBanner
+        title={"Forex Trading | Online FX Trading ,Forex Trading"}
+        description={
+          "The FX market moves over $5 trillion daily, making it the world’s largest and most liquid.The FX market moves over $5 trillion daily, making it the world’s largest and most liquid."
+        }
+      />
+      <CustomersSay data={features} />
+      <BrokerFeature
+        title={"Why trade with  fliptradegroup.com"}
+        description={`
+          Proudly supporting traders worldwide, we are committed to offering cutting-edge platforms, education, insights and opportunities for market success.
+            <br />
+          That's why over one million traders* have chosen us as their trusted partner.
+          `}
+        data={featureCards}
+      />
+      <OurPlatform
+        title={"Control. Power. Speed. Get the Edge"}
+        description={
+          "Our award-winning app and platforms offer full control, powerful performance, and fast execution to keep you ahead."
+        }
+        data={dataplatform}
+      />
       <div className="md:pt-10  max-w-7xl m-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl m-auto gap-y-3">
           {pointstep.map((data, index) =>
@@ -137,7 +289,11 @@ const page = () => {
         </div>
         <Spreadtable />
       </div>
-      <TradingEducation />
+      <TradingEducation 
+        title={'Advanced CFD Trading Education'}
+        description={'Our award-winning app and platforms offer full control, powerful performance, and fast execution to keep you ahead.'}
+        tabsData={tabsData}
+      />
       <div className="bg-theme">
         <div className="inn_container pt-12 pb-16">
           <div className="text-center">
