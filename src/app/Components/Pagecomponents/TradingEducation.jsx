@@ -11,8 +11,8 @@ const tabsData = [
     id: "platforms",
     title: "Platforms",
     description: [
-      "Find a trading platform that complements your style and strategy. Choose from our award-winning Web Trader platform, MetaTrader 4 and our powerful mobile trading app for Android and iOS. Find a trading platform that complements your style and strategy. Choose from our award-winning Web Trader platform, MetaTrader 4 and our powerful mobile trading app for Android and iOS.",
-      "Find a trading platform that complements your style and strategy. Choose from our award-winning Web Trader platform, MetaTrader 4 and our powerful mobile trading app for Android and iOS. Find a trading platform that complements your style and strategy."
+      "Find a trading platform that complements your style and strategy. Choose from our award-winning Web Trader platform, MetaTrader 4 and our powerful mobile trading app for Android and iOS. Find a trading platform that complements your style and strategy.",
+      "Find a trading platform that complements your style and strategy. Choose from our award-winning Web Trader platform."
     ],
     button: "PLATFORMS",
     image: tradingplatformtab
@@ -73,7 +73,7 @@ const TradingEducation = () => {
                 ${activeTab === tab.id
                   ? "gradient_bg text-black"
                   : "text-white hover:bg-white/10"} ${index === 2
-                  ? "col-span-2 md:col-span-1 border-t  text-center"
+                  ? "col-span-2 md:col-span-1 border-t md:border-t-0 text-center"
                   : ""}`}
               >
                 {tab.title}
@@ -96,7 +96,7 @@ const TradingEducation = () => {
                 </p>
               )}
 
-              <div className="pt-6 flex justify-center md:justify-start">
+              <div className="pt-6 md:pt-12 flex justify-center md:justify-start">
                 <Button
                   btn_name={activeContent.button}
                   btn_bg={"bg-primary"}
