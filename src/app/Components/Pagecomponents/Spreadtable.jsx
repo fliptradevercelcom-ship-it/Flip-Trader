@@ -183,7 +183,6 @@ export default function Spreadtable() {
         </table>
       </div>
 
-      {/* Load More */}
       {visible < filteredData.length && (
         <div className="flex justify-center mt-6">
           <button
