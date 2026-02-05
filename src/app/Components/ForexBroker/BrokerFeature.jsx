@@ -3,32 +3,31 @@ import Title from "../Uiux/Title";
 import Discription from "../Uiux/Discription";
 import Button from "../Uiux/Button";
 import firebtnicon from "../../../../public/icons/firebtnicon.svg";
+import Link from "next/link";
 
-const BrokerFeature = ({title, description, data}) => {
+const BrokerFeature = ({ title, description, data }) => {
   return (
     <div>
       <div className="inn_container py-12 md:py-18">
         <div className="grid grid-cols-1 xl:grid-cols-[2fr_3fr] gap-3">
           <div className="text-center lg:text-start">
-            <Title
-              title={title}
-              color={"gradient_text"}
-            />
+            <Title title={title} color={"gradient_text"} />
             <div>
-              <Discription
-                dispription={description}
-                color={"text-white"}
-              />
+              <Discription dispription={description} color={"text-white"} />
             </div>
             <div className="pt-8">
-              <Button
-                btn_name="Open Account"
-                icon={firebtnicon}
-                border_color="border-primary"
-                btn_bg="bg-primary"
-                shadow={true}
-                text_color="text-white"
-              />
+              <Link
+                href={"https://client.fliptradegroup.com/trader/registration"}
+              >
+                <Button
+                  btn_name="Open Account"
+                  icon={firebtnicon}
+                  border_color="border-primary"
+                  btn_bg="bg-primary"
+                  shadow={true}
+                  text_color="text-white"
+                />
+              </Link>
             </div>
           </div>
           <div>
@@ -56,12 +55,12 @@ const BrokerFeature = ({title, description, data}) => {
                       </p>
                     )}
 
-                    <a
+                    {/* <a
                       href={item.link}
                       className="mt-6 inline-flex items-center gap-2"
                     >
                       {item.cta} →
-                    </a>
+                    </a> */}
                   </div>
                 );
               })}
