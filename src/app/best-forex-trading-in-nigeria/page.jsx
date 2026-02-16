@@ -158,12 +158,12 @@ const pointstep = [
 ];
 const faqData = [
   {
-    question: "Why choose FlipTrade Group?",
+    question: "Why choose FlipTrade Group in Nigeria?",
     answer:
       "FlipTrade Group offers secure trading, fast execution, advanced tools, and education, making it ideal for best forex trading in Nigeria for beginners and traders alike."
   },
   {
-    question: "Is FlipTrade Group a trusted broker?",
+    question: "Is FlipTrade Group a trusted broker in Nigeria?",
     answer:
       "Yes, FlipTrade Group ranks among the Best Forex Brokers in Nigeria due to transparent pricing, reliable platforms, strong security, and professional support for traders nationwide."
   },
@@ -173,7 +173,7 @@ const faqData = [
       "It provides MT5, WebTrader, mobile access, real-time pricing, and advanced charts, making it the best platform for forex trading in Nigeria today for all traders."
   },
   {
-    question: "Can beginners trade easily?",
+    question: "Can beginners trade easily with FlipTrade Group in Nigeria?",
     answer:
       "Beginners can start Forex Trading in Nigeria easily using FlipTrade Group with demo accounts, learning resources, simple tools, and guidance from experts for confident trading."
   },
@@ -183,7 +183,7 @@ const faqData = [
       "FlipTrade Group ensures best forex trading in Nigeria through strong security systems, data protection, fund segregation, and responsible practices trusted by traders across Nigerian markets."
   },
   {
-    question: "Does it support mobile and MT5?",
+    question: "Does FlipTrade Group in Nigeria support mobile and MT5?",
     answer:
       "Yes, the best platform for forex trading in Nigeria supports MT5, WebTrader, and mobile apps, enabling seamless Forex Trading in Nigeria across devices anytime anywhere."
   },
@@ -193,7 +193,7 @@ const faqData = [
       "Traders access major, minor, and exotic currency pairs globally while engaging in Forex Trading in Nigeria with competitive spreads and deep liquidity on trusted platforms."
   },
   {
-    question: "Why do professionals prefer FlipTrade Group?",
+    question: "Why do professionals prefer FlipTrade Group in Nigeria?",
     answer:
       "Professionals choose FlipTrade Group for best forex trading in Nigeria because of fast execution, advanced tools, transparency, and reliable infrastructure offered to serious traders nationwide."
   },
@@ -203,7 +203,7 @@ const faqData = [
       "Yes, analytics and tools help traders succeed with Forex Trading in Nigeria on the best platform for forex trading in Nigeria online using real-time insights."
   },
   {
-    question: "How does FlipTrade support long-term growth?",
+    question: "How does FlipTrade support long-term growth in Nigeria?",
     answer:
       "FlipTrade Group supports long-term success in best forex trading in Nigeria through education, technology, market insights, and reliable trading conditions for consistent trader growth nationwide."
   }
