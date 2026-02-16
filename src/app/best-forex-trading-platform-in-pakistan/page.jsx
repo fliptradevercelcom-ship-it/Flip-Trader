@@ -14,30 +14,30 @@ import Link from "next/link";
 
 const features = [
   {
-    title: "INDICES",
+    title: "FOREX MARKET",
     description:
-      "Take positions on major global indices with FlipTrade Group. Trade popular indices covering US, European, and Asian markets with competitive spreads, smooth execution, and reliable market access designed for active traders.",
+      "Access a wide range of major, minor, and exotic currency pairs through FlipTrade Group. Recognized as the best broker for forex trading in Pakistan, the platform offers deep liquidity, transparent pricing, and fast order execution designed for serious and active forex traders.",
     class: "z-[4]",
     alt: "Global stock market indices"
   },
   {
-    title: "FOREX Trading",
+    title: "FOREX TRADING",
     description:
-      "Trade the global forex market with FlipTrade Group and access a wide range of currency pairs, including major and minor FX pairs. Enjoy fast execution, tight spreads, and a stable trading environment built for traders in Pakistan.",
+      "Trade forex efficiently in a stable and performance-focused environment. Ranked among the best forex brokers in Pakistan, FlipTrade Group combines fair pricing, reliable trade execution, and user-friendly systems that support both new traders and experienced professionals using the best forex trading platform in Pakistan.",
     class: "xl:w-[120%] left-[-20%] z-[3]",
     alt: "Forex currency trading"
   },
   {
-    title: "SHARES CFDs",
+    title: "FOREX CFDs",
     description:
-      "Trade CFDs on leading global companies through FlipTrade Group’s advanced trading platform. Access international stock markets with flexible trading hours, transparent pricing, and tools that support informed trading decisions.",
+      "Explore global currency markets through forex CFDs with flexible trading conditions. FlipTrade Group enables traders using the best forex trading app in Pakistan to track price movements, apply risk management strategies, and trade global currencies with greater control and confidence.",
     class: "xl:w-[120%] left-[-20%] z-[2]",
     alt: "Global shares and stock trading"
   },
   {
-    title: "CRYPTO Trading",
+    title: "FOREX PLATFORMS",
     description:
-      "Trade popular cryptocurrency CFDs with FlipTrade Group and access digital markets throughout the week. Trade major crypto assets using a secure platform with advanced charting and risk-aware trading conditions.",
+      "Choose from MT5, WebTrader, and mobile trading solutions tailored for speed and security. Designed for traders seeking the best app for forex trading in Pakistan, FlipTrade Group delivers real-time data, advanced charting tools, and uninterrupted access to international forex markets.",
     class: "xl:w-[120%] left-[-20%] z-[1]",
     alt: "Cryptocurrency CFD trading"
   }
@@ -45,36 +45,36 @@ const features = [
 const featureCards = [
   {
     __id: "01",
-    title: "Advanced markets & execution",
+    title: "High-Performance Forex Access & Execution",
     description: [
-      "Trade a wide range of global markets with FlipTrade Group, including forex, indices, shares CFDs, and cryptocurrencies. Benefit from smooth order execution, competitive trading conditions, and a stable platform designed for active market participation.",
+      "Trade across a broad range of global currency pairs with fast, institutional-level execution. As the best broker for forex trading in Pakistan, FlipTrade Group delivers competitive spreads, reliable liquidity, and efficient order handling built to support active traders and high-volume forex strategies.",
     ],
     cta: "TRADE MARKETS",
     link: "#"
   },
   {
     __id: "02",
-    title: "Tools built for smarter trading",
+    title: "Intelligent Trading Tools for Market Precision",
     description: [
-      "Use powerful trading tools and platforms offered by FlipTrade Group to analyze markets and manage trades efficiently. Access advanced charts, real-time pricing, and features that help traders make informed trading decisions.",
+      "Refine your trading approach using advanced analytical tools, live pricing, and real-time market data. FlipTrade Group strengthens Forex Online Trading through the best forex trading platform in Pakistan, enabling traders to spot opportunities faster and react decisively to changing market conditions.",
     ],
     cta: "GET TRADING TOOLS",
     link: "#"
   },
   {
     __id: "03",
-    title: "Reliable customer support",
+    title: "User-Focused Trading Experience",
     description: [
-      "FlipTrade Group provides dedicated customer support through multiple channels to assist traders whenever needed. Manage your trading account easily and receive timely assistance to ensure a smooth trading experience.",
+      "Experience hassle-free trading with simplified account management and dedicated customer support. Optimized for users of the best forex trading app in Pakistan, FlipTrade Group provides a stable and consistent trading environment across mobile, web, and MT5 platforms.",
     ],
     cta: "CUSTOMER SUPPORT",
     link: "#"
   },
   {
     __id: "04",
-    title: "A trusted global trading brand",
+    title: "Globally Trusted Forex Trading Infrastructure",
     description: [
-      "FlipTrade Group operates with a strong focus on transparency, security, and responsible trading. Our services are built to support traders worldwide while maintaining high standards in technology, data protection, and risk-aware trading practices.",
+      "Built on transparency, security, and responsible trading practices, FlipTrade Group serves traders worldwide. Recognized as one of the best forex brokers in Pakistan, the platform is designed to support secure, scalable, and long-term forex trading success.",
     ],
     cta: "FINANCIAL STRENGTH",
     link: "#"
@@ -82,30 +82,30 @@ const featureCards = [
 ];
 const dataplatform = [
   {
-    title: "Mobile App",
+    title: "Mobile Forex Trading",
     description:
-      "Trade anytime, anywhere with FlipTrade Group’s mobile trading app. Access real-time markets, manage trades, and monitor positions with intuitive tools designed for smooth performance on the move.",
+      "Trade currencies on the go using FlipTrade Group’s mobile solution. Recognized as the best forex trading app in Pakistan, the mobile platform allows traders to track markets, manage open positions, and execute trades instantly from anywhere.",
     link: "",
     class: "lg:left-[8%]"
   },
   {
-    title: "Web Trader",
+    title: "Web Trader for Forex Markets",
     description:
-      "Trade directly from your browser with FlipTrade Group’s Web Trader. Enjoy fast execution, advanced charting, and seamless access to global markets without downloading additional software.",
+      "Access global forex markets directly through your browser with FlipTrade Group’s Web Trader. Ideal for traders choosing the best broker for forex trading in Pakistan, it offers fast execution, real-time quotes, advanced charts, and secure access without software installation.",
     link: "",
     class: ""
   },
   {
-    title: "TradingView",
+    title: "Social & Copy Trading for Forex",
     description:
-      "Analyze markets with advanced charting and technical tools through TradingView integration. FlipTrade Group supports detailed market analysis to help traders plan and manage trades effectively.",
+      "Learn from experienced traders using Social & Copy Trading features. Available through the best forex trading platform in Pakistan, this option allows traders to follow proven strategies, copy trades automatically, and participate confidently in forex markets.",
     link: "",
     class: ""
   },
   {
     title: "MetaTrader 5 (MT5)",
     description:
-      "Trade forex and CFDs using MetaTrader 5 with FlipTrade Group. Access professional-grade tools, multiple order types, and reliable execution on one of the world’s most widely used trading platforms.",
+      "Trade with industry-leading MetaTrader 5 technology through FlipTrade Group. As part of the best forex trading app in Pakistan, MT5 delivers advanced indicators, automated trading capabilities, multiple order types, and reliable execution across all devices.",
     link: "",
     class: "lg:left-[8%]"
   }
@@ -113,33 +113,33 @@ const dataplatform = [
 const tabsData = [
   {
     id: "platforms",
-    title: "Platforms",
+    title: "Pip Value Calculator",
     description: [
-      "Find a trading platform that matches your trading style and strategy with FlipTrade Group. Access modern trading solutions designed for performance, stability, and ease of use across multiple devices.",
-      "Choose from Web Trader, MetaTrader 5, and mobile trading apps to trade forex and CFDs with reliable execution, advanced charting, and seamless market access—anytime, anywhere."
+      "Calculate potential profits and losses accurately with FlipTrade Group’s Pip Calculator. Designed for traders using Forex brokers in Singapore, it helps you understand pip values instantly, plan position sizes effectively, and manage risk with confidence before every trade."
     ],
-    button: "PLATFORMS",
-    image: tradingplatformtab
+    button: "Pip Calculator",
+    image: tradingplatformtab,
+    link: '/pip-calculator'
   },
   {
     id: "academy",
-    title: "Trading Academy",
+    title: "Economic Calendar",
     description: [
-      "Build a strong foundation in CFD trading with FlipTrade Group’s Trading Academy. Learn essential trading concepts through structured guides and educational content designed for clarity and ease of understanding..",
-      "From basic market concepts to practical trading strategies, the academy helps traders improve their knowledge and develop skills needed to navigate global financial markets with confidence."
+      "Stay informed about global economic developments that influence currency movements. A must-have for traders using the best forex trading app in Pakistan, the Economic Calendar delivers real-time updates on major announcements, policy decisions, and market-impacting data.",
     ],
-    button: "TRADING ACADEMY",
-    image: tradingplatformtab
+    button: "Economic Calendar",
+    image: tradingplatformtab,
+    link: '/economic-calendar'
   },
   {
     id: "risk",
-    title: "Risk Management",
+    title: "Forex Learning Programs",
     description: [
-      "Understand the importance of managing risk in CFD trading with FlipTrade Group’s risk management resources. Learn how to control exposure, manage positions responsibly, and approach trading with a risk-aware mindset.",
-      "Our educational content focuses on helping traders understand market volatility and make informed decisions while trading forex and CFDs."
+      "Advance your trading skills through organized educational content covering beginner to advanced topics. Supporting Forex Online Trading via the best app for forex trading in Pakistan, these learning materials help traders build disciplined strategies and long-term trading confidence.",
     ],
-    button: "RISK MANAGEMENT",
-    image: tradingplatformtab
+    button: "Learn Trading",
+    image: tradingplatformtab,
+    link: '/learn-trading'
   }
 ];
 const pointstep = [
@@ -158,72 +158,60 @@ const pointstep = [
 ];
 const faqData = [
   {
-    question: "What is forex trading and CFD trading?",
+    question: "What makes FlipTrade Group the best forex trading platform in Pakistan?",
     answer:
-      "Forex trading focuses on buying and selling currency pairs, while CFD trading lets you trade price movements of markets like indices, commodities, shares, and cryptocurrencies without owning the underlying asset. With FlipTrade Group, traders in Pakistan can access global markets through one platform."
+      "FlipTrade Group combines fast execution, advanced tools, and security, making it the best forex trading platform in Pakistan for beginners and professional traders alike."
   },
   {
-    question: "Can traders in Pakistan open an account with FlipTrade Group?",
+    question: "Why is FlipTrade Group considered the best forex broker in Pakistan?",
     answer:
-      "Yes. Traders in Pakistan can open an account with FlipTrade Group by completing the online registration and required verification steps. Eligibility may vary based on local requirements and internal checks."
+      "As the best forex broker in Pakistan, FlipTrade Group offers transparent pricing, tight spreads, strong liquidity, and reliable platforms supporting confident forex trading decisions."
   },
   {
-    question: "Which trading platforms are available on FlipTrade Group?",
+    question: "Is FlipTrade Group the best broker for forex trading in Pakistan for beginners?",
     answer:
-      "FlipTrade Group provides access to MetaTrader 5 (MT5) and web-based trading solutions, designed for desktop and mobile use so you can trade forex and CFDs with flexibility."
+      "Yes, FlipTrade Group is the best broker for forex trading in Pakistan, providing easy onboarding, learning resources, and tools designed for new and growing forex traders."
   },
   {
-    question: "Is FlipTrade Group suitable for beginners in Pakistan?",
+    question: "Which is the best app for forex trading in Pakistan?",
     answer:
-      "Yes. FlipTrade Group supports beginners with a user-friendly trading experience and educational resources. New traders can start with a demo account to understand the platform and practice basic trading strategies."
+      "FlipTrade Group offers the best app for forex trading in Pakistan, allowing traders to monitor markets, execute trades, and manage accounts securely from anywhere."
   },
   {
-    question: "Do you offer a demo account for practice?",
+    question: "How does the best forex trading app in Pakistan help manage risk?",
     answer:
-      "Yes. FlipTrade Group offers a demo account with virtual funds so traders can practice forex and CFD trading, test strategies, and explore platform features before moving to live trading."
+      "The best forex trading app in Pakistan by FlipTrade Group includes risk tools, real-time pricing, and calculators to help traders plan positions and control losses."
   },
   {
-    question: "What markets can I trade with FlipTrade Group?",
+    question: "Can I trade globally using the best forex trading platform in Pakistan?",
     answer:
-      "With FlipTrade Group, you can trade a range of global markets including forex pairs, indices, commodities, shares CFDs, and crypto CFDs—depending on account type and market availability."
+      "Yes, the best forex trading platform in Pakistan provides access to major, minor, and exotic currency pairs across global forex markets with reliable execution."
   },
   {
-    question: "What is leverage in forex trading, and is it risky?",
+    question: "Does the best forex broker in Pakistan support MT5 trading?",
     answer:
-      "Leverage allows you to open larger positions with a smaller amount of capital. While it can amplify gains, it can also amplify losses. FlipTrade Group encourages risk-aware trading and using leverage responsibly."
+      "The best forex broker in Pakistan, FlipTrade Group, supports MetaTrader 5 with advanced indicators, automation features, and multi-device access for forex traders."
   },
   {
-    question: "What risk management features can I use on the platform?",
+    question: "Why choose the best broker for forex trading in Pakistan over local platforms?",
     answer:
-      "FlipTrade Group platforms support common risk management tools such as Stop Loss, Take Profit, and pending orders. These tools help traders manage exposure, plan entries/exits, and control downside risk."
+      "Choosing the best broker for forex trading in Pakistan ensures better liquidity, stronger security, transparent pricing, and access to global trading technology and tools."
   },
   {
-    question: "How do deposits and withdrawals work for Pakistan traders?",
+    question: "Is Forex Online Trading safe with the best app for forex trading in Pakistan?",
     answer:
-      "Deposits and withdrawals are processed through the FlipTrade Group client portal after account verification. Available payment methods and processing times may depend on your selected method and internal compliance checks."
+      "Forex Online Trading is secure with the best app for forex trading in Pakistan, offering encrypted systems, regulated processes, and reliable infrastructure for traders."
   },
   {
-    question: "Is forex and CFD trading legal in Pakistan?",
+    question: "How does the best forex trading app in Pakistan support learning?",
     answer:
-      "Regulations can vary and may change over time. Traders in Pakistan should ensure they understand local rules and the risks involved before trading. FlipTrade Group provides risk disclosures and encourages informed, responsible trading."
+      "The best forex trading app in Pakistan includes education tools, market insights, and calculators that help traders build skills and improve long-term trading performance."
   }
 ];
 export const metadata = {
   title: "Best Forex Trading Platform in Pakistan | FlipTrade Group",
   description:
-    "Trade forex and CFDs with FlipTrade Group, a reliable trading platform for Pakistan traders. Access global markets, MT5 tools, and risk-aware trading.",
-  keywords: [
-    "best forex trading platform in Pakistan",
-    "forex trading Pakistan",
-    "online forex trading Pakistan",
-    "CFD trading platform Pakistan",
-    "trade forex in Pakistan",
-    "MT5 trading platform Pakistan",
-    "forex and CFD trading Pakistan",
-    "currency trading platform Pakistan",
-    "global forex markets",
-    "risk aware forex trading"
-  ]
+    "Trade global forex markets from Pakistan using MT5, WebTrader, and mobile apps. Enjoy tight spreads, advanced tools, and a secure trading environment.",
 };
 
 const page = () => {
@@ -232,23 +220,21 @@ const page = () => {
       <ForexBrokerBanner
         title={"Best Forex Trading Platform in Pakistan"}
         description={
-          "FlipTrade Group provides a secure and advanced forex trading platform for traders in Pakistan. Trade major, minor, and exotic currency pairs with fast execution, competitive spreads, and powerful tools on a reliable, user-friendly platform."
+          "FlipTrade Group is widely regarded as the best forex trading platform in Pakistan, built to meet the needs of modern traders. As a leading best forex broker in Pakistan, it delivers competitive spreads, high-speed execution, secure infrastructure, and dependable customer support. FlipTrade Group provides access to the best forex trading app in Pakistan for consistent and confident global trading."
         }
       />
       <CustomersSay data={features} />
       <BrokerFeature
-        title={"Why trade with  fliptradegroup.com"}
+        title={"Why Traders Choose FlipTrade Group"}
         description={`
-          FlipTrade Group supports traders in Pakistan with a reliable and advanced trading environment built for today’s global markets. Our platform focuses on transparency, performance, and ease of use, helping traders access forex and CFD markets with confidence.
-            <br />
-          From modern trading tools to responsive support, FlipTrade Group is designed to meet the needs of both new and experienced traders.
+          FlipTrade Group offers a technology-driven forex trading ecosystem trusted by traders worldwide. Recognized as the best forex broker in Pakistan, the platform blends advanced infrastructure, transparent trade conditions, and rapid execution to help traders make informed decisions in global forex markets.
           `}
         data={featureCards}
       />
       <OurPlatform
-        title={"Control. Power. Speed. Get the Edge"}
+        title={"Smart Forex Trading, Faster Execution"}
         description={
-          "FlipTrade Group’s advanced trading platforms give traders in Pakistan full control, powerful performance, and fast execution. Trade confidently with technology designed to support smarter decisions and efficient market access."
+          "FlipTrade Group provides a high-performance trading environment built for speed and accuracy. As the best forex trading platform in Pakistan, it enables smooth access to global markets, competitive trading conditions, and professional-level tools for forex traders."
         }
         data={dataplatform}
       />
@@ -301,8 +287,8 @@ const page = () => {
         <Spreadtable />
       </div>
       <TradingEducation 
-        title={'Advanced CFD Trading Education'}
-        description={'Our award-winning app and platforms offer full control, powerful performance, and fast execution to keep you ahead.'}
+        title={'Forex Education & Live Market Intelligence'}
+        description={'Build deeper market understanding with professional learning resources from FlipTrade Group. Created for traders using the best forex trading platform in Pakistan, these insights help users track market trends, apply risk management techniques, and trade with increased confidence.'}
         tabsData={tabsData}
       />
       <div className="bg-theme">

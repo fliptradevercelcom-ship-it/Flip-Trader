@@ -14,30 +14,30 @@ import Link from "next/link";
 
 const features = [
   {
-    title: "INDICES",
+    title: "FOREX MARKET",
     description:
-      "Trade major global indices with FlipTrade Group and gain exposure to leading markets across regions. Benefit from smooth execution and transparent trading conditions designed for active market participation.",
+      "Trade across global financial markets with access to major, minor, and exotic currency pairs. As a trusted name among the Best Forex Brokers in Nigeria, FlipTrade Group provides deep liquidity, fair pricing, and rapid trade execution. The platform is designed for traders looking for the best platform for forex trading in Nigeria, ensuring stability and accuracy in every trade.",
     class: "z-[4]",
     alt: "Global stock market indices"
   },
   {
-    title: "FOREX Trading",
+    title: "FOREX TRADING",
     description:
-      "Access the global forex market with FlipTrade Group and trade a wide range of currency pairs. Enjoy competitive spreads, fast execution, and a reliable trading environment built for traders in Nigeria.",
+      "Experience smooth and efficient Forex Trading in Nigeria through a performance-driven trading environment. FlipTrade Group delivers reliable execution, transparent pricing, and intuitive trading systems. Ranked among the Best Forex Brokers in Nigeria, it supports traders at every level using the best platform for forex trading in Nigeria.",
     class: "xl:w-[120%] left-[-20%] z-[3]",
     alt: "Forex currency trading"
   },
   {
-    title: "SHARES CFDs",
+    title: "FOREX CFDs",
     description:
-      "Trade CFDs on international companies with FlipTrade Group’s advanced trading platform. Access global stock markets with flexible trading opportunities and tools that support informed trading decisions.",
+      "Trade global currencies through flexible forex CFD instruments with full market visibility. FlipTrade Group empowers traders engaged in best forex trading in Nigeria to analyze price movements, manage risk effectively, and trade international currencies with confidence and control.",
     class: "xl:w-[120%] left-[-20%] z-[2]",
     alt: "Global shares and stock trading"
   },
   {
-    title: "CRYPTO Trading",
+    title: "FOREX PLATFORMS",
     description:
-      "Trade cryptocurrency CFDs with FlipTrade Group and access digital asset markets through a secure and user-friendly platform. Trade popular crypto assets with advanced charting and risk-aware conditions.",
+      "Trade seamlessly on MT5, WebTrader, and mobile platforms engineered for speed and stability. Built for traders looking for the best platform for forex trading in Nigeria, FlipTrade Group delivers advanced charts, live market data, and uninterrupted global market access.",
     class: "xl:w-[120%] left-[-20%] z-[1]",
     alt: "Cryptocurrency CFD trading"
   }
@@ -45,36 +45,36 @@ const features = [
 const featureCards = [
   {
     __id: "01",
-    title: "Advanced markets & execution",
+    title: "High-Speed Market Access & Execution",
     description: [
-      "Trade a wide range of global markets with FlipTrade Group, including forex, indices, shares CFDs, and cryptocurrencies. Benefit from smooth execution and stable trading conditions designed for active trading."
+      "Trade global currency pairs with institutional-grade execution speeds. As a leader in best forex trading in Nigeria, FlipTrade Group provides competitive spreads, strong liquidity, and efficient order processing designed for active and high-volume traders."
     ],
     cta: "TRADE MARKETS",
     link: "#"
   },
   {
     __id: "02",
-    title: "Tools designed for smarter trading",
+    title: "Advanced Trading Tools for Smarter Decisions",
     description: [
-      "Access modern trading tools that support technical analysis, real-time pricing, and efficient trade management. FlipTrade Group provides tools that help traders analyze markets and make informed decisions."
+      "Analyze markets using live pricing, technical indicators, and real-time data. Supporting Forex Trading in Nigeria, FlipTrade Group enhances decision-making through the best platform for forex trading in Nigeria, helping traders respond quickly to market opportunities."
     ],
     cta: "GET TRADING TOOLS",
     link: "#"
   },
   {
     __id: "03",
-    title: "Reliable customer experience",
+    title: "Seamless & User-Friendly Trading Experience",
     description: [
-      "Manage your trading account easily and receive support through multiple channels. FlipTrade Group focuses on delivering a smooth and responsive trading experience for traders in Nigeria."
+      "Enjoy a smooth trading journey with simplified account management and responsive customer support. Optimized for traders choosing the best platform for forex trading in Nigeria, FlipTrade Group ensures consistent performance across mobile, web, and MT5 platforms."
     ],
     cta: "CUSTOMER SUPPORT",
     link: "#"
   },
   {
     __id: "04",
-    title: "A trusted global trading brand",
+    title: "Secure & Globally Trusted Trading Environment",
     description: [
-      "FlipTrade Group operates with a strong focus on transparency, security, and responsible trading. Our infrastructure is built to support traders globally while maintaining high standards in platform reliability and data protection."
+      "Built on strong security protocols and transparent operations, FlipTrade Group supports responsible Forex Trading in Nigeria. Ranked among the Best Forex Brokers in Nigeria, the platform is designed for long-term trading confidence and scalability."
     ],
     cta: "FINANCIAL STRENGTH",
     link: "#"
@@ -82,30 +82,30 @@ const featureCards = [
 ];
 const dataplatform = [
   {
-    title: "Mobile App",
+    title: "Mobile Forex Trading",
     description:
-      "Trade anytime with FlipTrade Group’s mobile trading app. Monitor markets, manage positions, and execute trades in real time using a smooth and intuitive interface optimized for mobile devices.",
+      "Trade anytime, anywhere using FlipTrade Group’s mobile trading solution. Ideal for traders involved in Forex Trading in Nigeria, the mobile platform enables instant trade execution, market tracking, and position management on the go.",
     link: "",
     class: "lg:left-[8%]"
   },
   {
-    title: "Web Trader",
+    title: "Web Trader for Global Forex Markets",
     description:
-      "Trade directly from your browser with FlipTrade Group’s Web Trader. Access global markets without downloads, using fast execution, advanced charting, and a secure trading environment.",
+      "Trade directly from your browser with FlipTrade Group’s Web Trader. Perfect for those seeking the best platform for forex trading in Nigeria, it provides fast execution, real-time quotes, advanced charting, and secure access without downloads.",
     link: "",
     class: ""
   },
   {
-    title: "TradingView",
+    title: "Social & Copy Trading",
     description:
-      "Analyze market trends with advanced charting tools and technical indicators through TradingView. FlipTrade Group supports detailed analysis to help traders in Nigeria plan and manage trades more effectively.",
+      "Learn and grow by following experienced traders through Social & Copy Trading. Available on the best platform for forex trading in Nigeria, this feature allows users to copy proven strategies and participate confidently in Forex Trading in Nigeria.",
     link: "",
     class: ""
   },
   {
-    title: "MetaTrader 5 (MT5)",
+    title: "MetaTrader 5 (MT5) Trading",
     description:
-      "Trade forex and CFDs using MetaTrader 5 with FlipTrade Group. Access professional trading tools, multiple order types, and reliable execution across desktop, web, and mobile platforms.",
+      "Access global forex markets using the powerful MetaTrader 5 platform. Integrated into FlipTrade Group’s ecosystem, MT5 supports automated trading, advanced indicators, and multiple order types—making it ideal for best forex trading in Nigeria.",
     link: "",
     class: "lg:left-[8%]"
   }
@@ -113,33 +113,33 @@ const dataplatform = [
 const tabsData = [
   {
     id: "platforms",
-    title: "Platforms",
+    title: "Pip Value Calculator",
     description: [
-      "Choose a trading platform that matches your trading style with FlipTrade Group. Access reliable trading solutions designed for stability, performance, and ease of use across devices.",
-      "Trade forex and CFDs using Web Trader, MetaTrader 5, and mobile trading platforms that provide seamless access to global markets."
+      "Estimate trade outcomes accurately using the Pip Value Calculator. A valuable tool for traders choosing the Best Forex Brokers in Nigeria, it simplifies position sizing and strengthens risk management strategies."
     ],
-    button: "PLATFORMS",
-    image: tradingplatformtab
+    button: "Pip Calculator",
+    image: tradingplatformtab,
+    link: '/pip-calculator'
   },
   {
     id: "academy",
-    title: "Trading Academy",
+    title: "Economic Calendar",
     description: [
-      "Improve your trading knowledge with FlipTrade Group’s Trading Academy. Learn essential concepts of forex and CFD trading through structured and easy-to-follow educational content.",
-      "The academy helps traders in Nigeria build a strong foundation and develop a better understanding of global financial markets."
+      "Track important global economic events that impact currency markets. Essential for best forex trading in Nigeria, the Economic Calendar provides real-time updates on policy decisions, economic data, and major announcements."
     ],
-    button: "TRADING ACADEMY",
-    image: tradingplatformtab
+    button: "Economic Calendar",
+    image: tradingplatformtab,
+    link: '/economic-calendar'
   },
   {
     id: "risk",
-    title: "Risk Management",
+    title: "Forex Learning Programs",
     description: [
-      "Understand the importance of managing risk when trading CFDs and forex with FlipTrade Group. Learn key principles that help control exposure and support responsible trading decisions.",
-      "Our resources focus on helping traders in Nigeria trade with awareness and confidence in changing market conditions."
+      "Develop your trading skills with structured educational programs covering beginner to advanced strategies. Supporting Forex Trading in Nigeria, these resources help traders build discipline, confidence, and long-term success using the best platform for forex trading in Nigeria.",
     ],
-    button: "RISK MANAGEMENT",
-    image: tradingplatformtab
+    button: "Learn Trading",
+    image: tradingplatformtab,
+    link: '/learn-trading'
   }
 ];
 const pointstep = [
@@ -158,73 +158,62 @@ const pointstep = [
 ];
 const faqData = [
   {
-    question: "What is forex trading and how does it work?",
+    question: "Why choose FlipTrade Group?",
     answer:
-      "Forex trading involves buying and selling currency pairs to take advantage of price movements in the global foreign exchange market. FlipTrade Group allows traders in Nigeria to access forex markets through a secure online trading platform."
+      "FlipTrade Group offers secure trading, fast execution, advanced tools, and education, making it ideal for best forex trading in Nigeria for beginners and traders alike."
   },
   {
-    question: "Can traders in Nigeria open an account with FlipTrade Group?",
+    question: "Is FlipTrade Group a trusted broker?",
     answer:
-      "Yes. Traders in Nigeria can open an account with FlipTrade Group by completing the online registration and verification process, subject to eligibility requirements."
+      "Yes, FlipTrade Group ranks among the Best Forex Brokers in Nigeria due to transparent pricing, reliable platforms, strong security, and professional support for traders nationwide."
   },
   {
-    question: "Which trading platforms are available for Nigeria traders?",
+    question: "What makes it the best trading platform?",
     answer:
-      "FlipTrade Group offers MetaTrader 5 (MT5), Web Trader, and mobile trading platforms, allowing traders in Nigeria to access forex and CFD markets across multiple devices."
+      "It provides MT5, WebTrader, mobile access, real-time pricing, and advanced charts, making it the best platform for forex trading in Nigeria today for all traders."
   },
   {
-    question: "Is FlipTrade Group suitable for beginners in Nigeria?",
+    question: "Can beginners trade easily?",
     answer:
-      "Yes. FlipTrade Group supports beginner traders by offering a user-friendly platform, demo accounts, and educational resources to help new traders understand forex and CFD trading."
+      "Beginners can start Forex Trading in Nigeria easily using FlipTrade Group with demo accounts, learning resources, simple tools, and guidance from experts for confident trading."
   },
   {
-    question: "Do you offer a demo account for practice?",
+    question: "How secure is the platform?",
     answer:
-      "Yes. FlipTrade Group provides a demo account with virtual funds so traders can practice trading strategies and explore platform features without financial risk."
+      "FlipTrade Group ensures best forex trading in Nigeria through strong security systems, data protection, fund segregation, and responsible practices trusted by traders across Nigerian markets."
   },
   {
-    question: "What markets can I trade with FlipTrade Group?",
+    question: "Does it support mobile and MT5?",
     answer:
-      "Traders can access global markets including forex pairs, indices, commodities, shares CFDs, and cryptocurrency CFDs, depending on market availability."
+      "Yes, the best platform for forex trading in Nigeria supports MT5, WebTrader, and mobile apps, enabling seamless Forex Trading in Nigeria across devices anytime anywhere."
   },
   {
-    question: "What is leverage in forex trading?",
+    question: "What markets are available?",
     answer:
-      "Leverage allows traders to control larger positions with a smaller amount of capital. While leverage can increase potential returns, it also increases risk and should be used carefully."
+      "Traders access major, minor, and exotic currency pairs globally while engaging in Forex Trading in Nigeria with competitive spreads and deep liquidity on trusted platforms."
   },
   {
-    question: "What risk management tools are available?",
+    question: "Why do professionals prefer FlipTrade Group?",
     answer:
-      "FlipTrade Group platforms include tools such as Stop Loss, Take Profit, and pending orders to help traders manage risk and control exposure."
+      "Professionals choose FlipTrade Group for best forex trading in Nigeria because of fast execution, advanced tools, transparency, and reliable infrastructure offered to serious traders nationwide."
   },
   {
-    question: "How do deposits and withdrawals work for Nigeria traders?",
+    question: "Are analytics tools available?",
     answer:
-      "Deposits and withdrawals are handled securely through the FlipTrade Group client portal after verification. Processing times and payment options may vary."
+      "Yes, analytics and tools help traders succeed with Forex Trading in Nigeria on the best platform for forex trading in Nigeria online using real-time insights."
   },
   {
-    question: "Is forex trading legal in Nigeria?",
+    question: "How does FlipTrade support long-term growth?",
     answer:
-      "Forex trading regulations may change over time. Traders in Nigeria should ensure they understand local requirements and associated risks before trading. FlipTrade Group promotes informed and responsible trading."
+      "FlipTrade Group supports long-term success in best forex trading in Nigeria through education, technology, market insights, and reliable trading conditions for consistent trader growth nationwide."
   }
 ];
 
 
 export const metadata = {
-  title: "Best Forex Trading in Nigeria | FlipTrade Group",
+  title: "Best Forex Trading in Nigeria | Top Platform for Online Forex",
   description:
-    "Trade forex and CFDs with FlipTrade Group in Nigeria. Access global markets, advanced trading platforms, and risk-aware trading conditions.",
-  keywords: [
-    "best forex trading in Nigeria",
-    "forex trading Nigeria",
-    "online forex trading Nigeria",
-    "forex trading platform Nigeria",
-    "CFD trading Nigeria",
-    "MT5 trading Nigeria",
-    "MetaTrader 5 Nigeria",
-    "trade forex in Nigeria",
-    "forex and CFD trading Nigeria"
-  ]
+    "Start forex trading in Nigeria with a secure platform, real-time charts, and global currency access. Trade confidently with professional tools and fast execution.",
 };
 
 
@@ -232,25 +221,23 @@ const page = () => {
   return (
     <div>
       <ForexBrokerBanner
-        title={"Best Forex Trading in Nigeria"}
+        title={"Best Forex Trading in Nigeria for Faster Profits"}
         description={
-          "FlipTrade Group provides a reliable and advanced forex trading experience for traders in Nigeria. Trade major, minor, and exotic currency pairs using powerful trading tools, fast execution, and a stable platform designed for both beginner and experienced traders."
+          "FlipTrade Group stands out as a reliable choice for traders seeking the best forex trading in Nigeria. Built for performance, security, and transparency, the platform supports both beginners and professional traders. Recognized among the Best Forex Brokers in Nigeria, FlipTrade Group offers advanced tools, competitive spreads, and seamless execution, making Forex Trading in Nigeria more accessible and efficient than ever."
         }
       />
       <CustomersSay data={features} />
       <BrokerFeature
-        title={"Why trade with  fliptradegroup.com"}
+        title={"Why trade with  FlipTrade Group"}
         description={`
-        FlipTrade Group supports traders in Nigeria with a reliable and performance-focused trading environment built for global financial markets. Our platform combines modern technology, transparent trading conditions, and easy-to-use tools to help traders trade with confidence.
-            <br />
-          From advanced trading platforms to responsive customer support, FlipTrade Group is designed to meet the needs of both new and experienced traders looking for a dependable forex and CFD trading experience.
+           FlipTrade Group delivers a modern, technology-focused trading ecosystem trusted by traders worldwide. Recognized among the Best Forex Brokers in Nigeria, the platform combines cutting-edge infrastructure, transparent conditions, and fast execution to support confident Forex Trading in Nigeria.
           `}
         data={featureCards}
       />
       <OurPlatform
-        title={"Control. Power. Speed. Get the Edge"}
+        title={"Smart Forex Trading with Faster Execution"}
         description={
-          "FlipTrade Group provides advanced trading platforms built for performance and reliability, giving traders in Nigeria smooth access to global forex and CFD markets."
+          "FlipTrade Group offers a high-performance trading environment focused on speed, accuracy, and reliability. Supporting best forex trading in Nigeria, the platform delivers professional tools, competitive conditions, and smooth access to global markets."
         }
         data={dataplatform}
       />
@@ -301,9 +288,9 @@ const page = () => {
         <Spreadtable />
       </div>
       <TradingEducation
-        title={"Advanced CFD Trading Education"}
+        title={"Forex Learning & Real-Time Market Intelligence"}
         description={
-          "FlipTrade Group offers practical learning resources and trading tools to help traders in Nigeria understand forex and CFD markets with greater clarity."
+          "Enhance your trading knowledge with professional learning resources from FlipTrade Group. Designed for traders focused on Forex Trading in Nigeria, these tools help analyze trends, manage risk, and improve trading performance on the best platform for forex trading in Nigeria."
         }
         tabsData={tabsData}
       />

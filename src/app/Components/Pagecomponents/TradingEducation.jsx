@@ -5,6 +5,7 @@ import Discription from "../Uiux/Discription";
 import Image from "next/image";
 import Button from "../Uiux/Button";
 import firebtnicon from "../../../../public/icons/firebtnicon.svg";
+import Link from "next/link";
 
 const TradingEducation = ({title, description, tabsData}) => {
   const [activeTab, setActiveTab] = useState("platforms");
@@ -63,6 +64,9 @@ const TradingEducation = ({title, description, tabsData}) => {
               )}
 
               <div className="pt-6 md:pt-12 flex justify-center md:justify-start">
+                <Link
+                 href={`${activeContent.link || ''}`}
+                 >
                 <Button
                   btn_name={activeContent.button}
                   btn_bg={"bg-primary"}
@@ -70,6 +74,7 @@ const TradingEducation = ({title, description, tabsData}) => {
                   text_color={"text-white"}
                   icon={firebtnicon}
                 />
+                </Link>
               </div>
             </div>
 

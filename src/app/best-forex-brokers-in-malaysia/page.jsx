@@ -14,30 +14,30 @@ import Link from "next/link";
 
 const features = [
   {
-    title: "INDICES",
+    title: "FOREX MARKET",
     description:
-      "Take positions on major global indices with FlipTrade Group. Trade popular indices covering US, European, and Asian markets with competitive spreads, smooth execution, and reliable market access designed for active traders.",
+      "Access a broad selection of major, minor, and exotic currency pairs with FlipTrade Group. Ranked among the Best Forex Brokers in Malaysia, the platform provides deep market liquidity, transparent pricing structures, and efficient order execution tailored for active forex traders in Malaysia.",
     class: "z-[4]",
     alt: "Global stock market indices"
   },
   {
-    title: "FOREX Trading",
+    title: "FOREX TRADING",
     description:
-      "Trade the global forex market with FlipTrade Group and access a wide range of currency pairs, including major and minor FX pairs. Enjoy fast execution, competitive spreads, and a stable trading environment built for traders in Malaysia.",
+      "Experience smooth and reliable Forex Trading in Malaysia within a stable and performance-focused trading ecosystem. As one of the Best Forex Brokers in Malaysia, FlipTrade Group combines fair trading conditions, consistent execution, and user-friendly systems that support both beginner and professional traders using the best platform for forex trading in Malaysia.",
     class: "xl:w-[120%] left-[-20%] z-[3]",
     alt: "Forex currency trading"
   },
   {
-    title: "SHARES CFDs",
+    title: "FOREX CFDs",
     description:
-      "Trade CFDs on leading global companies through FlipTrade Group’s advanced trading platform. Access international stock markets with flexible trading opportunities, transparent pricing, and tools that support informed trading decisions.",
+      "Trade global currencies through flexible forex CFD options designed for market adaptability. FlipTrade Group supports Forex Trading in Malaysia by allowing traders to track price movements, apply risk management strategies, and trade international currency pairs with enhanced flexibility using the best platform for forex trading in Malaysia.",
     class: "xl:w-[120%] left-[-20%] z-[2]",
     alt: "Global shares and stock trading"
   },
   {
-    title: "CRYPTO Trading",
+    title: "FOREX PLATFORMS",
     description:
-      "Trade popular cryptocurrency CFDs with FlipTrade Group and access digital asset markets throughout the week. Trade major crypto assets using a secure platform with advanced charting and risk-aware trading conditions.",
+      "Choose from MT5, WebTrader, and mobile trading solutions engineered for speed and reliability. Built for traders seeking the best platform for forex trading in Malaysia, FlipTrade Group delivers real-time pricing, advanced charting tools, and uninterrupted access to global forex markets.",
     class: "xl:w-[120%] left-[-20%] z-[1]",
     alt: "Cryptocurrency CFD trading"
   }
@@ -45,36 +45,36 @@ const features = [
 const featureCards = [
   {
     __id: "01",
-    title: "Advanced markets & execution",
+    title: "Fast & Reliable Forex Market Access",
     description: [
-      "Trade a wide range of global markets with FlipTrade Group, including forex, indices, shares CFDs, and cryptocurrencies. Benefit from smooth execution and stable trading conditions designed for active market participation."
+      "Trade a wide range of currency pairs with institutional-grade execution quality. As one of the Best Forex Brokers in Malaysia, FlipTrade Group ensures tight spreads, stable liquidity, and efficient order handling to support active trading strategies.",
     ],
     cta: "TRADE MARKETS",
     link: "#"
   },
   {
     __id: "02",
-    title: "Tools designed for smarter trading",
+    title: "Advanced Tools for Market Analysis",
     description: [
-      "Access modern trading tools and platforms that support technical analysis, real-time pricing, and efficient trade management. FlipTrade Group provides the tools traders need to analyze markets and act with clarity."
+      "Improve trading accuracy with professional analytical tools, live market data, and real-time pricing. FlipTrade Group enhances Forex Trading in Malaysia by empowering traders through the best platform for forex trading in Malaysia to identify opportunities and react quickly.",
     ],
     cta: "GET TRADING TOOLS",
     link: "#"
   },
   {
     __id: "03",
-    title: "Reliable customer experience",
+    title: "Seamless Trading Experience",
     description: [
-      "Receive support through multiple channels and manage your trading account with ease. FlipTrade Group focuses on providing a smooth and responsive trading experience for traders in Malaysia."
+      "Enjoy smooth account management and responsive customer support across all devices. Optimized for Forex Trading in Malaysia, FlipTrade Group delivers a consistent and reliable experience via web, mobile, and MT5 platforms.",
     ],
     cta: "CUSTOMER SUPPORT",
     link: "#"
   },
   {
     __id: "04",
-    title: "A trusted global trading brand",
+    title: "Globally Trusted Trading Infrastructure",
     description: [
-      "FlipTrade Group operates with a strong focus on transparency, security, and responsible trading. Our infrastructure is built to support traders worldwide while maintaining high standards in data protection and platform reliability."
+      "Built on strong security standards and transparent operations, FlipTrade Group supports traders worldwide. Ranked among the Best Forex Brokers in Malaysia, the platform is designed for secure, scalable, and long-term forex trading success.",
     ],
     cta: "FINANCIAL STRENGTH",
     link: "#"
@@ -82,30 +82,30 @@ const featureCards = [
 ];
 const dataplatform = [
   {
-    title: "Mobile App",
+    title: "Mobile Forex Trading",
     description:
-      "Trade on the go with FlipTrade Group’s mobile trading app. Monitor markets, manage positions, and execute trades in real time using an intuitive interface designed for smooth performance on mobile devices.",
+      "Trade anytime, anywhere with FlipTrade Group’s mobile solution. Supporting Forex Trading in Malaysia, the mobile platform allows traders to monitor markets, manage positions, and execute trades instantly with confidence.",
     link: "",
     class: "lg:left-[8%]"
   },
   {
-    title: "Web Trader",
+    title: "Web Trader for Global Forex Markets",
     description:
-      "Trade directly from your browser with FlipTrade Group’s Web Trader platform. Access global markets without downloads, using fast execution, advanced charting tools, and a secure trading environment.",
+      "Trade directly from your browser using FlipTrade Group’s Web Trader. Ideal for Forex Trading in Malaysia, it offers fast execution, advanced charts, real-time pricing, and secure access without downloads.",
     link: "",
     class: ""
   },
   {
-    title: "TradingView",
+    title: "Social & Copy Trading",
     description:
-      "Analyze markets with advanced charts and technical indicators through TradingView. FlipTrade Group supports detailed market analysis to help traders in Malaysia plan trades with greater clarity and precision.",
+      "Learn from experienced traders through Social & Copy Trading features. Available on the best platform for forex trading in Malaysia, this option allows users to follow proven strategies and participate confidently in forex markets.",
     link: "",
     class: ""
   },
   {
     title: "MetaTrader 5 (MT5)",
     description:
-      "Trade forex and CFDs using MetaTrader 5 with FlipTrade Group. Access professional trading tools, multiple order types, and reliable execution across desktop, web, and mobile platforms.",
+      "Trade using the industry-standard MT5 platform with FlipTrade Group. Widely supported by the Best Forex Brokers in Malaysia, MT5 offers automated trading, advanced indicators, multiple order types, and stable execution across all devices.",
     link: "",
     class: "lg:left-[8%]"
   }
@@ -118,8 +118,9 @@ const tabsData = [
       "Choose a trading platform that fits your trading style and strategy with FlipTrade Group. Access reliable and modern trading solutions designed to support performance, stability, and ease of use.",
       "Trade forex and CFDs using Web Trader, MetaTrader 5, and mobile trading apps that provide seamless access to global markets across devices."
     ],
-    button: "PLATFORMS",
-    image: tradingplatformtab
+    button: "Pip Calculator",
+    image: tradingplatformtab,
+    link: '/pip-calculator'
   },
   {
     id: "academy",
@@ -128,8 +129,9 @@ const tabsData = [
       "Strengthen your trading knowledge with FlipTrade Group’s Trading Academy. Learn core concepts of forex and CFD trading through clear, easy-to-follow educational content.",
       "From understanding market basics to exploring practical trading approaches, the academy helps traders in Malaysia build skills and improve market awareness."
     ],
-    button: "TRADING ACADEMY",
-    image: tradingplatformtab
+    button: "Economic Calendar",
+    image: tradingplatformtab,
+    link: '/economic-calendar'
   },
   {
     id: "risk",
@@ -138,8 +140,9 @@ const tabsData = [
       "Learn how to manage trading risk effectively with FlipTrade Group’s risk management resources. Understand key principles such as position sizing, market volatility, and responsible trade planning.",
       "Our educational content focuses on helping traders make informed decisions while trading CFDs and forex in changing market conditions."
     ],
-    button: "RISK MANAGEMENT",
-    image: tradingplatformtab
+    button: "Learn Trading",
+    image: tradingplatformtab,
+    link: '/learn-trading'
   }
 ];
 const pointstep = [
@@ -158,98 +161,84 @@ const pointstep = [
 ];
 const faqData = [
   {
-    question: "What is forex trading and CFD trading?",
+    question: "Is FlipTrade Group suitable for Forex Trading in Malaysia beginners?",
     answer:
-      "Forex trading involves buying and selling currency pairs, while CFD trading allows traders to speculate on price movements of assets such as indices, commodities, shares, and cryptocurrencies without owning the underlying asset. FlipTrade Group provides access to both through one trading platform."
+      "Yes, Forex Trading in Malaysia is beginner-friendly with FlipTrade Group, offering learning tools, intuitive platforms, and support trusted by Best Forex Brokers in Malaysia."
   },
   {
-    question: "Can traders in Malaysia open an account with FlipTrade Group?",
+    question: "What makes FlipTrade Group one of the Best Forex Brokers in Malaysia?",
     answer:
-      "Yes. Traders in Malaysia can open a trading account with FlipTrade Group by completing the online registration and verification process, subject to internal eligibility checks."
+      "FlipTrade Group delivers transparent pricing, fast execution, advanced platforms, and strong security, positioning it among the Best Forex Brokers in Malaysia for reliable Forex Trading in Malaysia."
   },
   {
-    question: "Which trading platforms does FlipTrade Group offer?",
+    question: "Why choose the best platform for forex trading in Malaysia?",
     answer:
-      "FlipTrade Group offers multiple trading platforms including MetaTrader 5 (MT5), Web Trader, and mobile trading applications, allowing traders to access forex and CFD markets across devices."
+      "Using the best platform for forex trading in Malaysia ensures faster execution, better tools, strong security, and smoother Forex Trading in Malaysia with trusted brokers."
   },
   {
-    question: "Is FlipTrade Group suitable for beginner traders in Malaysia?",
+    question: "Does FlipTrade Group support global forex markets?",
     answer:
-      "Yes. FlipTrade Group supports beginners by offering a user-friendly trading environment, educational resources, and demo accounts to help new traders understand the platform before trading live."
+      "Yes, FlipTrade Group provides global market access through the best platform for forex trading in Malaysia, supporting Forex Trading in Malaysia across major currency pairs."
   },
   {
-    question: "Do you provide a demo trading account?",
+    question: "How secure is Forex Trading in Malaysia with FlipTrade Group?",
     answer:
-      "Yes. FlipTrade Group provides a demo account with virtual funds so traders can practice strategies, explore platform features, and gain trading experience without financial risk."
+      "Forex Trading in Malaysia is secure with FlipTrade Group due to encrypted systems, transparent processes, and infrastructure standards followed by Best Forex Brokers in Malaysia."
   },
   {
-    question: "What markets can I trade with FlipTrade Group?",
+    question: "Can I trade on mobile using the best platform for forex trading in Malaysia?",
     answer:
-      "Traders can access a range of global markets including forex pairs, indices, commodities, shares CFDs, and cryptocurrency CFDs, depending on market availability and account type."
+      "Yes, the best platform for forex trading in Malaysia supports mobile trading, allowing Forex Trading in Malaysia anytime with real-time data and fast execution."
   },
   {
-    question: "What is leverage and how does it affect trading?",
+    question: "Does FlipTrade Group offer MT5 for Malaysian traders?",
     answer:
-      "Leverage allows traders to open larger positions with a smaller initial investment. While leverage can increase potential returns, it also increases risk, so it should be used responsibly."
+      "FlipTrade Group supports MT5 as part of the best platform for forex trading in Malaysia, enabling advanced analysis and professional Forex Trading in Malaysia."
   },
   {
-    question: "What risk management tools are available?",
+    question: "What tools help improve Forex Trading in Malaysia performance?",
     answer:
-      "FlipTrade Group platforms support common risk management tools such as Stop Loss, Take Profit, and pending orders to help traders manage exposure and control risk."
+      "Forex Trading in Malaysia improves with advanced charts, calculators, economic calendars, and analytics provided by Best Forex Brokers in Malaysia like FlipTrade Group."
   },
   {
-    question: "How do deposits and withdrawals work for Malaysia traders?",
+    question: "Why are Best Forex Brokers in Malaysia preferred over unregulated platforms?",
     answer:
-      "Deposits and withdrawals are processed securely through the FlipTrade Group client portal after account verification. Available payment methods and processing times may vary."
+      "Best Forex Brokers in Malaysia offer better liquidity, transparency, security, and execution quality, ensuring safer and more reliable Forex Trading in Malaysia."
   },
   {
-    question: "Is forex and CFD trading legal in Malaysia?",
+    question: "Is long-term Forex Trading in Malaysia possible with FlipTrade Group?",
     answer:
-      "Trading regulations may vary and can change over time. Traders in Malaysia should ensure they understand local requirements and the risks involved before trading. FlipTrade Group encourages informed and responsible trading."
+      "Yes, FlipTrade Group supports long-term Forex Trading in Malaysia through stable platforms, education resources, and infrastructure trusted among Best Forex Brokers in Malaysia."
   }
 ];
 
 export const metadata = {
-  title: "Best Forex Brokers in Malaysia | FlipTrade Group",
+  title: "Best Forex Brokers in Malaysia for 2026 | Trusted Trading Platform",
   description:
-    "Explore forex and CFD trading with FlipTrade Group in Malaysia. Access global markets, advanced platforms like MT5, and risk-aware trading conditions.",
-  keywords: [
-    "best forex brokers in Malaysia",
-    "forex broker Malaysia",
-    "forex trading Malaysia",
-    "online forex trading Malaysia",
-    "CFD broker Malaysia",
-    "CFD trading platform Malaysia",
-    "MT5 broker Malaysia",
-    "MetaTrader 5 Malaysia",
-    "trade forex in Malaysia",
-    "forex and CFD trading Malaysia"
-  ]
+    "Compare the best forex brokers in Malaysia offering low spreads, advanced trading tools, and reliable platforms for beginners and professional traders.",
 };
 
 const page = () => {
   return (
     <div>
       <ForexBrokerBanner
-        title={"Best Forex Brokers in <br/> Malaysia"}
+        title={"Best Approached Forex Brokers in Malaysia"}
         description={
-          "FlipTrade Group provides a reliable and advanced forex trading experience for traders in Malaysia. Trade major, minor, and exotic currency pairs using powerful trading tools, fast execution, and a stable platform designed for both beginner and experienced traders."
+          "Choosing the right trading partner is essential for long-term success in currency markets. Among the Best Forex Brokers in Malaysia, FlipTrade Group delivers a balanced trading environment combining technology, transparency, and reliability. Designed for traders at every level, the platform supports informed decision-making, efficient execution, and secure access to global forex markets."
         }
       />
       <CustomersSay data={features} />
       <BrokerFeature
-        title={"Why trade with  fliptradegroup.com"}
+        title={"Why Traders Choose FlipTrade Group"}
         description={`
-          FlipTrade Group supports traders in Malaysia with a reliable and performance-focused trading environment built for global markets. Our platform combines advanced technology, transparent trading conditions, and user-friendly tools to help traders trade with confidence.
-            <br />
-          From powerful trading platforms to responsive customer support, FlipTrade Group is designed to meet the needs of both new and experienced traders looking for a dependable forex and CFD trading partner.
+          FlipTrade Group offers a technology-driven trading environment trusted by traders worldwide. Recognized among the Best Forex Brokers in Malaysia, the platform blends advanced infrastructure, transparent trading conditions, and rapid execution to support smarter decision-making in Forex Trading in Malaysia.
           `}
         data={featureCards}
       />
       <OurPlatform
-        title={"Control. Power. Speed. (Malaysia)"}
+        title={"Trade Faster with Intelligent Forex Technology"}
         description={
-          "FlipTrade Group offers powerful trading platforms built for speed, stability, and full control. Trade global forex and CFD markets using technology designed to support confident and efficient trading in Malaysia."
+          "FlipTrade Group delivers a high-performance trading environment designed for speed and precision. As the best platform for forex trading in Malaysia, it provides smooth market access, competitive trading conditions, and professional-grade tools for modern forex traders."
         }
         data={dataplatform}
       />
@@ -276,7 +265,9 @@ const page = () => {
         </div>
 
         <div className="pt-6 md:pt-12 flex justify-center gap-6">
-          <Link href={"https://client.fliptradegroup.com/trader/registration"}>
+          <Link
+            href={'https://client.fliptradegroup.com/trader/registration'}
+          >
             <Button
               btn_name="Open Account"
               icon={firebtnicon}
@@ -300,10 +291,8 @@ const page = () => {
         <Spreadtable />
       </div>
       <TradingEducation
-        title={"Advanced CFD Trading Education"}
-        description={
-          "FlipTrade Group provides structured education, practical tools, and risk-focused learning resources to help traders in Malaysia trade CFDs with greater understanding and confidence."
-        }
+        title={'Forex Education & Live Market Intelligence'}
+        description={'Build deeper market understanding with professional learning resources from FlipTrade Group. Created for traders using the best forex trading platform in Pakistan, these insights help users track market trends, apply risk management techniques, and trade with increased confidence.'}
         tabsData={tabsData}
       />
       <div className="bg-theme">

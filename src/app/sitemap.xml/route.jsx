@@ -44,6 +44,8 @@ export async function GET() {
     `${baseUrl}/best-forex-brokers-in-malaysia`,
     `${baseUrl}/best-forex-trading-in-nigeria`,
     `${baseUrl}/best-forex-trading-platform-in-pakistan`,
+    `${baseUrl}/best-forex-broker-in-india`,
+    `${baseUrl}/forex-brokers-in-singapore`,
 
   ];
 
