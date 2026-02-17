@@ -43,10 +43,10 @@ const footerdata = {
         // { pagelink: "/refund-withdrawal", pagename: "Refund & Withdrawal" },
         // { pagelink: "/risk-warning", pagename: "Risk Warning" },
         // { pagelink: "/terms-and-conditions", pagename: "Terms & Conditions" }
-       { pagelink: "/spreads-swaps", pagename: "Spreads Swaps" },
-       { pagelink: "/contest", pagename: "Contest" },
-       { pagelink: "/deposit-and-withdrawal", pagename: "Deposit & Withdrawal" },
-       { pagelink: "/reviews", pagename: "Reviews" },
+        { pagelink: "/spreads-swaps", pagename: "Spreads Swaps" },
+        { pagelink: "/contest", pagename: "Contest" },
+        { pagelink: "/deposit-and-withdrawal", pagename: "Deposit & Withdrawal" },
+        { pagelink: "/reviews", pagename: "Reviews" },
       ],
     },
     {
@@ -146,6 +146,28 @@ const footerdata = {
       icon: telegram,
     },
   ],
+  forex_broker: [
+    {
+      pagename: "Best Forex Broker in India",
+      pagelink: "/best-forex-broker-in-india",
+    },
+    {
+      pagename: "Best Forex Brokers in Malaysia",
+      pagelink: "/best-forex-brokers-in-malaysia",
+    },
+    {
+      pagename: "Best Forex Trading in Nigeria",
+      pagelink: "/best-forex-trading-in-nigeria",
+    },
+    {
+      pagename: "Best Forex Trading Platform in Pakistan",
+      pagelink: "/best-forex-trading-platform-in-pakistan",
+    },
+    {
+      pagename: "Forex Brokers in Singapore",
+      pagelink: "/forex-brokers-in-singapore",
+    },
+  ]
 };
 const Fotter = () => {
   useAutoScroll("Download-app", { delay: 800 });
@@ -263,6 +285,24 @@ const Fotter = () => {
                     <Fotterlinks title={data.title} linklist={data.pagelinks} />
                   </div>
                 ))}
+              </div>
+              <div className=" px-4 md:px-6 lg:px-8 xl:px-12 py-4 md:py-6 lg:py-8 xl:py-10">
+                <h3 className="text-base md:text-xl 2xl:text-2xl font-semibold text-subprimary">
+                  Forex Broker
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-4 gap-y-3">
+                  {
+                    footerdata.forex_broker.map((data, index) => (
+                      <div key={index} className="flex items-center justify-start">
+                        <Link href={data.pagelink} className="w-full border-r">
+                          <span className="text-[14px] md:text-lg 2xl:text-xl text-white hover:underline font_secondary">
+                            {data.pagename}
+                          </span>
+                        </Link>
+                      </div>
+                    ))
+                  }
+                </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 bg-primary py-4 md:py-6 lg:py-8 xl:py-10 2xl:py-12 gap-3 md:gap-4 lg:gap-4 xl:gap-6 px-4 md:px-6 lg:px-8 xl:px-12">
                 {footerdata.policydata.map((data, index) => (
