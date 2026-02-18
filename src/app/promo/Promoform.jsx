@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import popupcoin from "../../../public/icons/popupcoin.svg";
 import Image from "next/image";
-const Promoform = ({title,btnname}) => {
+const Promoform = ({title,btnname, email_template}) => {
   const [nameerror, setNameError] = useState("");
   const [emailerror, setEmailError] = useState("");
   const [phonenumbererror, setphonenumberError] = useState("");
@@ -57,7 +57,7 @@ const Promoform = ({title,btnname}) => {
     ) {
       setLoading(true);
       try {
-        const res = await fetch("/api/promo", {
+        const res = await fetch(`/api/${email_template ? email_template : 'promo'}`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({

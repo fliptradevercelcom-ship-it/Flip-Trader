@@ -196,9 +196,9 @@ export default function RootLayout({ children }) {
           <Aosinit />
           {children}
           <Fotter />
-          <div className="fixed left-0 bottom-0 z-[999]">
+          {/* <div className="fixed left-0 bottom-0 z-[999]">
             <Telegramlink />
-          </div>
+          </div> */}
 
           <div className="fixed right-5 bottom-3 z-[999]">
             <WhtasAppLink width={"50px"} height={"50px"} />

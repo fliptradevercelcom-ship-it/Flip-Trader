@@ -50,7 +50,7 @@ const page = () => {
           </div>
         </div>
         <div className="flex justify-center pb-12 xl:pb-0 xl:w-[40%]">
-        <Promoform title={'Activate Your Reward'} btnname={'Submit'}/>
+        <Promoform title={'Activate Your Reward'} btnname={'Submit'} email_template={'ib-partner-offer'}/>
         </div>
        </div>
         
