@@ -66,7 +66,7 @@ export async function POST(req) {
 
               <tr>
                 <td style="padding:24px;background:#0f0a24;text-align:center;font-size:13px;color:rgba(255,255,255,0.45);">
-                  FlipTrade — IB Partner Lead Notification
+                  Flip Trade Group  — IB Partner Lead Notification
                 </td>
               </tr>
 
@@ -116,7 +116,7 @@ export async function POST(req) {
 
               <tr>
                 <td style="padding:24px;background:#0f0a24;text-align:center;font-size:13px;color:rgba(255,255,255,0.45);">
-                  FlipTrade — IB Partner Team Notification
+                 Flip Trade Group — IB Partner Team Notification
                 </td>
               </tr>
 
@@ -142,7 +142,7 @@ export async function POST(req) {
               <tr>
                 <td align="center" style="padding:32px;background:linear-gradient(135deg,#5813f5,#9d45ff);">
                   <h1 style="margin:0;font-size:26px;font-weight:700;color:#ffffff;">
-                    Welcome to FlipTrade IB Program
+                    Welcome to Flip Trade Group  IB Program
                   </h1>
                   <p style="margin:8px 0 0;font-size:16px;color:rgba(255,255,255,0.82);">
                     Hi ${name}, your request has been received
@@ -153,7 +153,7 @@ export async function POST(req) {
               <tr>
                 <td style="padding:32px;background:#15112b;">
                   <p style="margin:0 0 18px;font-size:16px;line-height:1.7;color:rgba(245,245,255,0.9);">
-                    Thank you for applying to become an Introducing Broker partner with FlipTrade.
+                    Thank you for applying to become an Introducing Broker partner with Flip Trade Group .
                     Our partnership team will contact you shortly to guide you through onboarding,
                     commission structure, and next steps.
                   </p>
@@ -164,7 +164,7 @@ export async function POST(req) {
 
                   <p style="margin:26px 0 0;font-size:16px;line-height:1.7;color:rgba(245,245,255,0.9);">
                     Regards,<br/>
-                    <strong style="color:#ffffff;">Team FlipTrade</strong>
+                    <strong style="color:#ffffff;">Team Flip Trade Group </strong>
                   </p>
                 </td>
               </tr>
