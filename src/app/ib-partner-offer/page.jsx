@@ -37,7 +37,7 @@ const page = () => {
               <div className="absolute inset-0 bg-primary opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
             </Link>
             <Link
-              href="https://wa.me/+918852099227"
+              href="https://wa.me/+447446987184"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex w-full max-w-xs items-center justify-center rounded-full border-2 border-[#25D366] bg-[#25D366] px-8 py-3 text-base text-[#060608] transition-all duration-300 hover:scale-105 hover:bg-transparent hover:text-white hover:shadow-[0_0_30px_rgba(37,211,102,0.5)] sm:w-auto sm:max-w-none sm:px-12 sm:py-4 sm:text-lg"
@@ -50,7 +50,7 @@ const page = () => {
           </div>
         </div>
         <div className="flex justify-center pb-12 xl:pb-0 xl:w-[40%]">
-        <Promoform title={'Activate Your Reward'} btnname={'Complete SignUp'}/>
+        <Promoform title={'Activate Your Reward'} btnname={'Submit'}/>
         </div>
        </div>
         

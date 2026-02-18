@@ -10,7 +10,7 @@ function Thankyoubanner() {
             Thank You!
           </h1>
           <p className="text-base md:text-lg lg:text-xl xl:text-2xl text-white/90">
-            Your form has been submitted. Our team will connect with you shortly.
+            Your request has been submitted. Our team will connect with you shortly.
           </p>
           <Link
            href={'/'}>
