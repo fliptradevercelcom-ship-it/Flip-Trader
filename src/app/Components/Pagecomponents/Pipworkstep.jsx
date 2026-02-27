@@ -3,27 +3,35 @@ import React from "react";
 import Title from "../Uiux/Title";
 import Discription from "../Uiux/Discription";
 import { useAutoScroll } from "../../../hooks/useAutoScroll";
-
-
-export default function Pipworkstep({title , dispription , pointstep}) {
+import Button from "../Uiux/Button";
+import firebtn from "../../../../public/icons/firebtnicon.svg";
+import Link from "next/link";
+export default function Pipworkstep({
+  title,
+  dispription,
+  pointstep,
+  only_title,
+  button,
+  btn_name,
+  btn_link
+}) {
   useAutoScroll("pip-cal", { delay: 800 });
   return (
     <div className="bg-theme py-12 md:py-18 lg:py-32" id="pip-cal">
       <div className="inn_container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 text-center lg:text-start">
-          <div>
-            <Title
-              title={title}
-              color="gradient_text"
-            />
+        {only_title
+          ? <div className="text-center">
+            <Title title={title} color="gradient_text" />
           </div>
-          <div className="flex justify-center items-center">
-            <Discription
-              dispription={dispription}
-              color="text-white"
-            />
-          </div>
-        </div>
+          : <div className="grid grid-cols-1 lg:grid-cols-2 text-center lg:text-start">
+            <div>
+              <Title title={title} color="gradient_text" />
+            </div>
+            <div className="flex justify-center items-center">
+              <Discription dispription={dispription} color="text-white" />
+            </div>
+          </div>}
+
         <div className="pt-10">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl m-auto">
             {pointstep.map((data, index) =>
@@ -46,6 +54,25 @@ export default function Pipworkstep({title , dispription , pointstep}) {
             )}
           </div>
         </div>
+
+        {
+          button &&
+          <div className=" flex justify-center pt-12">
+            <Link
+              href={btn_link}
+            >
+              <Button
+                btn_name={btn_name}
+                border_color="border-primary"
+                btn_bg={"bg-primary"}
+                shadow={true}
+                text_color={"text-white"}
+                icon={firebtn}
+              />
+            </Link>
+          </div>
+        }
+
       </div>
     </div>
   );
