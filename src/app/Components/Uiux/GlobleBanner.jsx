@@ -5,8 +5,7 @@ import Link from "next/link";
 import Button from "./Button";
 import Image from "next/image";
 import firebtn from "../../../../public/icons/firebtnicon.svg";
-import referfriend from '../../../../public/images/referfriend.webp';
-const GlobleBanner = ({title, description, btn_name, btn_link}) => {
+const GlobleBanner = ({title, description, btn_name, btn_link, banner}) => {
   return (
     <div className="relative">
       <video
@@ -20,7 +19,7 @@ const GlobleBanner = ({title, description, btn_name, btn_link}) => {
       />
       <div className="inn_container pt-40 2xl:pt-52">
         <div className="grid xl:grid-cols-2">
-          <div className="text-center xl:text-start">
+          <div className="text-center xl:text-start flex items-center">
             <div>
               <Title
                 title={title}
@@ -53,7 +52,7 @@ const GlobleBanner = ({title, description, btn_name, btn_link}) => {
           </div>
           <div className="pt-8 xl:pt-0 relative z-[1]">
             <Image
-              src={referfriend}
+              src={banner}
               alt="side banner"
               width={1500}
               height={500}

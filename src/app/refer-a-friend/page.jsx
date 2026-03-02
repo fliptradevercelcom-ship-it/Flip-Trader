@@ -7,6 +7,9 @@ import Faq from "../Components/Pagecomponents/Faq";
 import Discription from "../Components/Uiux/Discription";
 import Button from "../Components/Uiux/Button";
 import firebtn from "../../../public/icons/firebtniconblue.svg";
+import referfriend from '../../../public/images/referafrind-banner.webp';
+import Image from "next/image";
+
 const workstep = [
   {
     title: "Share Your Referral Link",
@@ -61,6 +64,7 @@ const page = () => {
         }
         btn_name={"Start Trading"}
         btn_link={"https://client.fliptradegroup.com/trader/registration"}
+        banner={referfriend}
       />
 
       <ReferDescription />
@@ -75,29 +79,31 @@ const page = () => {
           btn_link={"https://client.fliptradegroup.com/trader/registration"}
         />
       </div>
-      <div className="inn_container bg-primary py-16 rounded-4xl my-18">
-        <div className="max-w-[1200px] m-auto text-center">
-          <Title
-            title={"Discover Rewarding Trading with Fliptrade Group"}
-            color={"text-white"}
-          />
-          <div className="pb-8">
-            <Discription
-              dispription={
-                "With Fliptrade Group Rewards, you earn benefits as you trade and grow your network. Unlock exclusive rewards and enjoy greater earning opportunities as your activity increases. Redeem your rewards anytime and make the most of your trading journey."
-              }
+      <div className="ps-4 max-w-[95%] mx-auto border-2 border-white rounded-4xl">
+        <div className=" grid lg:grid-cols-2">
+          <div className=" py-10">
+            <Title
+              title={"Discover Reward with Fliptrade Group"}
               color={"text-white"}
             />
+            <div className="md:pb-8">
+              <Discription
+                dispription={
+                  "With Fliptrade Group Rewards, you earn benefits as you trade and grow your network. Unlock exclusive rewards and enjoy greater earning opportunities as your activity increases. Redeem your rewards anytime and make the most of your trading journey."
+                }
+                color={"text-white"}
+              />
+            </div>
           </div>
-
-          <Button
-            btn_name={'Get Rewarded'}
-            border_color="border-primary"
-            btn_bg={"bg-white"}
-            shadow={true}
-            text_color={"text-primary"}
-            icon={firebtn}
-          />
+          <div className="hidden md:flex items-end">
+            <Image
+              src={'/images/lowerfooter.webp'}
+              alt=""
+              width={1000}
+              height={500}
+              className="h-[90%] rounded-br-4xl object-contain"
+            />
+          </div>
         </div>
       </div>
       <div className="bg-theme py-12 md:py-18 lg:py-24">
