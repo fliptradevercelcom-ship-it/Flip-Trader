@@ -19,10 +19,10 @@ const faqData = [
     answer:
       "Sign up for the IB program on Fliptrade, complete the registration, and start referring traders."
   },
-  {
-    question: "How much can I earn as an IB Partner?",
+ {
+    question: "What commission can I earn as an IB Partner?",
     answer:
-      "Earnings depend on the number of active referrals and their trading volume."
+      "IB Partners can earn a minimum commission of $3 and up to $11 per lot based on trading activity."
   },
   {
     question: "How do I track my referrals and earnings?",

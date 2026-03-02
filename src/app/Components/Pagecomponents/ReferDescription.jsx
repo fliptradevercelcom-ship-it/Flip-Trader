@@ -105,78 +105,78 @@ import Discription from "../Uiux/Discription";
 export default function ReferHeroSection() {
   return (
     <div>
-    <section className="relative overflow-hidden">
-      <video
-        className="absolute inset-0 h-full w-full object-cover pointer-events-none opacity-70"
-        src="/videos/marketsgraphbg.mp4"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-      />
+      <section className="relative overflow-hidden">
+        <video
+          className="absolute inset-0 h-full w-full object-cover pointer-events-none opacity-70"
+          src="/videos/marketsgraphbg.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+        />
 
-      <div className="inn_container grid lg:grid-cols-2 relative z-10 py-12 md:py-18">
-        <div className="hidden md:block">
-          <Image
-            src={"/images/homescreentabphone-img.webp"}
-            alt=""
-            width={1500}
-            height={500}
-            className=""
-          />
-        </div>
-
-        <div>
-          <div className="md:w-[90%] ms-auto">
-            <Title
-              title={"Earn Up to $100 Per Referral"}
-              color={"gradient_text"}
+        <div className="inn_container grid lg:grid-cols-2 relative z-10 py-12 md:py-18">
+          <div className="hidden md:block">
+            <Image
+              src={"/images/homescreentabphone-img.webp"}
+              alt=""
+              width={1500}
+              height={500}
+              className=""
             />
+          </div>
 
-            <div className="py-3">
+          <div>
+            <div className="md:w-[90%] ms-auto">
+              <Title
+                title={"Earn Up to $100 Per Referral"}
+                color={"gradient_text"}
+              />
+
+              <div className="py-3">
+                <Discription
+                  dispription={
+                    "Share the opportunity with aspiring traders and invite them to experience the powerful trading environment at Fliptrade Group. Earn attractive rewards when your referrals register and complete their first deposit of $1000."
+                  }
+                  color={"text-white"}
+                />
+              </div>
               <Discription
                 dispription={
-                  "Share the opportunity with aspiring traders and invite them to experience the powerful trading environment at Fliptrade Group. Earn attractive rewards when your referrals register and actively participate in trading."
+                  "With Fliptrade Group’s referral program, you can earn $100 for every qualified trader who completes a minimum first deposit of $1000."
                 }
                 color={"text-white"}
               />
-            </div>
-            <Discription
-              dispription={
-                "With Fliptrade Group’s referral program, you can earn up to $100 for every qualified trader who completes the required activity."
-              }
-              color={"text-white"}
-            />
 
-            <div className="mt-8 flex flex-row gap-4 justify-center lg:justify-start">
-              <Link href="https://client.fliptradegroup.com/trader/registration">
-                <Button
-                  btn_name={"Get Started"}
-                  border_color="border-primary"
-                  btn_bg={"bg-white"}
-                  shadow={true}
-                  text_color={"text-primary"}
-                />
-              </Link>
+              <div className="mt-8 flex flex-row gap-4 justify-center lg:justify-start">
+                <Link href="https://client.fliptradegroup.com/trader/registration">
+                  <Button
+                    btn_name={"Get Started"}
+                    border_color="border-primary"
+                    btn_bg={"bg-white"}
+                    shadow={true}
+                    text_color={"text-primary"}
+                  />
+                </Link>
 
-              <Link href="/terms-and-conditions">
-                <Button
-                  btn_name={"Terms & Conditions"}
-                  border_color="border-primary"
-                  btn_bg={"bg-priamry"}
-                  shadow={true}
-                  text_color={"text-white"}
-                />
-              </Link>
+                <Link href="/terms-and-conditions">
+                  <Button
+                    btn_name={"Terms & Conditions"}
+                    border_color="border-primary"
+                    btn_bg={"bg-priamry"}
+                    shadow={true}
+                    text_color={"text-white"}
+                  />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    
-    <div>
-       <div className="inn_container grid grid-cols-1 lg:grid-cols-2 py-12 md:py-18">
+      </section>
+
+      <div>
+        <div className="inn_container grid grid-cols-1 lg:grid-cols-2 py-12 md:py-18">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-18 relative lg:left-[7%]">
             <div className="lg:w-max  bg-theme  lg:ml-auto border-b-[1px] lg:border-b-0 border-r-0 lg:border-r-[3px] border-white shadow-[0_-15px_20px_-16px_#6a40ec,0_15px_16px_-15px_#6a40ec] ">
               <div className="p-4">
@@ -204,7 +204,7 @@ export default function ReferHeroSection() {
                   Track Your Rewards
                 </h5>
                 <p className="list_text font-light font_ternary  max-w-[400px]  text-center md:text-end lg:max-w-[unset] md:text-[unset] leading-6 xl:leading-[28px] !text-white">
-                 View referral activity and track <br /> earned rewards.
+                  View referral activity and track <br /> earned rewards.
                 </p>
               </div>
             </div>
@@ -222,7 +222,7 @@ export default function ReferHeroSection() {
             </div>
           </div>
         </div>
-    </div>
+      </div>
     </div>
   );
 }

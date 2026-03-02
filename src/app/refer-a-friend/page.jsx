@@ -28,11 +28,11 @@ const workstep = [
 ];
 
 const faqData = [
-  {
-    question: "How can I earn the $100 referral reward?",
-    answer:
-      "You can earn a $100 reward when a new user joins the platform through your referral and completes their first deposit."
-  },
+{
+  question: "How can I earn the $100 referral reward?",
+  answer:
+    "You can earn a $100 reward when a new user joins the platform through your referral and completes a minimum first deposit of $1000."
+},
   {
     question: "When will I receive my $100 reward?",
     answer:
