@@ -8,6 +8,7 @@ import Faq from "../Components/Pagecomponents/Faq";
 
 import ibgrapsecondary from "../../../public/images/ibgrapsecondary.webp";
 import ibgrapsecondaryph from "../../../public/images/ibgrapsecondaryph.webp";
+import IbEarning from "../Components/Pagecomponents/IbEarning";
 const faqData = [
   {
     question: "What is an IB Partner?",
@@ -47,6 +48,7 @@ const page = () => {
       <Ibpartnerbanner />
       <Ibpartnerwork />
       <Ibwhy />
+      <IbEarning />
       <Grapsecondary
         desktopbanner={ibgrapsecondary}
         phonetabbanner={ibgrapsecondaryph}  
