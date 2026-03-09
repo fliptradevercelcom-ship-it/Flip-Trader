@@ -3,7 +3,7 @@ import Title from "./Title";
 
 const TextCard = ({ data, col_2, title, p_sec}) => {
   return (
-    <div className={`inn_container ${p_sec ? 'py-6' : 'py-12 md:py-18'} `}>
+    <div className={`inn_container px-0! md:px-[unset]! ${p_sec ? 'py-6' : 'py-12 md:py-18'} `}>
       {
         title &&
         <div className="text-center">

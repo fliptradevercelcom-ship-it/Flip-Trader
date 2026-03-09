@@ -166,7 +166,7 @@ export default function AboutUs() {
         </div>
       </div>
 
-      {/* <AboutNewContent />   */}
+      <AboutNewContent />  
 
       <div className="inn_container py-6">
         <div className="max-w-7xl m-auto flex flex-col-reverse md:grid grid-cols-2 gap-x-6 gap-y-6">

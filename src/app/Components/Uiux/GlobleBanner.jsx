@@ -5,7 +5,7 @@ import Link from "next/link";
 import Button from "./Button";
 import Image from "next/image";
 import firebtn from "../../../../public/icons/firebtnicon.svg";
-const GlobleBanner = ({title, description, btn_name, btn_link, banner}) => {
+const GlobleBanner = ({ title, description, btn_name, btn_link, banner }) => {
   return (
     <div className="relative">
       <video
@@ -18,9 +18,9 @@ const GlobleBanner = ({title, description, btn_name, btn_link, banner}) => {
         preload="metadata"
       />
       <div className="inn_container pt-40 2xl:pt-52">
-        <div className="grid xl:grid-cols-2">
-          <div className="text-center xl:text-start flex items-center">
-            <div>
+        <div className={`grid ${banner ? 'xl:grid-cols-2' : 'grid-cols-1 pb-12'} `}>
+          <div className={`text-center xl:text-start flex items-center ${banner ? '' : 'max-w-5xl mx-auto text-center'}`}>
+            <div className={`${banner ? '' : 'text-center'}`}>
               <Title
                 title={title}
                 color="gradient_text"
@@ -50,15 +50,18 @@ const GlobleBanner = ({title, description, btn_name, btn_link, banner}) => {
               </div>
             </div>
           </div>
-          <div className="pt-8 xl:pt-0 relative z-[1]">
-            <Image
-              src={banner}
-              alt="side banner"
-              width={1500}
-              height={500}
-              className="w-[80%]  m-auto"
-            />
-          </div>
+          {
+            banner &&
+            <div className="pt-8 xl:pt-0 relative z-[1]">
+              <Image
+                src={banner}
+                alt="side banner"
+                width={1500}
+                height={500}
+                className="w-[80%]  m-auto"
+              />
+            </div>
+          }
         </div>
       </div>
     </div>
