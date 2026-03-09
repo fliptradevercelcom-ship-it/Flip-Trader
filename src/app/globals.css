@@ -195,16 +195,16 @@ strong {
 }
 
 .banner_secondary_text {
-  font-size: 64px;
+  font-size: 60px;
 }
 
 .banner_primary_text {
-  font-size: 105px;
-  line-height: 115px;
+  font-size: 95px;
+  line-height: 105px;
 }
 
 .main_banner {
-  background-image: url(../../public/banners/Homebanner.webp);
+  background-image: url(../../public/banners/newbanner.webp);
 }
 
 /* For swiper slider  */
@@ -232,12 +232,12 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   }
 
   .banner_primary_text {
-    font-size: 95px;
-    line-height: 105px;
+    font-size: 85px;
+    line-height: 95px;
   }
 
   .banner_secondary_text {
-    font-size: 58px;
+    font-size: 50px;
   }
 
   .description_text {
@@ -261,12 +261,12 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   }
 
   .banner_primary_text {
-    font-size: 85px;
-    line-height: 95px;
+    font-size: 70px;
+    line-height: 85px;
   }
 
   .banner_secondary_text {
-    font-size: 52px;
+    font-size: 48px;
   }
 
   .description_text {
@@ -282,12 +282,12 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 @media screen and (max-width: 1279px) {
   .banner_primary_text {
-    font-size: 70px;
-    line-height: 83px;
+    font-size: 56px;
+    line-height: 66px;
   }
 
   .banner_secondary_text {
-    font-size: 46px;
+    font-size: 40px;
   }
 
   .rainbow-btn {
@@ -313,7 +313,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   }
 
   .banner_secondary_text {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .description_text {
@@ -349,7 +349,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   }
 
   .banner_secondary_text {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .description_text {
@@ -358,7 +358,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   }
 
   .main_banner {
-    background-image: url(../../public/banners/Homebannerph.webp);
+    background-image: url(../../public/banners/newbannerph.webp);
   }
 
   .title_text {
@@ -366,7 +366,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     line-height: 32px;
   }
 
-  .list_text {
+  .list_text { 
     font-size: 14px;
   }
 

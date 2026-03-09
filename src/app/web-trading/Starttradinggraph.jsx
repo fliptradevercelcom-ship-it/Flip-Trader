@@ -9,7 +9,7 @@ export default function Starttradinggraph() {
     <div className='bg-black inn_container m-auto'>
       <div className="py-8 text-center">
         <Title
-          title="FlipTrade Web Trading Terminal"
+          title="FlipTrade Group Web Trading Terminal"
           color="gradient_text"
           ish1={true}
         />

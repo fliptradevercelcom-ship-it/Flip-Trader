@@ -18,7 +18,7 @@ const features = [
   {
     icon: networkblue,
     title: "Seamless <br/> Integration",
-    description: "Connect your FlipTrade account to MT5 instantly.",
+    description: "Connect your FlipTrade Group account to MT5 instantly.",
     class: "xl:w-[120%] left-[-20%] z-[3]",
     alt: "Network nodes showing seamless platform integration"
   },
@@ -47,7 +47,7 @@ const Mt5card = () => {
       >
         <div className="inn_container py-12 lg:py-18 2xl:py-24 ">
           <div className="text-center lg:text-start">
-            <Title title={"Why FlipTrade + MT5"} color={"text-white"} />
+            <Title title={"Why FlipTrade Group + MT5"} color={"text-white"} />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 xl:gap-0 xl:grid-cols-4 pt-8 md:pt-18">
             {features.map((data, index) =>

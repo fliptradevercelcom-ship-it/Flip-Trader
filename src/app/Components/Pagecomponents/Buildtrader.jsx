@@ -78,7 +78,7 @@ const Buildtrader = () => {
           desktopbanner={buildtraderimage}
           phonetabbanner={buildtraderimageloerph}
           title={
-            "<span class='text-primary'> FlipTrade. </span> Built for <span class='text-primary'> Traders. </span>"
+            "<span class='text-primary'> FlipTrade Group. </span> Built for <span class='text-primary'> Traders. </span>"
           }
           description={`Seamless trading across Forex, CFDs, metals, and <br/> more. Real-time insights, advanced tools, and <br/> reliable support — everything you need to grow.`}
           btnname={"Read More"}

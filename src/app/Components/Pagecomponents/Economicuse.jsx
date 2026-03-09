@@ -147,7 +147,7 @@ function Economicuse() {
             phonetabbanner={ecousebannerphone}
             title="How It <br/> <span class='text-primary'> Helps You </span>"
             description="Use the calendar to avoid being caught off guard, manage risks during high-impact events, and spot new opportunities when market outcomes differ from expectations."
-            btnname="Start Trading with FlipTrade"
+            btnname="Start Trading with FlipTrade Group"
             position='top-[22%] xl:w-[43%] right-[-2%]'
           />
           <EconomicCalendarHero/>

@@ -12,7 +12,7 @@ import { useAutoScroll } from "../../../hooks/useAutoScroll";
 import Link from "next/link";
 const faqData = [
   {
-    question: "What is FlipTrade?",
+    question: "What is FlipTrade Group?",
     answer:
       "A secure trading platform for Forex, stocks, commodities, indices, and crypto."
   },
@@ -25,7 +25,7 @@ const faqData = [
     answer: "Transparent, low trading fees with no hidden charges."
   },
   {
-    question: "Is FlipTrade safe?",
+    question: "Is FlipTrade Group safe?",
     answer: "Yes, we use strong security, 2FA, and safe fund storage."
   },
   {
@@ -57,7 +57,7 @@ const Mt5download = () => {
               <div className="flex flex-col justify-center items-center ps-4">
                 <div className="text-center lg:text-start pt-12 md:pt-0 px-5 md:px-0" id="trade-download">
                   <Title
-                    title={`Download MT5 and start trading with FlipTrade today.`}
+                    title={`Download MT5 and start trading with FlipTrade Group today.`}
                     color="gradient_text"
                   />
                   <p className="pt-4" />

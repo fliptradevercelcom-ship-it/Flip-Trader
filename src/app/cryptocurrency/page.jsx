@@ -17,27 +17,27 @@ const faqData = [
   {
     question: "Which cryptocurrencies are supported?",
     answer:
-      "FlipTrade offers trading on major cryptocurrencies like Bitcoin, Ethereum, Litecoin, and various altcoins, available with secure and fast execution."
+      "FlipTrade Group offers trading on major cryptocurrencies like Bitcoin, Ethereum, Litecoin, and various altcoins, available with secure and fast execution."
   },
   {
     question: "Is crypto trading 24/7?",
     answer:
-      "Yes, cryptocurrency markets are open 24/7, and FlipTrade provides continuous access for traders worldwide without market closing times."
+      "Yes, cryptocurrency markets are open 24/7, and FlipTrade Group provides continuous access for traders worldwide without market closing times."
   },
   {
     question: "Are there fees for crypto trading?",
     answer:
-      "Yes, spreads and swap fees may apply, but FlipTrade ensures transparent pricing with competitive spreads on crypto trades."
+      "Yes, spreads and swap fees may apply, but FlipTrade Group ensures transparent pricing with competitive spreads on crypto trades."
   },
   {
-    question: "Does FlipTrade offer leverage on crypto?",
+    question: "Does FlipTrade Group offer leverage on crypto?",
     answer:
       "Yes, leverage options are available, allowing traders to maximize exposure while managing risks responsibly within regulatory limits."
   },
   {
     question: "Is my crypto trading account secure?",
     answer:
-      "Yes, FlipTrade uses advanced security measures like encryption and compliance protocols to ensure safe cryptocurrency trading."
+      "Yes, FlipTrade Group uses advanced security measures like encryption and compliance protocols to ensure safe cryptocurrency trading."
   }
 ];
 
@@ -69,7 +69,7 @@ const pointdata = [
 ];
 export const metadata  = {
   title : 'Cryptocurrency Trading Platform | Trade Bitcoin & Altcoins',
-  description : 'Trade Bitcoin, Ethereum, and altcoins 24/7 with FlipTrade. Enjoy secure accounts, low spreads, fast execution, and leverage options for crypto CFD trading.'
+  description : 'Trade Bitcoin, Ethereum, and altcoins 24/7 with FlipTrade Group. Enjoy secure accounts, low spreads, fast execution, and leverage options for crypto CFD trading.'
 }
 export default function page() {
   return (

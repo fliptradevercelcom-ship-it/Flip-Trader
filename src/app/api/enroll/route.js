@@ -83,7 +83,7 @@ export async function POST(req) {
         <p>Message you sent:</p>
         <div style="padding:12px;border-radius:8px;background:#f4f4f6;">${message ||
           "—"}</div>
-        <p>Talk soon,<br/>Team FlipTrade</p>
+        <p>Talk soon,<br/>Team FlipTrade Group</p>
       </div>
     `;
 

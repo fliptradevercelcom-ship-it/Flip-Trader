@@ -20,7 +20,7 @@ const Accounttypebanner = () => {
         <div className="flex flex-col gap-7 items-center lg:items-start relative z-[1]">
           <div className="text-center lg:text-start">
             <Title
-              title={"Account Types at FlipTrade <br/> Built for All Traders"}
+              title={"Account Types at FlipTrade Group  <br/> Built for All Traders"}
               color={"gradient_text"}
               ish1={true}
             />
@@ -28,7 +28,7 @@ const Accounttypebanner = () => {
           <div className="text-center lg:text-start">
             <Discription
               dispription={
-                "FlipTrade empowers traders at every level with account <br/> types tailored to your skills, goals, and trading style. <br/> Choose the one that fits you best."
+                "FlipTrade Group empowers traders at every level with account <br/> types tailored to your skills, goals, and trading style. <br/> Choose the one that fits you best."
               }
               color={"text-[#D0D0D0]"}
             />

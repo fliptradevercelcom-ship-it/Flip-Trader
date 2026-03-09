@@ -135,7 +135,7 @@ const schemaData = {
 export const metadata = {
   title: "Best Forex & Multi-Asset Trading Platform | FlipTrade Group",
   description:
-    "Trade forex, stocks, cryptos, commodities & metals with FlipTrade — low spreads, fast execution, secure platform. Start your trading journey today.",
+    "Trade forex, stocks, cryptos, commodities & metals with FlipTrade Group — low spreads, fast execution, secure platform. Start your trading journey today.",
   icons: {
     icon: "/favicon.ico"
   },

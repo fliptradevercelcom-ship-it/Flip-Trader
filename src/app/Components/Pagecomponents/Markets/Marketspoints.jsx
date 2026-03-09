@@ -16,7 +16,7 @@ const Marketspoints = ({ pointdata }) => {
       <div className="inn_container pt-12">
         <div className="text-center lg:text-start max-w-[350px] md:max-w-[600px] lg:max-w-[unset] m-auto" id="benifits">
           <Title
-            title={`Why Trade ${pathname} <br/> with FlipTrade`}
+            title={`Why Trade ${pathname} <br/> with FlipTrade Group`}
             color={"gradient_text"}
           />
         </div>

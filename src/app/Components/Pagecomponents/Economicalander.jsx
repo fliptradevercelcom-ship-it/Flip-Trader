@@ -25,7 +25,7 @@ function Economicalander() {
             id="calender"
           >
             <Title
-              title="FlipTrade <br/> Economic Calendar"
+              title="FlipTrade Group <br/> Economic Calendar"
               color="gradient_text"
             />
           </div>

@@ -23,7 +23,7 @@ function Economicbanner({onScrollClick}) {
               />
               <div className="flex w-full pt-4">
                 <Discription
-                  dispription={`Stay ahead of market-moving events with FlipTrade’s <br/> Economic Calendar. Know when key releases <br/> happen and make informed trading decisions.`}
+                  dispription={`Stay ahead of market-moving events with FlipTrade Group’s <br/> Economic Calendar. Know when key releases <br/> happen and make informed trading decisions.`}
                   color="text-[#D0D0D0]"
                 />
               </div>

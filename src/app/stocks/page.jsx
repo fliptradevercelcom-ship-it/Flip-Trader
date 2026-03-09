@@ -17,17 +17,17 @@ const faqData = [
   {
     question: "Which stocks can I trade?",
     answer:
-      "FlipTrade provides access to US, European, and Asian stock CFDs, covering leading global companies."
+      "FlipTrade Group provides access to US, European, and Asian stock CFDs, covering leading global companies."
   },
   {
     question: "What are stock trading hours?",
     answer:
-      "Stock trading hours vary by region, and FlipTrade aligns access with respective market sessions."
+      "Stock trading hours vary by region, and FlipTrade Group aligns access with respective market sessions."
   },
   {
     question: "What fees apply to stock CFDs?",
     answer:
-      "Spreads and overnight swaps apply on stock CFDs. FlipTrade offers competitive and transparent pricing."
+      "Spreads and overnight swaps apply on stock CFDs. FlipTrade Group offers competitive and transparent pricing."
   },
   {
     question: "Can I trade fractional shares?",
@@ -69,8 +69,8 @@ const pointdata = [
 ];
 
 export const metadata = {
-  title : 'Stock Trading CFDs Online | Trade Global Equities FlipTrade',
-  description :'Trade stock CFDs on US, European, and Asian companies with FlipTrade. Access global equities with competitive spreads, fractional trading, and fast execution.'
+  title : 'Stock Trading CFDs Online | Trade Global Equities FlipTrade Group',
+  description :'Trade stock CFDs on US, European, and Asian companies with FlipTrade Group. Access global equities with competitive spreads, fractional trading, and fast execution.'
 }
 export default function page() {
   return (

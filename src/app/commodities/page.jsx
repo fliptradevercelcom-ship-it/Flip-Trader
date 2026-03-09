@@ -17,7 +17,7 @@ const faqData = [
   {
     question: "Which commodities are available?",
     answer:
-      "FlipTrade offers crude oil, natural gas, sugar, coffee, and agricultural products, giving traders exposure to diverse commodity markets."
+      "FlipTrade Group offers crude oil, natural gas, sugar, coffee, and agricultural products, giving traders exposure to diverse commodity markets."
   },
   {
     question: "How does commodity CFD trading work?",
@@ -27,12 +27,12 @@ const faqData = [
   {
     question: "What leverage is provided on commodities?",
     answer:
-      "FlipTrade provides leverage tailored to commodity markets, enabling flexible position sizes with responsible risk management."
+      "FlipTrade Group provides leverage tailored to commodity markets, enabling flexible position sizes with responsible risk management."
   },
   {
     question: "What fees apply to commodity trading?",
     answer:
-      "Spreads and overnight swaps may apply. FlipTrade ensures competitive pricing with transparent cost structures."
+      "Spreads and overnight swaps may apply. FlipTrade Group ensures competitive pricing with transparent cost structures."
   },
   {
     question: "Are commodities good for hedging?",

@@ -45,7 +45,7 @@ const Nextgennew = () => {
               </div>
               <div className="flex justify-center items-center">
                 <Discription
-                  dispription={`Trade with zero hidden fees, ultra-tight spreads, and lightning-fast execution. FlipTrade gives 
+                  dispription={`Trade with zero hidden fees, ultra-tight spreads, and lightning-fast execution. FlipTrade Group gives 
                        you transparent pricing, expert insights, & a stable platform you can trust.`}
                   color="text-white"
                 />

@@ -26,7 +26,7 @@ export async function POST(req) {
         await transporter.sendMail({
             from: process.env.EMAIL_USER,
             to: process.env.EMAIL_USER,
-            subject: `New Promo Lead Received on FlipTrade`,
+            subject: `New Promo Lead Received on FlipTrade Group`,
             html: `
        <table width="100%" cellpadding="0" cellspacing="0" style="margin:0;padding:0;background:#0d061f;font-family:'Segoe UI',Arial,sans-serif;color:#f5f5ff;">
   <tr>
@@ -69,7 +69,7 @@ export async function POST(req) {
         <!-- Footer -->
         <tr>
           <td style="padding:24px;background:#0f0a24;text-align:center;font-size:13px;color:rgba(255,255,255,0.45);">
-            FlipTrade — New Promo Lead Notification
+            FlipTrade Group — New Promo Lead Notification
           </td>
         </tr>
 
@@ -88,7 +88,7 @@ export async function POST(req) {
         await transporter.sendMail({
             from: process.env.EMAIL_USER,
             to: process.env.EMAIL_B2B,
-            subject: `New Promo Lead Received on FlipTrade`,
+            subject: `New Promo Lead Received on FlipTrade Group`,
             html: `
        <table width="100%" cellpadding="0" cellspacing="0" style="margin:0;padding:0;background:#0d061f;font-family:'Segoe UI',Arial,sans-serif;color:#f5f5ff;">
   <tr>
@@ -131,7 +131,7 @@ export async function POST(req) {
         <!-- Footer -->
         <tr>
           <td style="padding:24px;background:#0f0a24;text-align:center;font-size:13px;color:rgba(255,255,255,0.45);">
-            FlipTrade — New Promo Lead Notification
+            FlipTrade Group — New Promo Lead Notification
           </td>
         </tr>
 
@@ -168,7 +168,7 @@ export async function POST(req) {
                     </p>
                     <p style="margin:26px 0 0;font-size:16px;line-height:1.7;color:rgba(245,245,255,0.9);">
                       Talk soon,<br>
-                      <strong style="color:#ffffff;">Team FlipTrade</strong>
+                      <strong style="color:#ffffff;">Team FlipTrade Group</strong>
                     </p>
                   </td>
                 </tr>

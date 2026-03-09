@@ -18,7 +18,7 @@ const Economicgetstart = () => {
           <div className="flex items-center justify-center lg:justify-start pt-12 lg:pt-0 text-center lg:text-start">
             <div className="ps-[6%]">
               <Title
-                title="Get Started with <br /> FlipTrade’s  <br />  Economic Calendar"
+                title="Get Started with <br /> FlipTrade Group’s  <br />  Economic Calendar"
                 color="gradient_text"
               />
               <div className="pt-2">

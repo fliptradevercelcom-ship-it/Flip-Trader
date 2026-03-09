@@ -23,7 +23,7 @@ const EconomicCalendarHero = () => {
         <h1 className="font-medium title_text aos-init aos-animate">
           Get Started with{" "}
           <span className="gradient_text font-medium title_text aos-init aos-animate">
-            FlipTrade’s
+            FlipTrade Group’s
           </span>{" "}
           <span className="gradient_text font-medium title_text aos-init aos-animate">
             Economic Calendar

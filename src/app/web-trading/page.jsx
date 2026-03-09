@@ -5,19 +5,19 @@ import Faq from "../Components/Pagecomponents/Faq";
 import Title from "../Components/Uiux/Title";
 const faqData = [
   {
-    question: "What is the FlipTrade Web Trading platform?",
+    question: "What is the FlipTrade Group Web Trading platform?",
     answer:
-      "The FlipTrade Web Trading platform is an advanced online terminal that allows traders to access global markets directly from their browser — no downloads required."
+      "The FlipTrade Group Web Trading platform is an advanced online terminal that allows traders to access global markets directly from their browser — no downloads required."
   },
   {
     question: "Do I need to install any software to use Web Trading?",
     answer:
-      "No installation is needed. You can log in and trade instantly through any modern web browser using the secure FlipTrade Web Terminal."
+      "No installation is needed. You can log in and trade instantly through any modern web browser using the secure FlipTrade Group Web Terminal."
   },
   {
     question: "Is the Web Trading platform secure?",
     answer:
-      "Yes, FlipTrade uses encrypted connections and advanced security measures to protect your data and transactions on the Web Trading platform."
+      "Yes, FlipTrade Group uses encrypted connections and advanced security measures to protect your data and transactions on the Web Trading platform."
   },
   {
     question: "Can I trade all assets using Web Trading?",
@@ -27,7 +27,7 @@ const faqData = [
   {
     question: "Does the Web Trading platform support mobile devices?",
     answer:
-      "Absolutely! The FlipTrade Web Terminal is fully responsive and optimized for trading seamlessly on mobile, tablet, and desktop devices."
+      "Absolutely! The FlipTrade Group Web Terminal is fully responsive and optimized for trading seamlessly on mobile, tablet, and desktop devices."
   }
 ];
 

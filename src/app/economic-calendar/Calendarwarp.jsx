@@ -13,7 +13,7 @@ const faqData = [
       "It helps traders track market-moving events and plan trades effectively."
   },
   {
-    question: "How often is the FlipTrade Economic Calendar updated?",
+    question: "How often is the FlipTrade Group Economic Calendar updated?",
     answer:
       "The calendar is updated in real-time to provide the latest economic data and announcements as soon as they are released."
   },
@@ -25,7 +25,7 @@ const faqData = [
   {
     question: "Can I view events in my own time zone?",
     answer:
-      "Yes, the FlipTrade Economic Calendar automatically adjusts to your local time zone for accurate scheduling."
+      "Yes, the FlipTrade Group Economic Calendar automatically adjusts to your local time zone for accurate scheduling."
   },
   {
     question: "How do I use the calendar for trading?",

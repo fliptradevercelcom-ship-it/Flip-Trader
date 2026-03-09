@@ -12,25 +12,25 @@ import Banergif from "../../../../public/videos/BaneerGIF.gif";
 // import json from "../../../../public/json/Growth.json";
 export default function Banner() {
   return (
-    <div className={`bg-no-repeat main_banner`}>
-      <div className="inn_container pt-[135px] pb-0 md:pb-8 xl:pb-0 relative overflow-hidden">
+    <div className={`bg-no-repeat bg-center md:bg-right bg-cover main_banner`}>
+      <div className="inn_container pt-[135px] pb-0 md:pb-8 xl:pb-10 relative overflow-hidden">
         <div className="grid grid-cols-1 lg:grid-cols-2 pt-4 2xl:pt-12">
           <div className="text-center lg:text-start">
             <div>
               <h5 className="font-light banner_secondary_text text-white font_ternary" data-aos='fade-right' data-aos-duration='1000'>
-                Tap into the
+                Trade Global Markets with a
               </h5>
               <h1 className="font-medium  banner_primary_text gradient_text leading-[115px]" data-aos='fade-left' data-aos-duration='1200'>
-                Trillion Dollar <br />
-                Market
+                Fully Licensed & <br />
+                Regulated
               </h1>
               <h5 className="font-light banner_secondary_text text-white font_ternary" data-aos='fade-right' data-aos-duration='1400'>
-                with a Single Click
+                Forex Broker
               </h5>
             </div>
             <div className="pt-5">
               <Discription
-                dispription="Access the world’s largest financial market and trade <br/> multiple instruments in one place."
+                dispription="Access the world’s largest financial market and trade <br class='hidden xl:block'/> multiple instruments in one place."
                 color="text-do"
               />
               <div className="pt-8 xl:pt-10 2xl:pt-14  flex flex-wrap justify-center lg:justify-start flex-row lg:flex-col xl:flex-row gap-5 xl:gap-12 ">
@@ -61,7 +61,7 @@ export default function Banner() {
             </div>
           </div>
           <div className="pt-16 lg:pt-0">
-            <Image
+            {/* <Image
               src={Banergif}
               alt="Side banner"
               width={3000}
@@ -69,7 +69,7 @@ export default function Banner() {
               priority
               unoptimized
               className="relative right-[-2%] w-[90%] md:w-[60%] lg:w-full m-auto"
-            />
+            /> */}
             {/* <Player
               src={json}
               loop

@@ -8,7 +8,7 @@ const faqData = [
     {
         question: "What payment methods are available for deposits and withdrawals?",
         answer:
-            "FlipTrade supports multiple payment methods including Bank Transfer, Crypto Payments, Wire Transfer, Neteller, PayPal, and Skrill, allowing users to choose the most convenient option."
+            "FlipTrade Group supports multiple payment methods including Bank Transfer, Crypto Payments, Wire Transfer, Neteller, PayPal, and Skrill, allowing users to choose the most convenient option."
     },
     {
         question: "What is the minimum deposit and withdrawal amount?",
@@ -33,7 +33,7 @@ const faqData = [
     {
         question: "Are there any fees or commissions on deposits and withdrawals?",
         answer:
-            "FlipTrade does not charge commissions on deposits or withdrawals. However, third-party providers or banks may apply their own fees."
+            "FlipTrade Group does not charge commissions on deposits or withdrawals. However, third-party providers or banks may apply their own fees."
     },
     {
         question: "Can I use a different payment method for withdrawal than my deposit?",
@@ -41,9 +41,9 @@ const faqData = [
             "For security and compliance reasons, withdrawals are generally processed using the same payment method that was used for the deposit."
     },
     {
-        question: "Is it safe to deposit and withdraw funds with FlipTrade?",
+        question: "Is it safe to deposit and withdraw funds with FlipTrade Group?",
         answer:
-            "Yes, FlipTrade follows strict security protocols, including encryption and verification procedures, to ensure all deposit and withdrawal transactions are safe and secure."
+            "Yes, FlipTrade Group follows strict security protocols, including encryption and verification procedures, to ensure all deposit and withdrawal transactions are safe and secure."
     }
 ];
 

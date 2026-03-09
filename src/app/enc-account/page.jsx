@@ -60,7 +60,7 @@ const features = [
 ];
 
 const cardphdata = [
-  "Register or log in to FlipTrade.",
+  "Register or log in to FlipTrade Group.",
   "Complete KYC verification.",
   "Deposit a minimum of $200.",
   "Select ECN Account.",
@@ -117,7 +117,7 @@ const page = () => {
         description={
           "Sign up, complete verification, deposit $200 or more, <br/> and start trading with ECN conditions."
         }
-        card1desk={"Register or log in to <br/> FlipTrade."}
+        card1desk={"Register or log in to <br/> FlipTrade Group."}
         card2desk={"Complete KYC <br/> verification."}
         card3desk={"Deposit a <br/> minimum of $200."}
         card4desk={"Select ECN <br/> Account."}

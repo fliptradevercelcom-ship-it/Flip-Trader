@@ -9,7 +9,7 @@ const faqData = [
   {
     question: "What account types are available?",
     answer:
-      "FlipTrade offers Standard, ECN, and VIP accounts with different features for traders of all levels."
+      "FlipTrade Group offers Standard, ECN, and VIP accounts with different features for traders of all levels."
   },
   {
     question: "What is the minimum deposit?",
@@ -24,7 +24,7 @@ const faqData = [
   {
     question: "Can I change my account type later?",
     answer:
-      "Yes, you can upgrade or switch accounts by contacting FlipTrade support."
+      "Yes, you can upgrade or switch accounts by contacting FlipTrade Group support."
   },
   {
     question: "What benefits do VIP accounts offer?",
@@ -33,9 +33,9 @@ const faqData = [
   }
 ];
 export const metadata = {
-  title: "Trading Account Types | Standard, ECN & VIP FlipTrade",
+  title: "Trading Account Types | Standard, ECN & VIP FlipTrade Group",
   description:
-    "Choose FlipTrade account types — Standard, ECN, or VIP. Compare minimum deposits, spreads, leverage, and benefits to find the best fit for your trading style."
+    "Choose FlipTrade Group account types — Standard, ECN, or VIP. Compare minimum deposits, spreads, leverage, and benefits to find the best fit for your trading style."
 };
 export default function page() {
   return (

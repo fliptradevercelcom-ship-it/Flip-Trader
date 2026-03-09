@@ -34,7 +34,7 @@ function Learnwhy() {
       <div className="inn_container  pt-12 xl:pt-24 2xl:pt-36">
         <div className="grid grid-col-1 md:grid-cols-2 pb-5 text-center md:text-start relative z-[2]">
           <Title
-            title="Why Learn with <span class=&quot;gradient_text&quot;> FlipTrade </span>"
+            title="Why Learn with <span class=&quot;gradient_text&quot;> FlipTrade Group</span>"
             color="text-white"
           />
           <div className="flex justify-center items-center">

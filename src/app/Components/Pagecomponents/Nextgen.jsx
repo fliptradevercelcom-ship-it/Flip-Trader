@@ -19,7 +19,7 @@ const Nextgen = () => {
           />
           <div className="flex justify-center items-center">
             <Discription
-              dispription={`Trade with zero hidden fees, ultra-tight spreads, <br/> and lightning-fast execution. FlipTrade gives <br/>
+              dispription={`Trade with zero hidden fees, ultra-tight spreads, <br/> and lightning-fast execution. FlipTrade Group gives <br/>
                        you transparent pricing, expert insights, & <br/> a stable platform you can trust.`}
               color="text-ternary"
             />

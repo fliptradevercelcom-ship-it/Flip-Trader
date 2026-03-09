@@ -468,7 +468,7 @@ export function AMLCard16() {
     "Daily monitoring of deposits above set thresholds.",
     "Continuous transaction monitoring to identify anomalies.",
     "No third-party deposits are accepted; deposits must match the verified client name.",
-    "FlipTrade may decline or block any transaction suspected of financial crime.",
+    "FlipTrade Group may decline or block any transaction suspected of financial crime.",
     "By law, we may be prohibited from informing clients if a report is made to authorities.",
   ];
   return (

@@ -17,7 +17,7 @@ const DepositWithdrawalBanner = () => {
             <div className="py-6">
               <Discription
                 dispription={
-                  "FlipTrade offers secure and lightning-fast deposits and withdrawals. Fund your account instantly and withdraw profits with confidence using trusted payment methods and transparent processing."
+                  "FlipTrade Group offers secure and lightning-fast deposits and withdrawals. Fund your account instantly and withdraw profits with confidence using trusted payment methods and transparent processing."
                 }
                 color={"text-[#D0D0D0]"}
               />

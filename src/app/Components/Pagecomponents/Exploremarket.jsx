@@ -56,7 +56,7 @@ const Exploremarket = () => {
         <div className="inn_container pt-10 md:pt-18 lg:pt-24">
           <div className="text-center" id="exploremarket">
             <Title
-              title="What can you trade <br/> <span>with<span class='gradient_text'> FlipTrade </span></span>"
+              title="What can you trade <br/> <span>with<span class='gradient_text'> FlipTrade Group </span></span>"
               color="text-white"
             />
           </div>
