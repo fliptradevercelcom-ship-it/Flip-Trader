@@ -62,7 +62,7 @@ const page = () => {
       />
 
       <div className="inn_container pt-12">
-        <TextCard data={riskDisclosureData} p_sec={true} />
+        <TextCard data={riskDisclosureData} p_sec={true}  col_2={true}/>
       </div>
     </div>
   );

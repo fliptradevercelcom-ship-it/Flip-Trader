@@ -87,7 +87,7 @@ const Forexadvantages = () => {
         </p>
 
         <div className="md:pt-6">
-          <TextCard data={forexFeatures} p_sec={true} />
+          <TextCard data={forexFeatures} p_sec={true} col_2={true} />
         </div>
       </div>
     </div>
