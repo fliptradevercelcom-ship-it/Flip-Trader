@@ -128,7 +128,7 @@ function page() {
       <Whyflipbanner />
       <Whyflipstep pointdata={pointdata} />
       <Marketaccess />
-      <TextCard data={textcardData} title={'Why Fliptrade Group'} col_2={true} p_sec={true}/>
+      {/* <TextCard data={textcardData} title={'Why Fliptrade Group'} col_2={true} p_sec={true}/> */}
       <Grapbanner />
       <div className="bg-theme pb-12 md:pb-18 lg:py-24">
         <div className="inn_container">

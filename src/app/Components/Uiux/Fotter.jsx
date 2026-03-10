@@ -386,6 +386,9 @@ const Fotter = () => {
               </div>
               <div className="py-8 lg:py-12 max-w-[93%] m-auto">
                 <div className="text-base 2xl:text-lg text-[#AAAAAA] leading-[32px] 2xl:leading-[40px] font-light font_secondary">
+                 <span className="text-white font-medium">Flip Trade Group Ltd ( Company No. 232118 ), </span> is incorporated in Mauritius and regulated under License Number - GB26205911, its registered office is at C/o Renark Management Solutions Ltd Port Louis, Mauritius / 4th Floor, The Docks 4, The Docks, Caudan C/o Renark Management Solutions Ltd Port Louis, Mauritius
+                </div>
+                <div className="pt-6 text-base 2xl:text-lg text-[#AAAAAA] leading-[32px] 2xl:leading-[40px] font-light font_secondary">
                   <span className="text-white font-medium">
                     Risk statement :{" "}
                   </span>{" "}
