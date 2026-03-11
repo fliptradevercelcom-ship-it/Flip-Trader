@@ -1,7 +1,7 @@
 import React from 'react'
 import GlobleBanner from '../Components/Uiux/GlobleBanner'
 import TradingConditionsHour from '../Components/Pagecomponents/TradingConditionsHour'
-
+import { Suspense } from "react";
 const page = () => {
   return (
     <div>
@@ -13,8 +13,9 @@ const page = () => {
         btn_name={"Trade Forex"}
         btn_link={"https://client.fliptradegroup.com/trader/registration"}
       />
-     
+      <Suspense fallback={null}>
       <TradingConditionsHour />
+      </Suspense>
 
     </div>
   )
