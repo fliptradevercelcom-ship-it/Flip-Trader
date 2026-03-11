@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import {
   ChevronDown,
   Zap,
@@ -166,10 +166,11 @@ export default function AboutUs() {
           />
         </div>
       </div>
-     <div id="about-us-tab">
-
-      <AboutNewContent />  
-     </div>
+      <Suspense fallback={null}>
+        <div id="about-us-tab">
+          <AboutNewContent />
+        </div>
+      </Suspense>
 
       <div className="inn_container py-6">
         <div className="max-w-7xl m-auto flex flex-col-reverse md:grid grid-cols-2 gap-x-6 gap-y-6">
@@ -340,7 +341,7 @@ export default function AboutUs() {
               <div
                 key={i}
                 className={`group p-8 rounded-3xl bg-transparent border border-white/30 backdrop-blur-sm hover:border-white hover:shadow-[0_0_40px_rgba(180,106,255,0.25)] transition-all duration-500 ${i <
-                3
+                  3
                   ? "md:col-span-2"
                   : i < 5 ? "md:col-span-3" : "md:col-span-6"}`}
               >
