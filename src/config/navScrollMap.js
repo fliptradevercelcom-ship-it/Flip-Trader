@@ -16,6 +16,9 @@ export const navScrollMap = {
     "Discover Stock Trading": { sectionId: "discover-trading", path: "/stocks" },
     "What are Indices": { sectionId: "graph", path: "/indices" },
     "FAQs": { sectionId: "faq-scroll", path: "/cryptocurrency" },
+    'About Fliptrade Group' : {sectionId: "about-us-tab", path: "/about-us"},
+    'Regulation' : {sectionId: "about-us-tab", path: "/about-us"},
+    'Careers' : {sectionId: "about-us-tab", path: "/about-us"},
   },
   
   // Account Type dropdown items
@@ -54,6 +57,9 @@ export const navScrollMap = {
     "Social Links": { sectionId: "social-link", path: "/contact-us" },
     "How IB Partner Works": { sectionId: "ib-partner", path: "/ib-partner" },
     "Why Join as IB": { sectionId: "ib-why", path: "/ib-partner" },
+    'About Fliptrade Group' : {sectionId: "about-us-tab", path: "/about-us"},
+    'Regulation' : {sectionId: "about-us-tab", path: "/about-us"},
+    'Careers' : {sectionId: "about-us-tab", path: "/about-us"},
   },
 };
 

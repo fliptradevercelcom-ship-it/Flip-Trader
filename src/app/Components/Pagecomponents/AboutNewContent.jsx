@@ -1,11 +1,12 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import TextCard from "../Uiux/TextCard";
 import Image from "next/image";
 import AboutUniqFaq from "./AboutUniqFaq";
 import { title } from "process";
 import Link from "next/link";
 import Contactfrom from "./Contactfrom";
+import { useSearchParams } from "next/navigation";
 
 export const AboutFlipTradeGroupTab = () => {
   const aboutcardData = [
@@ -121,7 +122,7 @@ export const RegulationTab = () => {
     {
       id: 3,
       title: "Licence",
-      description: `Flip Trade Group Ltd' is authorised by the Seychelles Financial Services Authority as a Securities Dealer for the provision of financial services under License NO *******`
+      description: `Flip Trade Group Ltd' is authorised by the Seychelles Financial Services Authority as a Securities Dealer for the provision of financial services under License NO <span class='text-primary'> GB26205911 </span> , its registered office is at C/o Renark Management Solutions Ltd Port Louis, Mauritius / 4th Floor, The Docks 4, The Docks, Caudan C/o Renark Management Solutions Ltd Port Louis, Mauritius`
     }
   ];
   return (
@@ -363,17 +364,23 @@ export const CareersTab = () => {
   );
 };
 const AboutNewContent = () => {
-  const [activeTab, setActiveTab] = useState(1);
 
+    const searchparams = useSearchParams()
+    const newQuery = new URLSearchParams(Array.from(searchparams.entries()));
+    const tradingHour = newQuery.get("current-tab");
+    const [activeTab, setActiveTab] = useState(tradingHour || '1');
+    useEffect(() => {
+    setActiveTab(tradingHour);
+  }, [tradingHour]);
   const renderComponent = () => {
     switch (activeTab) {
-      case 1:
+      case '1':
         return <AboutFlipTradeGroupTab />;
-      case 2:
+      case '2':
         return <RegulationTab />;
-      case 3:
+      case '3':
         return <CareersTab />;
-      case 4:
+      case '4':
         return <Contactfrom/>;
       default:
         return <AboutFlipTradeGroupTab />;
@@ -385,35 +392,35 @@ const AboutNewContent = () => {
         
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 cursor-pointer py-3 border-b-2 border-white">
           <p
-            className={`text-base md:text-2xl ${activeTab === 1
+            className={`text-base md:text-2xl ${activeTab === '1'
               ? "text-subprimary underline"
               : "text-white"} text-center md:border-r-2 border-white`}
-            onClick={() => setActiveTab(1)}
+            onClick={() => setActiveTab('1')}
           >
             About Fliptrade Group
           </p>
           <p
-            className={`text-base md:text-2xl ${activeTab === 2
+            className={`text-base md:text-2xl ${activeTab === '2'
               ? "text-subprimary underline"
               : "text-white"} text-center md:border-r-2 border-white`}
-            onClick={() => setActiveTab(2)}
+            onClick={() => setActiveTab('2')}
           >
             Regulation
           </p>
           <p
-            className={`text-base md:text-2xl ${activeTab === 3
+            className={`text-base md:text-2xl ${activeTab === '3'
               ? "text-subprimary underline"
               : "text-white"} text-center md:border-r-2 border-white`}
-            onClick={() => setActiveTab(3)}
+            onClick={() => setActiveTab('3')}
           >
             Careers
           </p>
           {/* <Link href={"/contact-us"}> */}
             <p
-              className={`text-base md:text-2xl ${activeTab === 4
+              className={`text-base md:text-2xl ${activeTab === '4'
                 ? "text-subprimary underline"
                 : "text-white"} text-center md:border-r-2 border-white`}
-              onClick={() => setActiveTab(4)}
+              onClick={() => setActiveTab('4')}
             >
               Contact Us
             </p>

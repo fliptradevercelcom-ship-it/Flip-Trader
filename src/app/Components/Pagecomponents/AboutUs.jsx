@@ -22,6 +22,7 @@ import firebtnicon from "../../../../public/icons/firebtnicon.svg";
 import Pipworkstep from "./Pipworkstep";
 import Image from "next/image";
 import AboutNewContent from "./AboutNewContent";
+import { useAutoScroll } from "../../../hooks/useAutoScroll";
 
 const aboutFlipTradeData = [
   {
@@ -110,7 +111,7 @@ export default function AboutUs() {
     }
     // { icon: <Target className="w-6 h-6" color="white" />, title: "Transparency", desc: "Clarity in every transaction." }
   ];
-
+  useAutoScroll("about-us-tab", { delay: 800 })
   return (
     <div className="min-h-screen bg-[#050505] text-white selection:bg-[#6a40ec]/30 font-sans">
       <section className="relative pt-12 flex items-center justify-center overflow-hidden border-b border-white/5">
@@ -165,8 +166,10 @@ export default function AboutUs() {
           />
         </div>
       </div>
+     <div id="about-us-tab">
 
-      {/* <AboutNewContent />   */}
+      <AboutNewContent />  
+     </div>
 
       <div className="inn_container py-6">
         <div className="max-w-7xl m-auto flex flex-col-reverse md:grid grid-cols-2 gap-x-6 gap-y-6">

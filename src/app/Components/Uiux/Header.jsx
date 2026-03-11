@@ -105,6 +105,46 @@ const navlistdata = [
           { id: "whychooseus", name: "FAQs", link: "/cryptocurrency" }
         ]
       },
+       {
+        heading: "Company",
+        items: [
+          {
+            // id: "onlinetrading",
+            name: "Advantages of Forex",
+            link: "/advantages-of-forex"
+          },
+          { 
+            // id: "whychooseus",
+            name: "Risk Disclosure", 
+            link: "/risk-disclosure" 
+          },
+          {
+            // id: "whychooseus",
+            name: "Trading Conditions ",
+            link: "/trading-conditions-hour?current-tab=1"
+          },
+          {
+            // id: "whychooseus",
+            name: "Trading Hours",
+            link: "/trading-conditions-hour?current-tab=2"
+          },
+          {
+            id: "about-us-tab",
+            name: "About Fliptrade Group",
+            link: "/about-us?current-tab=1"
+          },
+           {
+            id: "about-us-tab",
+            name: "Regulation",
+            link: "/about-us?current-tab=2"
+          },
+           {
+            id: "about-us-tab",
+            name: "Careers",
+            link: "/about-us?current-tab=3"
+          }
+        ]
+      },
     ]
   },
   {
@@ -219,7 +259,7 @@ const navlistdata = [
         items: [
           { name: "IB Partner", link: "/ib-partner" },
           { name: "Contact Us", link: "/contact-us" },
-          { name: "About Us", link: "/about-us" },
+          { name: "About Us", link: "/about-us?current-tab=1" },
         ]
       },
       {

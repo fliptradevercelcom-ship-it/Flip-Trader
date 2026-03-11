@@ -1,8 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import TextCard from "../Uiux/TextCard";
 import ConditionHourFaq from "./ConditionHourFaq";
-
+import { useSearchParams } from "next/navigation";
 export const TradingConditions = () => {
   const tradingConditions = [
     {
@@ -547,12 +547,20 @@ export const TradingHour = () => {
   );
 };
 const TradingConditionsHour = () => {
-  const [activeTab, setActiveTab] = useState(1);
+
+  const searchparams = useSearchParams()
+  const newQuery = new URLSearchParams(Array.from(searchparams.entries()));
+  const tradingHour = newQuery.get("current-tab");
+  const [activeTab, setActiveTab] = useState(tradingHour);
+  useEffect(() => {
+  setActiveTab(tradingHour);
+}, [tradingHour]);
+
   const renderComponent = () => {
     switch (activeTab) {
-      case 1:
+      case '1':
         return <TradingConditions />;
-      case 2:
+      case '2':
         return <TradingHour />;
       default:
         return <p>sdff</p>;
@@ -563,18 +571,18 @@ const TradingConditionsHour = () => {
     <div className="container mx-auto py-6 md:py-18">
       <div className="grid grid-cols-2 gap-5 cursor-pointer py-3 border-b-2 border-white">
         <p
-          className={`text-base md:text-2xl ${activeTab === 1
+          className={`text-base md:text-2xl ${activeTab === '1'
             ? "text-subprimary underline"
             : "text-white"} text-center md:border-r-2 border-white`}
-          onClick={() => setActiveTab(1)}
+          onClick={() => setActiveTab('1')}
         >
           Trading Conditions
         </p>
         <p
-          className={`text-base md:text-2xl ${activeTab === 2
+          className={`text-base md:text-2xl ${activeTab === '2'
             ? "text-subprimary underline"
             : "text-white"} text-center md:border-r-2 border-white`}
-          onClick={() => setActiveTab(2)}
+          onClick={() => setActiveTab('2')}
         >
           Trading Hours
         </p>
