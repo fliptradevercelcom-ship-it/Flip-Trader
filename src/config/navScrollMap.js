@@ -32,7 +32,7 @@ export const navScrollMap = {
   },
   
   // Platforms dropdown items
-  "Platforms": {
+  "Company": {
     "Mobile App": { sectionId: "trade-anywhere", path: "/" },
     "Key Features": { sectionId: "platform-features", path: "/platform" },
     "Trade Anywhere": { sectionId: "trade", path: "/platform" },
