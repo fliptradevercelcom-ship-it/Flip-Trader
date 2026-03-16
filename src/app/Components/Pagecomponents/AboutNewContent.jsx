@@ -185,7 +185,7 @@ export const RegulationTab = () => {
             onClick={() => setOpenModal(true)}
             className="mt-6 bg-primary text-white px-6 py-3 rounded-lg hover:opacity-90 transition"
           >
-             Document
+             Documents
           </button>
         </div>
 
