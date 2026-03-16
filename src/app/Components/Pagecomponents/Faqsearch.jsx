@@ -204,7 +204,7 @@ const faqsmaindata = [
             {
                 question: "Who is FlipTrade Group regulated by?",
                 answer:
-                    "FlipTrade Group is a regulated broker registered in Saint Lucia and licensed under Mauritius Forex regulations, providing a secure, fully compliant, and trustworthy trading environment for clients worldwide."
+                    "Flip Trade Group Ltd ( Company No. 232118 ), is incorporated in Mauritius and regulated under License Number - GB26205911"
             },
             {
                 question: "Why choose FlipTrade Group?",

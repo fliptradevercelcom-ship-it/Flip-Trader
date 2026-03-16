@@ -106,7 +106,14 @@ export const AboutFlipTradeGroupTab = () => {
   );
 };
 
+
+
 export const RegulationTab = () => {
+  const [openModal, setOpenModal] = useState(false);
+  const [currentImage, setCurrentImage] = useState(0);
+
+  const images = ["/images/FSC1.webp", "/images/FSC2.webp"];
+
   const regulationData = [
     {
       id: 1,
@@ -117,42 +124,127 @@ export const RegulationTab = () => {
     {
       id: 2,
       title: "Anti-Money Laundering",
-      description: `In compliance with the FSC Anti-Money Laundering and Counter-Terrorism Financing Act, Flip Trade Group has implemented comprehensive policies and procedures to ensure compliance with the law. These measures are designed to prevent money laundering and related activities. Flip Trade Group' Anti-Money Laundering and KYC requirements specify the necessary documents that clients must provide before opening an account.`
+      description:
+        "In compliance with the FSC Anti-Money Laundering and Counter-Terrorism Financing Act, Flip Trade Group has implemented comprehensive policies and procedures to ensure compliance with the law. These measures are designed to prevent money laundering and related activities. Flip Trade Group Anti-Money Laundering and KYC requirements specify the necessary documents that clients must provide before opening an account."
     },
     {
       id: 3,
       title: "Licence",
-      description: `Flip Trade Group Ltd' is authorised by the Seychelles Financial Services Authority as a Securities Dealer for the provision of financial services under License NO <span class='text-primary'> GB26205911 </span> , its registered office is at C/o Renark Management Solutions Ltd Port Louis, Mauritius / 4th Floor, The Docks 4, The Docks, Caudan C/o Renark Management Solutions Ltd Port Louis, Mauritius`
+      description:
+        "Flip Trade Group Ltd is authorised by the Seychelles Financial Services Authority as a Securities Dealer for the provision of financial services under License NO GB26205911. Its registered office is at C/o Renark Management Solutions Ltd Port Louis, Mauritius / 4th Floor, The Docks 4, The Docks, Caudan."
     }
   ];
-  return (
-    <div>
-      <div className="max-w-2xl">
-        <div className="flex flex-col items-start w-fit gap-3">
-          <Image
-            src={"/images/fsc.jpg"}
-            alt=""
-            width={1000}
-            height={500}
-            className="max-w-25 rounded-2xl"
-          />
 
-          <h5 className="text-5xl text-white font-semibold">FSC</h5>
-          <p className="text-3xl text-white">Financial Services Commission</p>
+  const nextImage = () => {
+    if (currentImage < images.length - 1) {
+      setCurrentImage((prev) => prev + 1);
+    }
+  };
+
+  const prevImage = () => {
+    if (currentImage > 0) {
+      setCurrentImage((prev) => prev - 1);
+    }
+  };
+
+  return (
+    <div className="w-full">
+
+      {/* TOP SECTION */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+        <div className="max-w-2xl">
+          <div className="flex flex-col items-start w-fit gap-3">
+
+            <Image
+              src="/images/fsc.jpg"
+              alt="FSC"
+              width={200}
+              height={200}
+              className="rounded-2xl max-w-25 md:max-w-50"
+            />
+
+            <h5 className="text-5xl text-white font-semibold">FSC</h5>
+            <p className="text-3xl text-white">
+              Financial Services Commission
+            </p>
+          </div>
+
+          <p className="pt-4 text-2xl font-normal text-white">
+            Fliptrade Group complies with the FSC regulatory requirements and
+            has in place internal risk management controls to ensure that it is
+            sufficiently capitalized to support its operations.
+            <br />
+            <br />
+            External audits supplement Fliptrade Group operational and
+            accounting process and ensure full regulatory compliance.
+          </p>
+
+          {/* READ DOCUMENT BUTTON */}
+          <button
+            onClick={() => setOpenModal(true)}
+            className="mt-6 bg-primary text-white px-6 py-3 rounded-lg hover:opacity-90 transition"
+          >
+             Document
+          </button>
         </div>
-        <p className="pt-4 text-2xl font-normal  font_ternary text-white">
-          Fliptrade Group complies with the FSC regulatory requirements and has
-          in place internal risk management controls to ensure that it is
-          sufficiently capitalized to support its operations.
-          <br />
-          <br />
-          External audits supplement Fliptrade Group operational and accounting
-          process and ensure full regulatory compliance.
-        </p>
+
+
+
       </div>
-      <div>
+     <div>
         <TextCard data={regulationData} col_2={true} p_sec={true} />
       </div>
+      {/* MODAL */}
+      {openModal && (
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-6">
+
+          <div className="bg-white rounded-xl max-w-4xl w-full p-6 relative">
+
+            {/* CLOSE BUTTON */}
+            <button
+              onClick={() => setOpenModal(false)}
+              className="absolute -top-4 -right-4 text-xl font-bold text-white bg-black w-10 h-10 flex justify-center items-center rounded-[50%]"
+            >
+              ✕
+            </button>
+
+            {/* IMAGE */}
+            <div className="flex justify-center">
+              <Image
+                src={images[currentImage]}
+                alt="FSC Document"
+                width={900}
+                height={600}
+                className="rounded-lg"
+              />
+            </div>
+
+            {/* CONTROLS */}
+            <div className="flex justify-between mt-6">
+
+              <button
+                onClick={prevImage}
+                disabled={currentImage === 0}
+                className="px-5 py-2 bg-gray-200 rounded disabled:opacity-40"
+              >
+                Prev
+              </button>
+
+              <button
+                onClick={nextImage}
+                disabled={currentImage === images.length - 1}
+                className="px-5 py-2 bg-primary text-white rounded disabled:opacity-40"
+              >
+                Next
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+      )}
     </div>
   );
 };
@@ -365,11 +457,11 @@ export const CareersTab = () => {
 };
 const AboutNewContent = () => {
 
-    const searchparams = useSearchParams()
-    const newQuery = new URLSearchParams(Array.from(searchparams.entries()));
-    const tradingHour = newQuery.get("current-tab");
-    const [activeTab, setActiveTab] = useState(tradingHour || '1');
-    useEffect(() => {
+  const searchparams = useSearchParams()
+  const newQuery = new URLSearchParams(Array.from(searchparams.entries()));
+  const tradingHour = newQuery.get("current-tab");
+  const [activeTab, setActiveTab] = useState(tradingHour || '1');
+  useEffect(() => {
     setActiveTab(tradingHour);
   }, [tradingHour]);
   const renderComponent = () => {
@@ -381,7 +473,7 @@ const AboutNewContent = () => {
       case '3':
         return <CareersTab />;
       case '4':
-        return <Contactfrom/>;
+        return <Contactfrom />;
       default:
         return <AboutFlipTradeGroupTab />;
     }
@@ -389,7 +481,7 @@ const AboutNewContent = () => {
   return (
     <div className="inn_container">
       <div className="container mx-auto py-12 md:py-18">
-        
+
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 cursor-pointer py-3 border-b-2 border-white">
           <p
             className={`text-base md:text-2xl ${activeTab === '1'
@@ -416,14 +508,14 @@ const AboutNewContent = () => {
             Careers
           </p>
           {/* <Link href={"/contact-us"}> */}
-            <p
-              className={`text-base md:text-2xl ${activeTab === '4'
-                ? "text-subprimary underline"
-                : "text-white"} text-center md:border-r-2 border-white`}
-              onClick={() => setActiveTab('4')}
-            >
-              Contact Us
-            </p>
+          <p
+            className={`text-base md:text-2xl ${activeTab === '4'
+              ? "text-subprimary underline"
+              : "text-white"} text-center md:border-r-2 border-white`}
+            onClick={() => setActiveTab('4')}
+          >
+            Contact Us
+          </p>
           {/* </Link> */}
         </div>
 

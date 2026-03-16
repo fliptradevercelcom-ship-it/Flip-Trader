@@ -61,6 +61,11 @@ const forexFeatures = [
     title: "Non-Standardised Contract Sizes",
     description:
       "Forex is an over-the-counter market unlike the stock and futures markets. This means Forex traders have flexibility in position sizing and can trade any amount between 0.01 lots (1 micro lot) and 200 lots. This gives traders a greater ability to manage their risk."
+  },
+  {
+    id: 11,
+    title: "Licence",
+    description: `Flip Trade Group Ltd' is authorised by the Seychelles Financial Services Authority as a Securities Dealer for the provision of financial services under License NO <span class='text-primary'> GB26205911 </span> , its registered office is at C/o Renark Management Solutions Ltd Port Louis, Mauritius / 4th Floor, The Docks 4, The Docks, Caudan C/o Renark Management Solutions Ltd Port Louis, Mauritius`
   }
 ];
 const Forexadvantages = () => {
