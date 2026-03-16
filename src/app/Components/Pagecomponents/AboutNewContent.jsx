@@ -131,7 +131,7 @@ export const RegulationTab = () => {
       id: 3,
       title: "Licence",
       description:
-        "Flip Trade Group Ltd is authorised by the Seychelles Financial Services Authority as a Securities Dealer for the provision of financial services under License NO GB26205911. Its registered office is at C/o Renark Management Solutions Ltd Port Louis, Mauritius / 4th Floor, The Docks 4, The Docks, Caudan."
+        "Flip Trade Group Ltd is authorised by the Seychelles Financial Services Authority as a Securities Dealer for the provision of financial services under License NO <span class='text-primary'> GB26205911 </span>. Its registered office is at C/o Renark Management Solutions Ltd Port Louis, Mauritius / 4th Floor, The Docks 4, The Docks, Caudan."
     }
   ];
 
