@@ -167,13 +167,21 @@ const footerdata = {
       pagename: "Forex Brokers in Singapore",
       pagelink: "/forex-brokers-in-singapore",
     },
+    {
+      pagename : 'Best Forex Brokers in Abu Dhabi',
+      pagelink : '/trading/best-forex-brokers-in-abu-dhabi'
+    },
+     {
+      pagename : 'Forex Trading in Dubai',
+      pagelink : '/forex-trading-in-dubai'
+    }
   ]
 };
 const Fotter = () => {
   useAutoScroll("Download-app", { delay: 800 });
   const pathname = usePathname();
 
-  if (pathname?.startsWith('/promo')) {
+  if (pathname?.startsWith('/promo') || pathname?.startsWith('/admin')) {
     return null;
   }
   return (
@@ -294,7 +302,7 @@ const Fotter = () => {
                   {
                     footerdata.forex_broker.map((data, index) => (
                       <div key={index} className="flex items-center justify-start">
-                        <Link href={data.pagelink} className="w-full border-r">
+                        <Link href={data.pagelink} className="w-full border-r" onClick={()=> window.scrollTo({top : 0 , behavior : 'smooth'})}>
                           <span className="text-[14px] md:text-lg 2xl:text-xl text-white hover:underline font_secondary">
                             {data.pagename}
                           </span>
