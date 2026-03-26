@@ -84,6 +84,11 @@ const navlistdata = [
             id: "about-us-tab",
             name: "Careers",
             link: "/about-us?current-tab=3"
+          },
+          {
+            // id: "about-us-tab",
+            name: "Blogs",
+            link: "/blog"
           }
           // { id: "accounttfdsfypes", name: "Mobile App", link: "/" },
         ]
@@ -250,6 +255,11 @@ const navlistdata = [
             id: "about-us-tab",
             name: "Careers",
             link: "/about-us?current-tab=3"
+          },
+           {
+            // id: "about-us-tab",
+            name: "Blogs",
+            link: "/blog"
           }
         ]
       },

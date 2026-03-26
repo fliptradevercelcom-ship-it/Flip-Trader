@@ -129,7 +129,7 @@ export const ShareIcon = () => {
     );
 };
 
-const BlogDetail = () => {
+const BlogDetail = ({slug}) => {
     const [singleBlog, setsingleBlog] = useState({});
     const [liked, setLiked] = useState(false);
     const [loading, setLoading] = useState(true);
@@ -140,7 +140,7 @@ const BlogDetail = () => {
         const fetchsingleblog = async () => {
             try {
                 const res = await fetch(
-                    `${API_URL}/api/blogs/slug/${path}`
+                    `${API_URL}/api/blogs/slug/${slug}`
                 );
                 const data = await res.json();
                 setsingleBlog(data);
