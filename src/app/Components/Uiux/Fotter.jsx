@@ -47,6 +47,8 @@ const footerdata = {
         { pagelink: "/contest", pagename: "Contest" },
         { pagelink: "/deposit-and-withdrawal", pagename: "Deposit & Withdrawal" },
         { pagelink: "/reviews", pagename: "Reviews" },
+        { pagelink: "/blog", pagename: "Blogs" },
+        
       ],
     },
     {
