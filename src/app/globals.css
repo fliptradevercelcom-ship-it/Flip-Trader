@@ -146,13 +146,11 @@ body {
 }
 
 .gradient_text {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgb(176 156 240 / 94%) 26%,
-    rgb(159 135 234) 55%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgb(176 156 240 / 94%) 26%,
+      rgb(159 135 234) 55%,
+      rgba(255, 255, 255, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -160,11 +158,9 @@ body {
 }
 
 .gradient_text_secondary {
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 1),
-    rgba(135, 135, 135, 0)
-  );
+  background: radial-gradient(circle,
+      rgba(255, 255, 255, 1),
+      rgba(135, 135, 135, 0));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -172,22 +168,18 @@ body {
 }
 
 .gradient_bg {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgb(176 156 240 / 94%) 26%,
-    rgb(159 135 234) 55%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgb(176 156 240 / 94%) 26%,
+      rgb(159 135 234) 55%,
+      rgba(255, 255, 255, 1) 100%);
 }
 
 .gradient_line_bg {
-  background: linear-gradient(
-    182deg,
-    rgba(255, 255, 255, 1) -26%,
-    rgb(188 171 240 / 95%) 49%,
-    rgba(255, 255, 255, 1) 106%
-  );
+  background: linear-gradient(182deg,
+      rgba(255, 255, 255, 1) -26%,
+      rgb(188 171 240 / 95%) 49%,
+      rgba(255, 255, 255, 1) 106%);
 }
 
 strong {
@@ -226,6 +218,16 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-image: none !important;
 }
 
+.blog_detail_description h4 {
+  font-size: 28px;
+  color: var(--subprimary);
+}
+
+.blog_detail_description h3 {
+  font-size: 28px;
+  color: var(--subprimary);
+}
+
 @media screen and (max-width: 1700px) {
   .inn_container {
     padding-inline: 4%;
@@ -256,6 +258,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 @media screen and (max-width: 1536px) {
+  .blog_detail_description h4 {
+    font-size: 26px;
+    color: var(--subprimary);
+  }
+
   .list_text {
     font-size: 15px;
   }
@@ -366,7 +373,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     line-height: 32px;
   }
 
-  .list_text { 
+  .list_text {
     font-size: 14px;
   }
 
@@ -416,13 +423,11 @@ input[type=number] {
 /*  Smooth Animated Black + Purple Gradient Background (with top/bottom fade) */
 .bg-animated-gradient {
   position: relative;
-  background: linear-gradient(
-    -45deg,
-    #000000,
-    #1a002e,
-    #3b007a,
-    #000000
-  );
+  background: linear-gradient(-45deg,
+      #000000,
+      #1a002e,
+      #3b007a,
+      #000000);
   background-size: 300% 300%;
   animation: gradientShift 35s ease-in-out infinite;
   overflow: hidden;
@@ -433,13 +438,11 @@ input[type=number] {
   content: "";
   position: absolute;
   inset: 0;
-  background: repeating-linear-gradient(
-    125deg,
-    rgba(150, 0, 255, 0.06) 0px,
-    rgba(150, 0, 255, 0.06) 1px,
-    transparent 3px,
-    transparent 90px
-  );
+  background: repeating-linear-gradient(125deg,
+      rgba(150, 0, 255, 0.06) 0px,
+      rgba(150, 0, 255, 0.06) 1px,
+      transparent 3px,
+      transparent 90px);
   animation: softLines 100s linear infinite;
   opacity: 0.25;
   mix-blend-mode: overlay;
@@ -452,13 +455,11 @@ input[type=number] {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0) 20%,
-    rgba(0, 0, 0, 0) 80%,
-    rgba(0, 0, 0, 0.9) 100%
-  );
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0) 20%,
+      rgba(0, 0, 0, 0) 80%,
+      rgba(0, 0, 0, 0.9) 100%);
   z-index: 2;
   pointer-events: none;
 }
@@ -468,9 +469,11 @@ input[type=number] {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -481,6 +484,7 @@ input[type=number] {
   0% {
     background-position: 0 0;
   }
+
   100% {
     background-position: 1200px 600px;
   }
@@ -490,14 +494,17 @@ input[type=number] {
   animation: popup_scaleani 1.5s ease-in-out infinite;
   transition: all 0.9s ease-in-out;
 }
+
 @keyframes popup_scaleani {
-  0%{
-     transform: scale(1.1);
+  0% {
+    transform: scale(1.1);
   }
+
   50% {
     transform: scale(1);
   }
+
   100% {
-     transform: scale(1.1);
+    transform: scale(1.1);
   }
 }

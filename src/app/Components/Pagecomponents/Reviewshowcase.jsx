@@ -120,7 +120,7 @@ const Reviewshowcase = () => {
   return (
     <section className="bg-theme py-16">
       {/* <!-- TrustBox widget - Review Collector --> */}
-      <div
+      {/* <div
         className="trustpilot-widget mb-[2rem]"
         data-locale="en-US"
         data-template-id="56278e9abfbbba0bdcd568bc"
@@ -128,6 +128,7 @@ const Reviewshowcase = () => {
         data-style-height="52px"
         data-style-width="100%"
         data-token="cabb707c-961e-4e76-8313-3679442f36b7"
+        style={{position:"relative"}}
       >
         <a
           href="https://www.trustpilot.com/review/fliptradegroup.com"
@@ -136,7 +137,7 @@ const Reviewshowcase = () => {
         >
           Trustpilot
         </a>
-      </div>
+      </div> */}
       {/* <!-- End TrustBox widget --> */}
       <div className="inn_container">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[340px_1fr] xl:gap-16">

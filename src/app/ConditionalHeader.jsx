@@ -6,7 +6,7 @@ import Header from './Components/Uiux/Header';
 export default function ConditionalHeader() {
   const pathname = usePathname();
 
-  if (pathname?.startsWith('/promo')) {
+  if (pathname?.startsWith('/promo') || pathname?.startsWith('/admin')) {
     return null;
   }
 
