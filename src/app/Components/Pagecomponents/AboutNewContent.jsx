@@ -460,9 +460,12 @@ const AboutNewContent = () => {
   const searchparams = useSearchParams()
   const newQuery = new URLSearchParams(Array.from(searchparams.entries()));
   const tradingHour = newQuery.get("current-tab");
-  const [activeTab, setActiveTab] = useState(tradingHour || '1');
+  
+  const [activeTab, setActiveTab] = useState(tradingHour || '2');
+  console.log(tradingHour, 'tradingHour');
+  console.log(activeTab, 'activeTab');
   useEffect(() => {
-    setActiveTab(tradingHour);
+    setActiveTab(tradingHour || '2');
   }, [tradingHour]);
   const renderComponent = () => {
     switch (activeTab) {

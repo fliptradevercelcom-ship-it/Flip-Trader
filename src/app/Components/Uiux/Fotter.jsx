@@ -96,24 +96,24 @@ const footerdata = {
     {
       title: "Head Quarter",
       discription:
-        "Giorgi Leonid Ze Street, Tbilisi 0105, <br/> Georgia Office 38.",
+        "Flip Trade Group  4th Floor, The Docks 4,<br/> The Docks  Port Louis, Mauritius.",
       link: false,
     },
     {
       title: "Registered Address",
       discription:
-        "Ground Floor, The Sotheby <br/> Building, Rodney  Village, Rodney <br/> Bay, Saint Lucia",
+        "4th Floor, The Docks 4,<br/>  The Docks, Caudan C/o Renark <br/>  Management Solutions Ltd <br/>  Port Louis, Mauritius",
       link: false,
     },
     {
       title: "Registration No.",
-      discription: "2025-00621",
+      discription: "232118 ",
       link: false,
     },
     {
       title: "Contact No.",
-      discription: "+41 2650 06818",
-      link: "tel:+41265006818",
+      discription: "+230 52515560",
+      link: "tel:+23052515560",
     },
     {
       title: "Email",

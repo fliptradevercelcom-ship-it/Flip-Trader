@@ -78,7 +78,7 @@ const navlistdata = [
            {
             id: "about-us-tab",
             name: "Regulation",
-            link: "/about-us?current-tab=2"
+            link: "/fsc-regulated-forex-broker"
           },
            {
             id: "about-us-tab",
@@ -249,7 +249,7 @@ const navlistdata = [
            {
             id: "about-us-tab",
             name: "Regulation",
-            link: "/about-us?current-tab=2"
+            link: "/fsc-regulated-forex-broker"
           },
            {
             id: "about-us-tab",
