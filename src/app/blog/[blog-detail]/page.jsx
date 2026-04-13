@@ -2,7 +2,8 @@ import React from 'react';
 import BlogDetail from './BlogDetail';
 const API_URL=process.env.NEXT_PUBLIC_API_BASE_URL
 export async function generateMetadata({ params }) {
-  const slug = params["blog-detail"]; // 👈 important
+  const resolvedParams = await params;
+  const slug = resolvedParams["blog-detail"];
 
   try {
     const res = await fetch(
@@ -27,6 +28,7 @@ export async function generateMetadata({ params }) {
     };
   }
 }
-export default function Page({ params }) {
-  return <BlogDetail slug={params["blog-detail"]} />;
+export default async function Page({ params }) {
+  const resolvedParams = await params;
+  return <BlogDetail slug={resolvedParams["blog-detail"]} />;
 }

@@ -87,7 +87,6 @@ export default function Page() {
     const token = localStorage.getItem("token");
     if (!token) router.push("/admin/login");
   }, [router]);
-
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
   const handleImage = (e) => {
@@ -103,9 +102,20 @@ export default function Page() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!editor) return;
-
+    
+     if (!image) {
+    alert("Please select an image");
+    return;
+  }
     setLoading(true);
-    const token = localStorage.getItem("token");
+    const rawToken = localStorage.getItem("token");
+    if (!rawToken) {
+      alert("Session expired. Please login again.");
+      router.push("/admin/login");
+      setLoading(false);
+      return;
+    }
+    const authToken = rawToken.startsWith("Bearer ") ? rawToken : `Bearer ${rawToken}`;
     const formData = new FormData();
     
     formData.append("image", image);
@@ -119,12 +129,15 @@ export default function Page() {
 
     const res = await fetch(`${API_URL}/api/blogs`, {
       method: "POST",
-      headers: { Authorization: token },
+      headers: { Authorization: authToken },
       body: formData,
     });
 
     if (res.ok) router.push("/admin");
-    else alert("Error creating blog");
+    else {
+      const data = await res.json().catch(() => ({}));
+      alert(data?.message || "Error creating blog");
+    }
     setLoading(false);
   };
 

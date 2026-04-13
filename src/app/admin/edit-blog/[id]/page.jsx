@@ -90,7 +90,14 @@ export default function EditBlog() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    const token = localStorage.getItem("token");
+    const rawToken = localStorage.getItem("token");
+    if (!rawToken) {
+      alert("Session expired. Please login again.");
+      router.push("/admin/login");
+      setLoading(false);
+      return;
+    }
+    const authToken = rawToken.startsWith("Bearer ") ? rawToken : `Bearer ${rawToken}`;
     const formData = new FormData();
     
     if (image) formData.append("image", image);
@@ -104,7 +111,7 @@ export default function EditBlog() {
 
     const res = await fetch(`${API_URL}/api/blogs/${id}`, {
       method: "PUT",
-      headers: { Authorization: token },
+      headers: { Authorization: authToken },
       body: formData,
     });
 

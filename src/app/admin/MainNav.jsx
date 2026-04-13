@@ -25,14 +25,21 @@ export default function MainNav() {
   };
 
   const handleDelete = async (id) => {
+    const isConfirmed = window.confirm("Are you sure you want to delete this blog?");
+    if (!isConfirmed) return;
 
     
-    const token = localStorage.getItem("token");
+    const rawToken = localStorage.getItem("token");
+    if (!rawToken) {
+      router.push("/admin/login");
+      return;
+    }
+    const authToken = rawToken.startsWith("Bearer ") ? rawToken : `Bearer ${rawToken}`;
 
     await fetch(`${API_URL}/api/blogs/${id}`, {
       method: "DELETE",
       headers: {
-        Authorization: token,
+        Authorization: authToken,
       },
     });
 
