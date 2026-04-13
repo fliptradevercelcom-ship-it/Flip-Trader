@@ -6,6 +6,8 @@ import { useEditor, EditorContent } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 import Link from "@tiptap/extension-link";
 
+const MAX_IMAGE_SIZE = 1 * 1024 * 1024; // 1MB
+
 const MenuBar = ({ editor }) => {
   if (!editor) return null;
 
@@ -92,6 +94,13 @@ export default function Page() {
   const handleImage = (e) => {
     const file = e.target.files[0];
     if (file) {
+      if (file.size > MAX_IMAGE_SIZE) {
+        alert("Image size must be less than 1MB.");
+        setImage(null);
+        setPreview(null);
+        e.target.value = "";
+        return;
+      }
       setImage(file);
       setPreview(URL.createObjectURL(file));
     }
