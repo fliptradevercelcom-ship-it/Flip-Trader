@@ -5,7 +5,7 @@ const WhtasAppLink = ({ width, height }) => {
     return (
         <div>
             <Link
-                href="https://wa.me/447446987184"
+                href="https://wa.me/447853154492"
                 target='_blank'
             >
                 <svg
