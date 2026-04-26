@@ -64,9 +64,9 @@ const pointdata = [
   }
 ];
 export const metadata = {
-  title: "Forex Trading Online Platform | Trade Currency Pairs FlipTrade",
+  title: "Forex Trading Online Platform | FlipTrade Group",
   description:
-    "Trade major, minor, and exotic forex pairs on FlipTrade. Enjoy tight spreads, fast execution, and flexible leverage to enhance your online forex trading experience securely."
+    "Trade forex with FlipTrade Group. Access major, minor & exotic pairs, tight spreads, advanced tools, fast execution, and global markets worldwide today."
 };
 export default function page() {
   return (

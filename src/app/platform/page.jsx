@@ -7,9 +7,9 @@ import Mt5download from "../Components/Pagecomponents/Mt5download";
 import Title from "../Components/Uiux/Title";
 import Faq from "../Components/Pagecomponents/Faq";
 export const metadata = {
-  title: "FlipTrade Platform | Trade with MetaTrader 5 & Multi-Asset Access",
+  title: "Advanced Trading Platform MT5 | FlipTrade Group",
   description:
-    "Explore FlipTrade’s trading platform powered by MetaTrader 5 access forex, stocks, commodities, indices & crypto. Trade seamlessly with charts, alerts & advanced tools"
+    "Trade smarter with FlipTrade Group MT5 platform. Access multi-assets, advanced charts, fast execution, and automated trading tools all in one place easily."
 };
 const faqData = [
   {

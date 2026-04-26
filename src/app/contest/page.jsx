@@ -73,6 +73,10 @@ const faqData = [
   }
 ];
 
+export const metadata = {
+  title : 'Join Forex Trading Contest & Win Rewards | FlipTrade',
+  description : 'Participate in FlipTrade Group’s exciting forex contest. Compete with traders, showcase your skills, win amazing rewards, and boost your trading journey today.'
+}
 function page() {
   return (
     <div className="pt-18 lg:pt-28 xl:pt-32">

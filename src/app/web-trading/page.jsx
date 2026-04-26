@@ -31,6 +31,10 @@ const faqData = [
   }
 ];
 
+export const metadata = {
+  title : 'Web Trading Platform Online | FlipTrade Group',
+  description : 'Access FlipTrade Group web trading platform instantly. Trade forex, crypto, indices, and more directly from your browser with no downloads required easily.'
+}
 const page = () => {
   return (
     <div className="bg-black pt-[140px] md:pt-[160px]">
