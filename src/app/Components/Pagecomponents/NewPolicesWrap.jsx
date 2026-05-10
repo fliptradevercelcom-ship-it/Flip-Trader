@@ -42,7 +42,7 @@ const policesTabdata = [
   },
           {
     id: 7 ,
-    title : 'TermCondition',
+    title : 'Terms & Conditions',
     component : TermCondition
   },
 ]

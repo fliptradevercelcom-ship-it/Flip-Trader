@@ -1386,7 +1386,7 @@ const TermCondition = () => {
       <div className="inn_container pt-5 md:pt-14">
         <div className="text-center">
           <Title
-            title="Terms and  Conditions"
+            title="Terms & Conditions"
             color="text-white"
             ish1={true}
           />

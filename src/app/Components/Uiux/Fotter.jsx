@@ -19,7 +19,7 @@ import Title from "./Title";
 import { useAutoScroll } from "../../../hooks/useAutoScroll";
 const footerdata = {
   policydata: [
-    { pagelink: "/privacy-policy", pagename: "Privacy Policy" },
+    { pagelink: "/legal-documents", pagename: "Legal Documents" },
     { pagelink: "/aml-ctf-policy", pagename: "AML & CTF Policy" },
     { pagelink: "/refund-withdrawal", pagename: "Refund & Withdrawal" },
     { pagelink: "/risk-warning", pagename: "Risk Warning" },
